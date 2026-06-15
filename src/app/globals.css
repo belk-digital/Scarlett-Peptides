@@ -1,0 +1,50 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@theme inline {
+  --color-base: #1A1416;
+  --color-surface: #221A1D;
+  --color-surface2: #2C2226;
+  --color-elevated: #332A2E;
+  --color-bordersub: #3A2F33;
+  --color-rosegold: #E8B4A0;
+  --color-rosegoldhi: #F4C9B8;
+  --color-champagne: #E6CBA8;
+  --color-mauve: #C98BA6;
+  --color-blush: #D9A5A5;
+  --color-textmain: #F5EDE8;
+  --color-textsub: #C9BBB4;
+  --color-textmuted: #8A7B75;
+  
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-textmain);
+  font-family: var(--font-inter), sans-serif;
+  @apply antialiased;
+}
+
+/* Base utility classes for glowing buttons and elevated cards */
+@layer utilities {
+  .glow-hover {
+    transition: all 0.3s ease;
+  }
+  .glow-hover:hover {
+    box-shadow: 0 0 15px rgba(232, 180, 160, 0.25);
+    transform: translateY(-1px);
+  }
+  
+  .card-elevated {
+    border-radius: 16px;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-bordersub);
+    transition: all 0.3s ease;
+  }
+  .card-elevated:hover {
+    background-color: var(--color-surface2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(232, 180, 160, 0.1);
+    transform: translateY(-2px);
+  }
+}
