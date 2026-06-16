@@ -13,7 +13,7 @@ export default function NewsletterForm({ ctaText }: { ctaText: string }) {
       <input 
         type="email" 
         placeholder="Your email address" 
-        className="bg-surface2 border border-bordersub text-textmain px-6 py-3 rounded-full flex-1 focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(232,180,160,0.2)] transition-all"
+        className="bg-surface2 border border-bordersub text-textmain px-6 py-3 rounded-full flex-1 focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all"
         required
       />
       <button type="submit" className="bg-rosegold text-base px-8 py-3 rounded-full font-medium uppercase tracking-widest text-xs glow-hover transition-all">

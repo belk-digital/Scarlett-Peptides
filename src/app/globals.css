@@ -1,50 +1,50 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @theme inline {
-  --color-base: #1A1416;
-  --color-surface: #221A1D;
-  --color-surface2: #2C2226;
-  --color-elevated: #332A2E;
-  --color-bordersub: #3A2F33;
-  --color-rosegold: #E8B4A0;
-  --color-rosegoldhi: #F4C9B8;
-  --color-champagne: #E6CBA8;
-  --color-mauve: #C98BA6;
-  --color-blush: #D9A5A5;
-  --color-textmain: #F5EDE8;
-  --color-textsub: #C9BBB4;
-  --color-textmuted: #8A7B75;
+  --color-base: #0a0908; /* Very deep warm umber instead of black */
+  --color-surface: #141211;
+  --color-surface2: #1e1b1a;
+  --color-elevated: #282422;
+  --color-bordersub: #302b29;
+  --color-rosegold: #e3b5a4; /* Soft rose gold */
+  --color-rosegoldhi: #f5d6c6;
+  --color-champagne: #f4e8d3;
+  --color-mauve: #b8929e;
+  --color-blush: #d4b4b4;
+  --color-textmain: #faf6f5; /* Warm off-white */
+  --color-textsub: #bfaea8;
+  --color-textmuted: #8c7d78;
   
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-cormorant);
+  --font-serif: var(--font-cormorant); /* Bringing back the elegant serif */
 }
 
 body {
   background-color: var(--color-base);
   color: var(--color-textmain);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-sans), sans-serif;
   @apply antialiased;
 }
 
 /* Base utility classes for glowing buttons and elevated cards */
 @layer utilities {
   .glow-hover {
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .glow-hover:hover {
-    box-shadow: 0 0 15px rgba(232, 180, 160, 0.25);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
     transform: translateY(-1px);
   }
   
   .card-elevated {
-    border-radius: 16px;
+    border-radius: 1px; /* Ultra sharp edges for modern tech look, or 12px for apple. Let's do 12px for luxury */
+    border-radius: 12px;
     background-color: var(--color-surface);
     border: 1px solid var(--color-bordersub);
-    transition: all 0.3s ease;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   }
   .card-elevated:hover {
     background-color: var(--color-surface2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(232, 180, 160, 0.1);
-    transform: translateY(-2px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
   }
 }

@@ -129,22 +129,22 @@ export default function Contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-xs uppercase tracking-widest text-textsub mb-2">Full Name</label>
-                    <input type="text" id="name" name="name" required className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(232,180,160,0.2)] transition-all" />
+                    <input type="text" id="name" name="name" required className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all" />
                   </div>
                   <div>
                     <label htmlFor="email" className="block text-xs uppercase tracking-widest text-textsub mb-2">Email Address</label>
-                    <input type="email" id="email" name="email" required className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(232,180,160,0.2)] transition-all" />
+                    <input type="email" id="email" name="email" required className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all" />
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="phone" className="block text-xs uppercase tracking-widest text-textsub mb-2">Phone (Optional)</label>
-                    <input type="tel" id="phone" name="phone" className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(232,180,160,0.2)] transition-all" />
+                    <input type="tel" id="phone" name="phone" className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all" />
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-xs uppercase tracking-widest text-textsub mb-2">Subject</label>
-                    <select id="subject" name="subject" required defaultValue="" className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(232,180,160,0.2)] transition-all appearance-none cursor-pointer">
+                    <select id="subject" name="subject" required defaultValue="" className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all appearance-none cursor-pointer">
                       <option value="" disabled>Select a reason...</option>
                       {CONTACT_CONTENT.form.subjects.map(subject => (
                         <option key={subject} value={subject}>{subject}</option>
@@ -155,7 +155,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="message" className="block text-xs uppercase tracking-widest text-textsub mb-2">Message</label>
-                  <textarea id="message" name="message" required rows={5} className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(232,180,160,0.2)] transition-all resize-none"></textarea>
+                  <textarea id="message" name="message" required rows={5} className="w-full bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl focus:outline-none focus:border-rosegold focus:shadow-[0_0_10px_rgba(255,255,255,0.15)] transition-all resize-none"></textarea>
                 </div>
 
                 <div className="flex items-start gap-3">

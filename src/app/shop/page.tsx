@@ -2,24 +2,34 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import { getAllProducts } from "@/data/products";
 import { useCart } from "@/context/CartContext";
 
-export default function Shop() {
+function ShopContent() {
   const products = getAllProducts();
   const { addItem } = useCart();
+  const searchParams = useSearchParams();
+  const categoryFilter = searchParams.get('category');
+  
+  const filteredProducts = categoryFilter 
+    ? products.filter(p => p.category.toLowerCase() === categoryFilter.toLowerCase())
+    : products;
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-16">
-        <h1 className="font-serif text-4xl md:text-5xl text-rosegold mb-4 tracking-wide">The Collection</h1>
+        <h1 className="font-serif text-4xl md:text-5xl text-rosegold mb-4 tracking-wide">
+          {categoryFilter ? `${categoryFilter} Research` : "The Collection"}
+        </h1>
         <p className="text-textsub max-w-2xl mx-auto">
           Explore our premium selection of research peptides, carefully synthesized for unparalleled purity.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {products.map((product) => {
+        {filteredProducts.map((product) => {
           const minPrice = product.isVariable 
             ? Math.min(...(product.variants?.map(v => v.price) || [0]))
             : product.price;
@@ -97,5 +107,17 @@ export default function Shop() {
         })}
       </div>
     </div>
+  );
+}
+
+export default function Shop() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center text-rosegold">
+        Loading catalog...
+      </div>
+    }>
+      <ShopContent />
+    </Suspense>
   );
 }

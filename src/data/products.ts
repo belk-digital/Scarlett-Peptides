@@ -56,7 +56,7 @@ export const products: Product[] = [
     shortDescription: "Copper peptide.",
     longDescription: "Detailed laboratory information and compound overview for GhkCU.",
     image: "/images/products/ghk-cu-100mg.jpg",
-    category: "Peptides",
+    category: "Longevity",
     isVariable: true,
     variants: [
       { label: "50mg - Single", price: 60.0, regularPrice: 60.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
@@ -73,7 +73,7 @@ export const products: Product[] = [
     shortDescription: "Mitochondrial-derived peptide.",
     longDescription: "Detailed laboratory information and compound overview for MOTS-C.",
     image: "/images/products/mots-c-10mg.jpg",
-    category: "Peptides",
+    category: "Longevity",
     isVariable: true,
     variants: [
       { label: "10mg - Single", price: 65.0, regularPrice: 70.0, variationId: 2816, image: "/images/products/mots-c-10mg.jpg" },
@@ -111,7 +111,7 @@ export const products: Product[] = [
     shortDescription: "Nicotinamide Adenine Dinucleotide.",
     longDescription: "Detailed laboratory information and compound overview for NAD+.",
     image: "/images/products/nadplus-500mg.jpg",
-    category: "Wellness",
+    category: "Longevity",
     isVariable: true,
     variants: [
       { label: "500mg - Single", price: 80.0, regularPrice: 90.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
@@ -127,7 +127,7 @@ export const products: Product[] = [
     shortDescription: "Potent antioxidant.",
     longDescription: "Detailed laboratory information and compound overview for Glutathione.",
     image: "/images/products/glutathione-200mg.jpg",
-    category: "Wellness",
+    category: "Longevity",
     wooProductId: 1176,
     isVariable: false,
     price: 60.0,
@@ -139,7 +139,7 @@ export const products: Product[] = [
     shortDescription: "Body Protection Compound.",
     longDescription: "Detailed laboratory information and compound overview for BPC-157.",
     image: "/images/products/bpc-157-10mg.jpg",
-    category: "Peptides",
+    category: "Recovery & Repair",
     isVariable: true,
     variants: [
       { label: "10mg - Single", price: 65.0, regularPrice: 65.0, variationId: 2839, image: "/images/products/bpc-157-10mg.jpg" },
@@ -156,7 +156,7 @@ export const products: Product[] = [
     shortDescription: "Anti-inflammatory peptide.",
     longDescription: "Detailed laboratory information and compound overview for KPV.",
     image: "/images/products/kpv-10mg.jpg",
-    category: "Peptides",
+    category: "Recovery & Repair",
     wooProductId: 986,
     isVariable: false,
     price: 55.0,
@@ -168,7 +168,7 @@ export const products: Product[] = [
     shortDescription: "Actin regulating peptide.",
     longDescription: "Detailed laboratory information and compound overview for TB500.",
     image: "/images/products/tb-500-10mg.jpg",
-    category: "Peptides",
+    category: "Recovery & Repair",
     isVariable: true,
     variants: [
       { label: "10/10mg - Single", price: 105.0, regularPrice: 105.0, variationId: 3813, image: "/images/products/tb-500-10mg.jpg" },

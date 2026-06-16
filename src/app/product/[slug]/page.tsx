@@ -127,7 +127,7 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
                       id="concentration-select"
                       value={selectedConcentration}
                       onChange={handleConcentrationChange}
-                      className="w-full appearance-none bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl text-sm font-medium focus:outline-none focus:border-rosegold focus:shadow-[0_0_15px_rgba(232,180,160,0.15)] transition-all cursor-pointer"
+                      className="w-full appearance-none bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl text-sm font-medium focus:outline-none focus:border-rosegold focus:shadow-[0_0_15px_rgba(255,255,255,0.15)] transition-all cursor-pointer"
                     >
                       <option value="" disabled>Select Concentration</option>
                       {uniqueConcentrations.map(conc => (
@@ -153,7 +153,7 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
                       value={selectedSize}
                       onChange={(e) => setSelectedSize(e.target.value)}
                       disabled={!selectedConcentration}
-                      className="w-full appearance-none bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl text-sm font-medium focus:outline-none focus:border-rosegold focus:shadow-[0_0_15px_rgba(232,180,160,0.15)] transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="w-full appearance-none bg-surface2 border border-bordersub text-textmain px-4 py-3 rounded-xl text-sm font-medium focus:outline-none focus:border-rosegold focus:shadow-[0_0_15px_rgba(255,255,255,0.15)] transition-all cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                       <option value="" disabled>Select Size</option>
                       {availableVariants.map(variant => (
