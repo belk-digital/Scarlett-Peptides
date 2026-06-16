@@ -533,7 +533,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   badge: "GLOW · KLOW"
                 }
               ].map((cat, i) => (
-                <ScrollReveal key={i} delay={i * 0.1} direction="up" className="h-full" style={{ perspective: '1000px' }}>
+                <ScrollReveal key={i} delay={i * 0.1} direction="up" className="h-full">
                   <Link href={`/shop?category=${encodeURIComponent(cat.label)}`} className="group block h-full">
                     <TiltCard className="h-full">
                       <div className="h-full rounded-3xl border border-white/10 bg-white/[0.06] backdrop-blur-2xl shadow-lg p-8 flex flex-col transition-all duration-500 hover:bg-white/[0.1] hover:border-white/20 hover:shadow-[0_20px_40px_rgba(255,255,255,0.05)] relative overflow-hidden">
@@ -593,7 +593,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 text: "We filter out the noise, providing only the specific compounds truly worth your research attention."
               }
             ].map((feature, i) => (
-              <ScrollReveal key={i} delay={i * 0.15} className="h-full" style={{ perspective: '1000px' }}>
+              <ScrollReveal key={i} delay={i * 0.15} className="h-full">
                 <TiltCard className="h-full">
                   <div className="group relative p-10 h-full rounded-3xl border border-white/10 bg-white/[0.06] backdrop-blur-2xl shadow-lg flex flex-col transition-all duration-500 hover:bg-white/[0.1] hover:border-white/20 hover:shadow-[0_20px_40px_rgba(255,255,255,0.05)] overflow-hidden">
                     
