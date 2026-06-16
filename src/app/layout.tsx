@@ -8,13 +8,13 @@ import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const outfit = Outfit({
-  variable: "--font-inter", // Keeping variable name to preserve tailwind mappings
+  variable: "--font-outfit",
   subsets: ["latin"],
   display: "swap",
 });
 
 const playfair = Playfair_Display({
-  variable: "--font-cormorant", // Keeping variable name to preserve tailwind mappings
+  variable: "--font-playfair",
   subsets: ["latin"],
   display: "swap",
 });
