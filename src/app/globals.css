@@ -19,6 +19,16 @@
   --font-serif: var(--font-playfair);
 }
 
+/* 
+ * CRITICAL FOR VERCEL DEPLOYMENT: 
+ * Next.js font optimizer strips next/font variables if it doesn't see them used in standard CSS blocks. 
+ * Since Tailwind v4 uses @theme inline, Next.js misses it. This dummy block forces Next.js to bundle the fonts!
+ */
+:root {
+  --next-font-hack-1: var(--font-outfit);
+  --next-font-hack-2: var(--font-playfair);
+}
+
 body {
   background-color: var(--color-base);
   color: var(--color-textmain);
