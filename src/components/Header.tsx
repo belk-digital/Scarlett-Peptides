@@ -102,7 +102,7 @@ export default function Header() {
                 >
                   <Link 
                     href={item.href} 
-                    className="text-3xl font-serif tracking-widest text-white hover:text-[#e3b5a4] transition-colors"
+                    className="text-3xl font-serif tracking-widest text-white hover:text-white transition-colors"
                   >
                     {item.label}
                   </Link>

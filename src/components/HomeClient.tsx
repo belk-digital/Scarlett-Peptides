@@ -29,7 +29,7 @@ const FAQItem = ({ faq, index }: { faq: any, index: number }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex justify-between items-center gap-6">
-        <h3 className="text-base md:text-lg font-serif text-white group-hover:text-rosegold transition-colors">{faq.q}</h3>
+        <h3 className="text-base md:text-lg font-serif text-white group-hover:text-white transition-colors">{faq.q}</h3>
         <div className={`text-white/50 transition-transform duration-500 shrink-0 ${isOpen ? "rotate-45" : ""}`}>
           <Plus className="w-5 h-5" />
         </div>
@@ -185,7 +185,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
   const opacity = useTransform(scrollYProgress, [0, 0.5], [0.6, 0]);
 
   return (
-    <div className="flex flex-col w-full bg-base text-textmain overflow-clip selection:bg-textmain selection:text-base">
+    <div className="flex flex-col w-full bg-bg-base text-textmain overflow-clip selection:bg-textmain selection:text-bg-base">
       
       {/* 1. HERO (Full Background, Editorial Layout) */}
       <section ref={containerRef} className="relative w-full min-h-[100dvh] flex flex-col justify-end overflow-hidden px-4 md:px-8 lg:px-12 pb-12 md:pb-20 pt-40">
@@ -201,8 +201,8 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
         </motion.div>
 
         {/* Elegant Shadow Overlays for text readability without ruining the image */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-base via-base/40 to-transparent h-[70%] top-auto"></div>
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-base/80 via-transparent to-transparent w-[60%] left-0"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-t from-[#050505] via-[#050505]/40 to-transparent h-[70%] top-auto"></div>
+        <div className="absolute inset-0 z-10 bg-gradient-to-r from-[#050505]/80 via-transparent to-transparent w-[60%] left-0"></div>
 
         <div className="relative z-20 w-full flex flex-col items-start justify-end h-full">
           
@@ -225,7 +225,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               className="text-6xl md:text-[8rem] lg:text-[10rem] font-serif tracking-tight mb-8 text-white leading-[0.95]"
             >
               Elevated<br />
-              <span className="text-rosegold">Wellness.</span>
+              <span className="text-white">Wellness.</span>
             </motion.h1>
             
             <motion.p
@@ -255,7 +255,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
       </section>
 
       {/* 2. INTRO STATEMENT */}
-      <section ref={textSectionRef} className="py-24 md:py-48 bg-base relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
+      <section ref={textSectionRef} className="py-24 md:py-48 bg-bg-base relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
         {/* Giant ambient quotation mark */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[40rem] text-white/[0.02] font-serif leading-none select-none pointer-events-none mt-20">
           "
@@ -304,7 +304,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.4, duration: 1 }}
           >
-             <span className="text-rosegold/50 mb-4">—</span>
+             <span className="text-white/50 mb-4">—</span>
              <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-white font-sans">Scarlett Hawkins</span>
              <span className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-textsub font-sans mt-2">Founder</span>
           </motion.div>
@@ -312,14 +312,14 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
       </section>
 
       {/* 2.5 CORE PILLARS (Speed, Quality, Support) */}
-      <section className="py-20 bg-base border-b border-bordersub">
+      <section className="py-20 bg-bg-base border-b border-bordersub">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-bordersub">
             <ScrollReveal delay={0.1}>
               <div className="flex flex-col items-center p-6">
                 <Truck className="w-6 h-6 text-textsub mb-4" strokeWidth={1.5} />
                 <h3 className="text-sm tracking-widest uppercase mb-2">Rapid Fulfillment</h3>
-                <p className="text-xs text-textmuted leading-relaxed max-w-xs">Orders dispatched within 24 hours via our laboratory partner, 99 Purity Peptides - keeping your research timeline on track.</p>
+                <p className="text-xs text-textmuted leading-relaxed max-w-xs">Orders dispatched within 24 hours via our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> - keeping your research timeline on track.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -359,7 +359,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
           <div 
             ref={scrollContainerRef}
             onScroll={handleScroll}
-            className="grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(50%-12px)] lg:auto-cols-[calc(25%-18px)] gap-x-6 overflow-x-auto pt-32 pb-8 snap-x snap-mandatory scroll-smooth hide-scrollbar w-full"
+            className="grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(50%-12px)] lg:auto-cols-[calc(25%-18px)] gap-x-6 overflow-x-auto pt-32 pb-8 scroll-smooth hide-scrollbar w-full"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {infiniteProducts.map((product, i) => {
@@ -368,7 +368,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 : product.price;
 
               return (
-                <ScrollReveal key={`${product.slug}-${i}`} delay={0} direction="up" className="snap-start w-full">
+                <ScrollReveal key={`${product.slug}-${i}`} delay={0} direction="up" className="w-full">
                   <Link href={`/product/${product.slug}`} className="group relative w-full h-full bg-white rounded-[2rem] p-6 pb-8 flex flex-col items-center text-center shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-shadow duration-500 hover:shadow-[0_30px_60px_rgba(0,0,0,0.7)] block">
                     
                     {/* Subtle Background Elements to match reference */}
@@ -399,7 +399,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                       <h3 className="text-xl font-black mb-3 text-black font-sans uppercase tracking-tight">
                         {product.name}
                       </h3>
-                      <p className="text-xs text-gray-500 mb-6 font-medium italic line-clamp-2 h-8 px-2">
+                      <p className="text-xs text-gray-500 mb-6 font-medium line-clamp-2 h-8 px-2">
                         {product.shortDescription}
                       </p>
                       
@@ -430,7 +430,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                             });
                           }
                         }}
-                        className="w-full bg-black text-white py-4 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-[#e3b5a4] hover:text-black transition-colors duration-300 shadow-xl z-20 relative cursor-pointer"
+                        className="w-full bg-black text-white py-4 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-colors duration-300 shadow-xl z-20 relative cursor-pointer"
                       >
                         {product.isVariable ? "Select Options" : "Add to Cart"}
                       </button>
@@ -542,7 +542,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
                         
                         <span className="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-6 block group-hover:text-white/70 transition-colors">{cat.label}</span>
-                        <h3 className="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-rosegold transition-colors">{cat.headline}</h3>
+                        <h3 className="text-2xl font-serif text-white mb-4 tracking-wide group-hover:text-white transition-colors">{cat.headline}</h3>
                         <p className="text-white/60 text-xs leading-relaxed font-light flex-grow mb-8">{cat.desc}</p>
                         
                         <div className="text-[9px] tracking-[0.2em] uppercase text-white/40 border-t border-white/10 pt-5 flex items-center justify-between group-hover:text-white/80 group-hover:border-white/20 transition-colors">
@@ -607,7 +607,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl font-serif tracking-wide mb-4 text-white group-hover:text-rosegold transition-colors">{feature.title}</h3>
+                    <h3 className="text-2xl font-serif tracking-wide mb-4 text-white group-hover:text-white transition-colors">{feature.title}</h3>
                     <p className="text-white/60 text-sm leading-relaxed font-light flex-grow">{feature.text}</p>
                   </div>
                 </TiltCard>
@@ -623,7 +623,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
         {/* VISUAL COLUMN (Right Full Bleed) */}
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 relative w-full h-[400px] lg:h-auto">
           <Image 
-            src="/images/flower-2.webp" 
+            src="/images/IMG-10.webp" 
             alt="Laboratory purity research" 
             fill 
             className="object-cover object-center opacity-60"
@@ -669,7 +669,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   <strong className="text-white font-medium">Research peptides</strong> are short-chain amino acid sequences synthesized for in-vitro and preclinical study. They serve as invaluable tools for investigating signaling pathways, metabolic cascades, and cellular repair mechanisms that underpin modern longevity and metabolic science.
                 </p>
                 <p className="text-white/60">
-                  At Scarlett Hawkins, every compound — from the tri-agonist <span className="text-white font-medium">Retatrutide</span> and mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <span className="text-white font-medium">99 Purity Peptides</span>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
+                  At Scarlett Hawkins, every compound — from the tri-agonist <span className="text-white font-medium">Retatrutide</span> and mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
                 </p>
                 <p className="text-white/60">
                   Impurities matter. TFA residues, heavy metals, and synthesis byproducts can skew results and compromise data integrity. Our ≥99% purity standard eliminates these variables, giving researchers a clean, reliable baseline for reproducible science.
@@ -741,7 +741,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 </div>
                 <h2 className="text-3xl md:text-5xl font-serif tracking-wide mb-8 md:mb-10 text-white leading-[1.2]">
                   Absolute Data <br />
-                  <span className="text-white/60 italic font-light">Transparency</span>
+                  <span className="text-white/60 font-light">Transparency</span>
                 </h2>
                 <div className="space-y-6 font-light leading-relaxed text-sm md:text-base">
                   <p className="text-white/60">
@@ -842,7 +842,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "How does the ordering process work?",
-                    a: "The Scarlett Hawkins storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, 99 Purity Peptides. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation."
+                    a: <>The Scarlett Hawkins storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation.</>
                   },
                   {
                     q: "How are the compounds shipped and stored?",
@@ -898,7 +898,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-black/50 border border-white/10 group-hover:border-white/30 flex items-center justify-center text-white font-serif text-xl md:text-2xl mb-6 md:mb-8 tracking-widest shadow-[inset_0_0_20px_rgba(255,255,255,0.02)] transition-all duration-700">
                       {p.step}
                     </div>
-                    <h3 className="text-lg md:text-xl font-serif tracking-wide text-white mb-3 md:mb-4 group-hover:text-rosegold transition-colors duration-500">{p.title}</h3>
+                    <h3 className="text-lg md:text-xl font-serif tracking-wide text-white mb-3 md:mb-4 group-hover:text-white transition-colors duration-500">{p.title}</h3>
                     <p className="text-white/50 font-light text-sm leading-relaxed">{p.desc}</p>
                   </div>
                 </TiltCard>
@@ -909,7 +909,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
       </section>
 
       {/* 6. FOUNDER ANIMATION (SCROLL-SCRUBBED) */}
-      <section ref={founderRef} className="h-[250vh] relative bg-base">
+      <section ref={founderRef} className="h-[250vh] relative bg-bg-base">
         <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden">
           
           <motion.div style={{ opacity: bgOpacity }} className="absolute inset-0 z-0 pointer-events-none">
@@ -920,7 +920,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               className="object-cover mix-blend-luminosity scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-base via-transparent to-base"></div>
-            <div className="absolute inset-0 bg-base/60"></div>
+            <div className="absolute inset-0 bg-bg-base/60"></div>
           </motion.div>
 
           <div className="relative z-10 flex flex-col items-center max-w-5xl mx-auto px-4 sm:px-6 w-full text-center">
@@ -941,8 +941,8 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               style={{ opacity: useTransform(founderProgress, [0.6, 0.8], [0, 1]) }}
               className="flex flex-col items-center gap-3 relative z-10"
             >
-              <div style={{ backgroundColor: '#e3b5a4' }} className="w-16 h-px mb-4"></div>
-              <span style={{ color: '#e3b5a4' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Scarlett Hawkins</span>
+              <div style={{ backgroundColor: '#ffffff' }} className="w-16 h-px mb-4"></div>
+              <span style={{ color: '#ffffff' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Scarlett Hawkins</span>
               <span className="text-xs md:text-sm tracking-[0.2em] text-white/50 uppercase">Founder & CEO</span>
             </motion.div>
 
@@ -967,7 +967,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   Recent Research & <span className="font-light text-white/60">Insights</span>
                 </h2>
               </div>
-              <Link href="/blog" className="text-xs uppercase tracking-[0.2em] text-[#e3b5a4] hover:text-white pb-2 border-b border-white/20 hover:border-[#e3b5a4] transition-all flex items-center gap-2 group">
+              <Link href="/blog" className="text-xs uppercase tracking-[0.2em] text-white hover:text-white pb-2 border-b border-white/20 hover:border-white/50 transition-all flex items-center gap-2 group">
                 Read All <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -996,18 +996,18 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                       </div>
                       
                       <div className="p-8 md:p-10 flex flex-col flex-grow relative z-20">
-                        <span className="text-[10px] text-[#e3b5a4] tracking-[0.3em] uppercase mb-4">{post.date}</span>
-                        <h3 className="text-xl md:text-2xl font-serif text-white mb-4 group-hover:text-[#e3b5a4] transition-colors duration-500 line-clamp-2">
+                        <span className="text-[10px] text-white tracking-[0.3em] uppercase mb-4">{post.date}</span>
+                        <h3 className="text-xl md:text-2xl font-serif text-white mb-4 group-hover:text-white transition-colors duration-500 line-clamp-2">
                           {post.title}
                         </h3>
                         <p className="text-sm text-white/50 font-light line-clamp-3 mb-8 flex-grow leading-relaxed">
                           {post.excerpt}
                         </p>
                         
-                        <div className="flex items-center text-xs uppercase tracking-[0.2em] text-white mt-auto group-hover:text-[#e3b5a4] transition-colors duration-500">
+                        <div className="flex items-center text-xs uppercase tracking-[0.2em] text-white mt-auto group-hover:text-white transition-colors duration-500">
                           <span className="relative">
                             Read Article
-                            <div className="absolute -bottom-2 left-0 w-0 h-px bg-[#e3b5a4] group-hover:w-full transition-all duration-500"></div>
+                            <div className="absolute -bottom-2 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></div>
                           </span>
                           <ArrowRight className="w-3 h-3 ml-3 group-hover:translate-x-2 transition-transform duration-500" />
                         </div>
@@ -1057,7 +1057,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               
               <Link 
                 href="/shop"
-                className="inline-flex items-center justify-center px-10 md:px-12 py-4 md:py-5 bg-white text-black hover:bg-[#e3b5a4] transition-colors duration-500 rounded-[2px] font-sans text-[11px] md:text-xs tracking-[0.2em] uppercase"
+                className="inline-flex items-center justify-center px-10 md:px-12 py-4 md:py-5 bg-white text-black hover:bg-white transition-colors duration-500 rounded-[2px] font-sans text-[11px] md:text-xs tracking-[0.2em] uppercase"
               >
                 Shop The Collection
               </Link>

@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#050505]" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col font-sans bg-[#050505] text-[#faf6f5]" suppressHydrationWarning>
         <CartProvider>
           <SmoothScroll>
             <div className="fixed top-0 w-full z-50 flex flex-col">
@@ -89,10 +89,10 @@ export default function RootLayout({
                 
                 {/* Disclaimer Section */}
               <div className="border-t border-[#1f2937] pt-12 mt-12">
-                <div className="bg-white/[0.02] rounded-xl md:rounded-2xl p-6 md:p-8 mb-8 border border-[#1f2937]">
-                  <h5 style={{ color: '#d1d5db' }} className="text-xs md:text-sm font-medium uppercase tracking-widest mb-4">Important Research Notice</h5>
+                <div className="mb-10 max-w-4xl mx-auto md:mx-0 text-center md:text-left">
+                  <h5 style={{ color: '#d1d5db' }} className="text-xs md:text-sm font-medium uppercase tracking-widest mb-4">Disclaimer</h5>
                   <p style={{ color: '#6b7280' }} className="text-[10px] md:text-xs leading-relaxed md:leading-loose font-light">
-                    The products offered by Scarlett Hawkins are intended strictly for in-vitro research and laboratory use only. They are not intended for human consumption, medical treatment, diagnostic purposes, or any veterinary use. All buyers must be qualified researchers handling materials in a sanctioned laboratory environment. By purchasing from Scarlett Hawkins, you acknowledge the risks associated with these compounds and agree to our Terms of Service.
+                    This site contains affiliate links. The owner of this site may earn a commission on purchases made through third-party sites at no cost to you. I am not the seller or fulfiller of any products. All content on this site is for informational purposes only, nothing here constitutes medical advice. We are not liable for any products, outcomes, or transactions on third-party websites.
                   </p>
                 </div>
                 

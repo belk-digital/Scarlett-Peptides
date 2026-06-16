@@ -1,17 +1,18 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @theme inline {
-  --color-base: #0a0908; /* Very deep warm umber instead of black */
+  --color-black: #050505; /* Never use pure black */
+  --color-bg-base: #0a0908;
   --color-surface: #141211;
   --color-surface2: #1e1b1a;
   --color-elevated: #282422;
   --color-bordersub: #302b29;
-  --color-rosegold: #e3b5a4; /* Soft rose gold */
+  --color-rosegold: #e3b5a4;
   --color-rosegoldhi: #f5d6c6;
   --color-champagne: #f4e8d3;
   --color-mauve: #b8929e;
   --color-blush: #d4b4b4;
-  --color-textmain: #faf6f5; /* Warm off-white */
+  --color-textmain: #faf6f5;
   --color-textsub: #bfaea8;
   --color-textmuted: #8c7d78;
   
@@ -30,7 +31,7 @@
 }
 
 body {
-  background-color: var(--color-base);
+  background-color: var(--color-bg-base);
   color: var(--color-textmain);
   font-family: var(--font-sans), sans-serif;
   @apply antialiased;

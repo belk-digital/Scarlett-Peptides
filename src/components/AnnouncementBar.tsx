@@ -3,9 +3,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export const ANNOUNCEMENT_MESSAGES = [
+export const ANNOUNCEMENT_MESSAGES: React.ReactNode[] = [
   "Curated research peptides, verified ≥99% purity",
-  "Free delivery on orders above $300 (via 99 Purity Peptides)",
+  <>Free delivery on orders above $300 (via <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>)</>,
 ];
 
 export default function AnnouncementBar() {

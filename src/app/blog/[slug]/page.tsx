@@ -27,7 +27,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
   const prevPost = currentIndex < allBlogPosts.length - 1 ? allBlogPosts[currentIndex + 1] : null; // Older post
 
   return (
-    <div className="flex flex-col w-full min-h-screen bg-base">
+    <div className="flex flex-col w-full min-h-screen bg-bg-base">
       
       {/* 1. HERO HEADER */}
       <section className="pt-24 pb-16 px-4 text-center relative overflow-hidden">
@@ -38,7 +38,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
             <span className="w-1 h-1 rounded-full bg-bordersub"></span>
             <span>{post.readingTime}</span>
           </div>
-          <h1 className="font-serif text-4xl md:text-6xl text-rosegold mb-8 tracking-wide leading-tight">
+          <h1 className="font-serif text-4xl md:text-6xl text-white mb-8 tracking-wide leading-tight">
             {post.title}
           </h1>
         </div>
@@ -68,11 +68,11 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
           We customize colors inline to match the dark theme without polluting global css.
         */}
         <div className="w-full lg:w-2/3 prose prose-invert max-w-none 
-          prose-headings:font-serif prose-headings:font-normal prose-headings:text-rosegoldhi
+          prose-headings:font-serif prose-headings:font-normal prose-headings:text-white
           prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-          prose-h3:text-2xl prose-h3:text-rosegold
+          prose-h3:text-2xl prose-h3:text-white
           prose-p:text-textsub prose-p:leading-relaxed prose-p:font-light
-          prose-a:text-rosegold prose-a:underline hover:prose-a:text-rosegoldhi
+          prose-a:text-white prose-a:underline hover:prose-a:text-white
           prose-strong:text-textmain prose-strong:font-medium
           prose-ul:text-textsub prose-li:marker:text-champagne
           prose-blockquote:border-l-rosegold prose-blockquote:bg-surface2/50 prose-blockquote:py-2 prose-blockquote:px-6 prose-blockquote:rounded-r-lg prose-blockquote:font-serif prose-blockquote:text-champagne prose-blockquote:italic
@@ -89,7 +89,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                   </svg>
                   Previous Article
                 </span>
-                <span className="font-serif text-rosegold group-hover:text-rosegoldhi transition-colors truncate">{prevPost.title}</span>
+                <span className="font-serif text-white group-hover:text-white transition-colors truncate">{prevPost.title}</span>
               </Link>
             ) : <div className="w-full sm:w-1/2"></div>}
 
@@ -101,7 +101,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>
                 </span>
-                <span className="font-serif text-rosegold group-hover:text-rosegoldhi transition-colors truncate text-right w-full">{nextPost.title}</span>
+                <span className="font-serif text-white group-hover:text-white transition-colors truncate text-right w-full">{nextPost.title}</span>
               </Link>
             ) : <div className="w-full sm:w-1/2"></div>}
           </div>
@@ -111,21 +111,21 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
         <aside className="w-full lg:w-1/3 sticky top-32">
           
           <div className="card-elevated p-8 mb-8 text-center relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-rosegold/50"></div>
-            <h3 className="font-serif text-2xl text-rosegold mb-4">Shop the Research</h3>
+            <div className="absolute top-0 left-0 w-full h-1 bg-white text-black/50"></div>
+            <h3 className="font-serif text-2xl text-white mb-4">Shop the Research</h3>
             <p className="text-sm text-textsub mb-8 leading-relaxed">
-              Explore the laboratory-grade compounds discussed in this article. Fulfilled by 99 Purity Peptides.
+              Explore the laboratory-grade compounds discussed in this article. Fulfilled by <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300 transition-colors">99 Purity Peptides</a>.
             </p>
             
             {relatedProducts.length > 0 ? (
               <div className="space-y-4 text-left">
                 {relatedProducts.map(product => (
-                  <Link key={product.slug} href={`/product/${product.slug}`} className="flex items-center gap-4 group bg-surface2 border border-bordersub p-3 rounded-xl hover:border-rosegold/50 transition-all">
-                    <div className="relative w-16 h-16 rounded-lg bg-base overflow-hidden shrink-0">
+                  <Link key={product.slug} href={`/product/${product.slug}`} className="flex items-center gap-4 group bg-surface2 border border-bordersub p-3 rounded-xl hover:border-white/50/50 transition-all">
+                    <div className="relative w-16 h-16 rounded-lg bg-bg-base overflow-hidden shrink-0">
                       <Image src={product.image} alt={product.name} fill className="object-cover opacity-80 mix-blend-luminosity group-hover:mix-blend-normal transition-all" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm font-serif text-rosegold truncate">{product.name}</p>
+                      <p className="text-sm font-serif text-white truncate">{product.name}</p>
                       <p className="text-[10px] uppercase tracking-widest text-textmuted mt-1">View Compound</p>
                     </div>
                   </Link>
@@ -134,14 +134,14 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
             ) : (
               <Link 
                 href="/shop"
-                className="bg-transparent text-rosegold border border-rosegold px-8 py-3 rounded-full font-medium tracking-widest uppercase text-xs hover:bg-rosegold hover:text-base transition-all inline-block w-full"
+                className="bg-transparent text-white border border-white/50 px-8 py-3 rounded-full font-medium tracking-widest uppercase text-xs hover:bg-white text-black hover:text-base transition-all inline-block w-full"
               >
                 View Full Catalog
               </Link>
             )}
           </div>
 
-          <Link href="/blog" className="flex items-center justify-center gap-2 text-sm text-textsub hover:text-rosegold transition-colors py-4">
+          <Link href="/blog" className="flex items-center justify-center gap-2 text-sm text-textsub hover:text-white transition-colors py-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
             </svg>

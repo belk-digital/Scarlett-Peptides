@@ -50,7 +50,7 @@ const COMPLIANCE_TAB: Tab = {
     "This product is classified as Research Use Only (RUO). It is synthesized exclusively for in-vitro laboratory testing, preclinical research, and scientific development purposes. It is not a dietary supplement, pharmaceutical drug, cosmetic, food ingredient, or veterinary medicine.",
     "This product has not been evaluated by the U.S. Food and Drug Administration or any equivalent international regulatory body for safety or efficacy in human or animal subjects. It is not intended for, and must not be used for, human consumption, self-injection, topical self-application, veterinary administration, or any form of self-experimentation.",
     "By purchasing this product, the buyer represents that they are a qualified researcher or laboratory professional operating in full compliance with all applicable local, state, and federal laws and regulations governing the purchase, possession, handling, and use of research-grade chemical compounds.",
-    "Scarlett Hawkins and its fulfillment partner 99 Purity Peptides provide this product in good faith for legitimate scientific and research purposes. Any misuse of this compound is neither condoned nor supported. Redistribution of this product for non-research purposes is strictly prohibited.",
+    "Scarlett Hawkins and its fulfillment partner <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> provide this product in good faith for legitimate scientific and research purposes. Any misuse of this compound is neither condoned nor supported. Redistribution of this product for non-research purposes is strictly prohibited.",
   ],
 };
 
@@ -75,7 +75,7 @@ export const products: Product[] = [
         title: "Product Details",
         paragraphs: [
           "GLOW is supplied as a lyophilized (freeze-dried) powder in a sealed glass vial, packaged for stability during shipping and long-term cold storage. Each vial is labeled with a unique batch number that corresponds to its individual Certificate of Analysis.",
-          "As a proprietary blend, GLOW's exact peptide ratios are formulated by Scarlett Hawkins in partnership with 99 Purity Peptides and are not published in granular detail; however, every component is independently tested for identity and purity prior to blending, and the finished blend is tested again post-formulation.",
+          "As a proprietary blend, GLOW's exact peptide ratios are formulated by Scarlett Hawkins in partnership with <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and are not published in granular detail; however, every component is independently tested for identity and purity prior to blending, and the finished blend is tested again post-formulation.",
           "GLOW is supplied for laboratory reconstitution using bacteriostatic water or sterile water for research purposes, following standard aseptic technique appropriate for in-vitro and preclinical research environments.",
         ],
       },
@@ -93,7 +93,7 @@ export const products: Product[] = [
     faqs: [
       {
         q: "What is GLOW exactly?",
-        a: "GLOW is a proprietary multi-peptide research blend curated by Scarlett Hawkins and manufactured by 99 Purity Peptides. It combines several peptide fragments associated with dermal and cellular repair research into a single vial for combinatorial research use.",
+        a: "GLOW is a proprietary multi-peptide research blend curated by Scarlett Hawkins and manufactured by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>. It combines several peptide fragments associated with dermal and cellular repair research into a single vial for combinatorial research use.",
       },
       {
         q: "Why doesn't Scarlett Hawkins publish the exact ratio of peptides in GLOW?",
@@ -131,7 +131,7 @@ export const products: Product[] = [
     shortDescription:
       "A proprietary peptide blend curated for skin, recovery, and cellular signaling research. Independently verified to ≥99% purity with full COA transparency.",
     longDescription:
-      "KLOW is a second proprietary peptide blend in the Scarlett Hawkins catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by 99 Purity Peptides and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design — not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
+      "KLOW is a second proprietary peptide blend in the Scarlett Hawkins catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design — not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
     image: "/images/products/klow.jpg",
     category: "Proprietary",
     isVariable: true,
@@ -163,7 +163,7 @@ export const products: Product[] = [
     faqs: [
       {
         q: "What is KLOW?",
-        a: "KLOW is a proprietary multi-peptide research blend curated by Scarlett Hawkins and manufactured by 99 Purity Peptides, formulated around peptide fragments studied for repair and inflammation-resolution research.",
+        a: "KLOW is a proprietary multi-peptide research blend curated by Scarlett Hawkins and manufactured by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, formulated around peptide fragments studied for repair and inflammation-resolution research.",
       },
       {
         q: "How is KLOW different from GLOW?",
@@ -197,7 +197,7 @@ export const products: Product[] = [
     shortDescription:
       "GHK-Cu copper peptide studied for gene expression, collagen synthesis, and wound-healing research. ≥99% pure, third-party verified.",
     longDescription:
-      "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Scarlett Hawkins sources GHK-Cu exclusively through 99 Purity Peptides, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
+      "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Scarlett Hawkins sources GHK-Cu exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
     image: "/images/products/ghk-cu-100mg.jpg",
     category: "Longevity",
     isVariable: true,
@@ -270,7 +270,7 @@ export const products: Product[] = [
     shortDescription:
       "Mitochondrial-derived peptide studied for AMPK activation and metabolic/exercise-mimetic research. ≥99% verified purity.",
     longDescription:
-      "MOTS-C (Mitochondrial Open Reading Frame of the 12S rRNA-c) is a 16-amino-acid peptide encoded within mitochondrial DNA and studied for its reported role as a regulator of cellular metabolic homeostasis. Research interest in MOTS-C centers on its ability to translocate to the nucleus under metabolic stress and activate the AMPK (AMP-activated protein kinase) pathway, a mechanism frequently associated with exercise-mimetic and metabolic-adaptation research models. Scarlett Hawkins sources MOTS-C exclusively from 99 Purity Peptides, with independent third-party testing confirming ≥99% purity on every batch.",
+      "MOTS-C (Mitochondrial Open Reading Frame of the 12S rRNA-c) is a 16-amino-acid peptide encoded within mitochondrial DNA and studied for its reported role as a regulator of cellular metabolic homeostasis. Research interest in MOTS-C centers on its ability to translocate to the nucleus under metabolic stress and activate the AMPK (AMP-activated protein kinase) pathway, a mechanism frequently associated with exercise-mimetic and metabolic-adaptation research models. Scarlett Hawkins sources MOTS-C exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with independent third-party testing confirming ≥99% purity on every batch.",
     image: "/images/products/mots-c-10mg.jpg",
     category: "Longevity",
     isVariable: true,
@@ -339,7 +339,7 @@ export const products: Product[] = [
     shortDescription:
       "Triple-agonist (GLP-1/GIP/glucagon) research peptide studied in metabolic and weight-regulation models. ≥99% purity, independently verified.",
     longDescription:
-      "Retatrutide (LY3437943) is a triple-receptor agonist research peptide engineered to activate GLP-1, GIP, and glucagon receptors simultaneously, distinguishing it from single- or dual-agonist compounds such as semaglutide and tirzepatide. Its design incorporates a fatty acid modification enabling extended half-life, a feature of interest to researchers studying sustained-release pharmacokinetics in metabolic models. Retatrutide is among the most actively studied compounds in current metabolic peptide research, with Scarlett Hawkins offering it across multiple concentrations to support varied protocol designs, all manufactured exclusively by 99 Purity Peptides and verified to ≥99% purity by independent third-party testing.",
+      "Retatrutide (LY3437943) is a triple-receptor agonist research peptide engineered to activate GLP-1, GIP, and glucagon receptors simultaneously, distinguishing it from single- or dual-agonist compounds such as semaglutide and tirzepatide. Its design incorporates a fatty acid modification enabling extended half-life, a feature of interest to researchers studying sustained-release pharmacokinetics in metabolic models. Retatrutide is among the most actively studied compounds in current metabolic peptide research, with Scarlett Hawkins offering it across multiple concentrations to support varied protocol designs, all manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and verified to ≥99% purity by independent third-party testing.",
     image: "/images/products/retatrutide-10mg.jpg",
     category: "Metabolic",
     isVariable: true,
@@ -416,7 +416,7 @@ export const products: Product[] = [
     shortDescription:
       "Nicotinamide Adenine Dinucleotide studied for sirtuin activation, cellular energy, and longevity research. ≥99% pure, COA-verified.",
     longDescription:
-      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38 — all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Scarlett Hawkins offers NAD+ exclusively through 99 Purity Peptides, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38 — all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Scarlett Hawkins offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
     image: "/images/products/nadplus-500mg.jpg",
     category: "Longevity",
     isVariable: true,
@@ -484,7 +484,7 @@ export const products: Product[] = [
     shortDescription:
       "Tripeptide antioxidant studied for redox balance and oxidative stress research. ≥99% purity, independently verified by COA.",
     longDescription:
-      "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Scarlett Hawkins sources Glutathione exclusively from 99 Purity Peptides, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
+      "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Scarlett Hawkins sources Glutathione exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
     image: "/images/products/glutathione-200mg.jpg",
     category: "Longevity",
     wooProductId: 1176,
@@ -548,7 +548,7 @@ export const products: Product[] = [
     shortDescription:
       "Gastric-derived pentadecapeptide studied for tissue repair, angiogenesis, and tendon/ligament research. ≥99% verified purity.",
     longDescription:
-      "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide derived from a protective protein found in human gastric juice, extensively studied in preclinical research for its reported roles in angiogenesis, nitric oxide pathway modulation, and accelerated tissue repair. It is among the most widely referenced peptides in tendon, ligament, and gastrointestinal mucosa research due to its broad reported activity across multiple repair-related signaling cascades. Scarlett Hawkins sources BPC-157 exclusively from 99 Purity Peptides, with every batch independently tested to ≥99% purity and accompanied by a full Certificate of Analysis.",
+      "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide derived from a protective protein found in human gastric juice, extensively studied in preclinical research for its reported roles in angiogenesis, nitric oxide pathway modulation, and accelerated tissue repair. It is among the most widely referenced peptides in tendon, ligament, and gastrointestinal mucosa research due to its broad reported activity across multiple repair-related signaling cascades. Scarlett Hawkins sources BPC-157 exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently tested to ≥99% purity and accompanied by a full Certificate of Analysis.",
     image: "/images/products/bpc-157-10mg.jpg",
     category: "Recovery & Repair",
     isVariable: true,
@@ -621,7 +621,7 @@ export const products: Product[] = [
     shortDescription:
       "Alpha-MSH-derived tripeptide studied for anti-inflammatory and NF-κB pathway research. ≥99% pure, COA-verified.",
     longDescription:
-      "KPV is the C-terminal tripeptide fragment of alpha-melanocyte-stimulating hormone (α-MSH), studied in research for its reported anti-inflammatory activity independent of classical melanocortin receptor signaling. Of particular research interest is KPV's reported ability to inhibit NF-κB activation and translocate into the cell nucleus, suggesting a mechanism distinct from receptor-mediated pathways alone. Scarlett Hawkins sources KPV exclusively from 99 Purity Peptides, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
+      "KPV is the C-terminal tripeptide fragment of alpha-melanocyte-stimulating hormone (α-MSH), studied in research for its reported anti-inflammatory activity independent of classical melanocortin receptor signaling. Of particular research interest is KPV's reported ability to inhibit NF-κB activation and translocate into the cell nucleus, suggesting a mechanism distinct from receptor-mediated pathways alone. Scarlett Hawkins sources KPV exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
     image: "/images/products/kpv-10mg.jpg",
     category: "Recovery & Repair",
     wooProductId: 986,
@@ -685,7 +685,7 @@ export const products: Product[] = [
     shortDescription:
       "Thymosin Beta-4 fragment studied for actin regulation, cell migration, and tissue repair research. ≥99% verified purity.",
     longDescription:
-      "TB-500 is a synthetic peptide fragment of Thymosin Beta-4 (Ac-LKKTETQ), studied in preclinical research for its reported role in regulating actin, a protein central to cell structure, migration, and proliferation. Its actin-sequestering mechanism distinguishes it from BPC-157's angiogenesis-focused activity, and it is frequently referenced in cardiac, dermal, and musculoskeletal repair research models. Scarlett Hawkins sources TB-500 exclusively from 99 Purity Peptides, with every batch independently verified to ≥99% purity and accompanied by a full Certificate of Analysis.",
+      "TB-500 is a synthetic peptide fragment of Thymosin Beta-4 (Ac-LKKTETQ), studied in preclinical research for its reported role in regulating actin, a protein central to cell structure, migration, and proliferation. Its actin-sequestering mechanism distinguishes it from BPC-157's angiogenesis-focused activity, and it is frequently referenced in cardiac, dermal, and musculoskeletal repair research models. Scarlett Hawkins sources TB-500 exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified to ≥99% purity and accompanied by a full Certificate of Analysis.",
     image: "/images/products/tb-500-10mg.jpg",
     category: "Recovery & Repair",
     isVariable: true,
