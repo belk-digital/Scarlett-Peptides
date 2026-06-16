@@ -31,6 +31,8 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
   const [selectedConcentration, setSelectedConcentration] = useState<string>("");
   const [selectedSize, setSelectedSize] = useState<string>("");
   const [quantity, setQuantity] = useState(1);
+  const [activeTab, setActiveTab] = useState(0);
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const availableVariants = selectedConcentration 
     ? parsedVariants.filter(v => v.concentration === selectedConcentration)
@@ -207,6 +209,64 @@ export default function ProductDetail({ params }: { params: Promise<{ slug: stri
           </div>
         </div>
       </div>
+
+      {/* Tabs */}
+      {product.tabs && product.tabs.length > 0 && (
+        <div className="mt-20 md:mt-28">
+          <div className="flex flex-wrap gap-2 sm:gap-4 border-b border-bordersub mb-10 overflow-x-auto">
+            {product.tabs.map((tab, i) => (
+              <button
+                key={tab.title}
+                onClick={() => setActiveTab(i)}
+                className={`px-4 sm:px-6 py-4 text-xs sm:text-sm uppercase tracking-widest font-medium whitespace-nowrap transition-colors border-b-2 -mb-px ${
+                  activeTab === i
+                    ? "text-rosegold border-rosegold"
+                    : "text-textmuted border-transparent hover:text-textmain"
+                }`}
+              >
+                {tab.title}
+              </button>
+            ))}
+          </div>
+          <div className="prose prose-invert prose-rosegold max-w-none text-textsub space-y-5">
+            {product.tabs[activeTab].paragraphs.map((p, i) => (
+              <p key={i} className="leading-relaxed">{p}</p>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* FAQs */}
+      {product.faqs && product.faqs.length > 0 && (
+        <div className="mt-20 md:mt-28 max-w-4xl">
+          <h2 className="font-serif text-3xl md:text-4xl text-rosegold mb-10">Frequently Asked Questions</h2>
+          <div className="divide-y divide-bordersub border-t border-b border-bordersub">
+            {product.faqs.map((faq, i) => (
+              <div key={i}>
+                <button
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full flex items-center justify-between gap-4 py-6 text-left"
+                >
+                  <span className="text-textmain font-medium text-sm sm:text-base">{faq.q}</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className={`w-5 h-5 text-mauve shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180" : ""}`}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                </button>
+                {openFaq === i && (
+                  <p className="text-textmuted text-sm leading-relaxed pb-6 pr-10">{faq.a}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

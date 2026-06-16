@@ -53,8 +53,14 @@ export function buildCheckoutUrl(items: CartItem[]): string {
     url.searchParams.append("empty-cart", "1"); // Adding both common parameters just in case
   }
 
-  // Attach Affiliate Referral (Removed for now)
-  // url.searchParams.append(AFFILIATE_REF_PARAM, AFFILIATE_REF_VALUE);
+  // --- ORIGIN TRACKING ---
+  // Append explicit origin for custom snippets
+  url.searchParams.append("origin", "scarlett");
+  
+  // Append standard UTM parameters for built-in WooCommerce Order Attribution and Analytics
+  url.searchParams.append("utm_source", "scarlett_peptides");
+  url.searchParams.append("utm_medium", "referral");
+  url.searchParams.append("utm_campaign", "storefront");
 
   return url.toString();
 }
