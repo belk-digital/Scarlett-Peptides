@@ -10,11 +10,13 @@ import "./globals.css";
 const outfit = Outfit({
   variable: "--font-inter", // Keeping variable name to preserve tailwind mappings
   subsets: ["latin"],
+  display: "swap",
 });
 
 const playfair = Playfair_Display({
   variable: "--font-cormorant", // Keeping variable name to preserve tailwind mappings
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

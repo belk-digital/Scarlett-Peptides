@@ -15,8 +15,8 @@
   --color-textsub: #bfaea8;
   --color-textmuted: #8c7d78;
   
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-cormorant); /* Bringing back the elegant serif */
+  --font-sans: var(--font-inter, "Outfit", sans-serif);
+  --font-serif: var(--font-cormorant, "Playfair Display", serif);
 }
 
 body {
