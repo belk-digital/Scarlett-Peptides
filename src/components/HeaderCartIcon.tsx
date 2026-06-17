@@ -41,9 +41,21 @@ export default function HeaderCartIcon() {
       >
         <ShoppingBag className="w-4 h-4 text-black" strokeWidth={1.5} />
       </motion.div>
-      <span className="text-xs font-sans font-medium uppercase tracking-widest whitespace-nowrap">
-        Cart {itemCount > 0 && `(${itemCount})`}
-      </span>
+      
+      <div className="flex items-center gap-1.5">
+        <span className="hidden md:inline text-[10px] font-sans font-bold uppercase tracking-widest whitespace-nowrap">
+          Cart
+        </span>
+        {itemCount > 0 && (
+          <motion.div 
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            className="bg-black text-white text-[9px] font-bold min-w-[16px] h-[16px] px-1 flex items-center justify-center rounded-full"
+          >
+            {itemCount}
+          </motion.div>
+        )}
+      </div>
     </Link>
   );
 }

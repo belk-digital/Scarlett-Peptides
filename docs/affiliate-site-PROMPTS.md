@@ -1,4 +1,4 @@
-# Antigravity Build Prompts — Scarlett Hawkins Affiliate Store
+# Antigravity Build Prompts — Peptides 7 Affiliate Store
 
 Copy each prompt block **in order** into Antigravity. Each builds on the previous.
 Replace anything in `<ANGLE_BRACKETS>` with your real values before sending.
@@ -16,7 +16,7 @@ Stack: **Next.js (App Router) + TypeScript + Tailwind CSS**, deploy on Vercel.
 ## PROMPT 0 — Project Context (paste once, at the very start)
 
 ```
-You are building a Next.js affiliate storefront for "Scarlett Hawkins" — a curated
+You are building a Next.js affiliate storefront for "Peptides 7" — a curated
 peptide catalog that hands its cart off to a parent WooCommerce store at
 https://99puritypeptides.com.
 
@@ -232,11 +232,11 @@ medspa aesthetic. Build these sections top to bottom:
    Content ideas:
    - Headline: "Elevated Wellness, Backed by Science"
    - Subhead: "A curated selection of high-purity research peptides, hand-picked by
-     Scarlett Hawkins."
+     Peptides 7."
 
 3. INTRO / BRAND PROMISE band: 2–3 sentences on who she is and why this collection
    exists, tying her medspa/aesthetics authority to the catalog.
-   Content idea: "From the founder of Scarlett Hawkins Medspa — a personally curated
+   Content idea: "From the founder of Peptides 7 Medspa — a personally curated
    line of research-grade peptides, chosen for purity and transparency."
 
 4. FEATURED PRODUCTS strip: 3–4 best-sellers pulled from the catalog (cards with
@@ -279,7 +279,7 @@ constants. Sections:
 1. PAGE HERO: title "About" + one-line tagline + portrait image placeholder.
    Content idea: "Beauty, wellness, and science — curated with intention."
 
-2. FOUNDER STORY: 2–3 paragraphs on Scarlett Hawkins — her medspa background in
+2. FOUNDER STORY: 2–3 paragraphs on Peptides 7 — her medspa background in
    downtown Charleston, her eye for quality, and why she extended into curating
    research peptides. Placeholder copy I can replace.
 

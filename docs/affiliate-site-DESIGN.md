@@ -1,4 +1,4 @@
-# Scarlett Hawkins Affiliate Store — Design System
+# Peptides 7 Affiliate Store — Design System
 
 **Theme:** Dark, luxury, feminine — boutique medspa elegance translated to a dark UI.
 **Reference brand:** `scarletthawkinsmedspa.com` (Charleston, SC boutique medspa — soft, premium, feminine, Instagram-forward).
@@ -152,7 +152,7 @@ Use these to signal femininity without being heavy-handed:
 - **Photography:** warm, soft, premium — product shots on dark/moody backgrounds, plus aspirational lifestyle imagery that fits a female wellness audience. Apply a subtle dark gradient/duotone for cohesion.
 - **Icons:** thin-stroke line set (Lucide / Phosphor "thin"), rose-gold or champagne on dark.
 - **Backgrounds:** faint botanical line-art or soft gradient blobs at low opacity; optional very subtle grain to soften flat dark areas.
-- **Logo:** if a dark-mode/light version of the Scarlett Hawkins mark exists, use it; otherwise present the wordmark in warm off-white with a rose-gold accent.
+- **Logo:** if a dark-mode/light version of the Peptides 7 mark exists, use it; otherwise present the wordmark in warm off-white with a rose-gold accent.
 
 ---
 

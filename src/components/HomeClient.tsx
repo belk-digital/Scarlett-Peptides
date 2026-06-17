@@ -55,8 +55,40 @@ const ScrubWord = ({ children, progress, range }: { children: React.ReactNode, p
   return <motion.span style={{ opacity }} className="inline-block">{children}</motion.span>
 };
 
+const StaggeredText = ({ text, className, style }: { text: string, className?: string, style?: any }) => {
+  const words = text.split(" ");
+  return (
+    <motion.span
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-100px" }}
+      variants={{
+        visible: { transition: { staggerChildren: 0.15 } },
+      }}
+      className={className}
+      style={style}
+    >
+      {words.map((word, i) => (
+        <motion.span
+          key={i}
+          variants={{
+            hidden: { opacity: 0, y: 40, rotateX: 80, scale: 1.1, filter: "blur(12px)" },
+            visible: { opacity: 1, y: 0, rotateX: 0, scale: 1, filter: "blur(0px)" }
+          }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+          style={{ transformOrigin: "bottom" }}
+          className="inline-block drop-shadow-2xl whitespace-pre"
+        >
+          {word}{" "}
+        </motion.span>
+      ))}
+    </motion.span>
+  );
+};
+
 export default function HomeClient({ allProducts, featuredProducts, recentPosts }: Props) {
   const { addItem } = useCart();
+  const [addedItems, setAddedItems] = useState<Record<string, boolean>>({});
   const founderRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress: founderProgress } = useScroll({
     target: founderRef,
@@ -177,7 +209,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
 
   const { scrollYProgress: textScrollProgress } = useScroll({
     target: textSectionRef,
-    offset: ["start 80%", "end 50%"]
+    offset: ["start 80%", "end 20%"]
   });
 
   // Slow parallax on the hero background
@@ -214,7 +246,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <span className="inline-flex items-center gap-3 text-[10px] md:text-xs tracking-[0.25em] uppercase text-textsub mb-8 backdrop-blur-md bg-white/5 border border-white/10 px-5 py-2 rounded-full">
-                The Scarlett Hawkins Collection
+                PEPTIDES 7
               </span>
             </motion.div>
             
@@ -222,10 +254,10 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl md:text-[8rem] lg:text-[10rem] font-serif tracking-tight mb-8 text-white leading-[0.95]"
+              className="text-5xl md:text-[5.5rem] lg:text-[7rem] font-serif tracking-tight mb-8 text-white leading-[0.95]"
             >
-              Elevated<br />
-              <span className="text-white">Wellness.</span>
+              The Future of<br />
+              <span className="text-white">Wellness, Curated.</span>
             </motion.h1>
             
             <motion.p
@@ -234,7 +266,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               transition={{ duration: 1, delay: 0.8 }}
               className="text-base md:text-xl text-white/70 max-w-xl mb-12 font-light leading-relaxed"
             >
-              Research-grade peptides — Retatrutide, BPC-157, NAD+, GHK-Cu, and more — tested to ≥99% purity and backed by independent COAs. The standard that serious research demands.
+              A collection of premium research peptides selected for purity, consistency, and excellence. Every batch is independently tested and held to rigorous quality standards.
             </motion.p>
             
             <motion.div 
@@ -254,60 +286,68 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
         </div>
       </section>
 
-      {/* 2. INTRO STATEMENT */}
-      <section ref={textSectionRef} className="py-24 md:py-48 bg-bg-base relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
+      {/* 2. WHY PEPTIDES 7 */}
+      <section ref={textSectionRef} className="py-24 md:py-32 bg-bg-base relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
         {/* Giant ambient quotation mark */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[40rem] text-white/[0.02] font-serif leading-none select-none pointer-events-none mt-20">
+        <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[40rem] text-white/[0.02] font-serif leading-none select-none pointer-events-none mt-20">
           "
         </div>
         
-        <div className="max-w-5xl mx-auto px-6 text-center relative z-10">
-          <p 
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white leading-[1.6] md:leading-[1.6] font-serif font-light tracking-wide flex flex-wrap justify-center gap-x-2 gap-y-1 md:gap-x-3 md:gap-y-2"
-            style={{ perspective: "1200px" }}
-          >
-            {'"From the founder of Scarlett Hawkins Medspa - a personally curated catalog of research-grade peptides, held to medspa standards of purity and trust."'.split(" ").map((word, i, array) => {
-              const start = i / array.length;
-              const end = start + (1 / array.length);
-              
-              // Map scroll to 3D cinematic effects
-              const opacity = useTransform(textScrollProgress, [start * 0.8, end * 0.8], [0, 1]);
-              const y = useTransform(textScrollProgress, [start * 0.8, end * 0.8], [40, 0]);
-              const rotateX = useTransform(textScrollProgress, [start * 0.8, end * 0.8], [80, 0]);
-              const scale = useTransform(textScrollProgress, [start * 0.8, end * 0.8], [1.2, 1]);
-              const blurVal = useTransform(textScrollProgress, [start * 0.8, end * 0.8], [12, 0]);
-              const filter = useTransform(blurVal, (v) => `blur(${v}px) drop-shadow(0px 10px 15px rgba(0,0,0,0.5))`);
-
-              return (
-                <motion.span
-                  key={i}
-                  style={{ 
-                    opacity, 
-                    y, 
-                    rotateX, 
-                    scale, 
-                    filter,
-                    transformOrigin: "bottom" 
-                  }}
-                  className="inline-block drop-shadow-2xl"
-                >
-                  {word}
-                </motion.span>
-              );
-            })}
-          </p>
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10 flex flex-col gap-8 md:gap-12">
           
-          <motion.div 
-            className="mt-16 flex flex-col items-center"
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ delay: 0.4, duration: 1 }}
-          >
-             <span className="text-white/50 mb-4">—</span>
-             <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-white font-sans">Scarlett Hawkins</span>
-             <span className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-textsub font-sans mt-2">Founder</span>
-          </motion.div>
+          <StaggeredText 
+            text="Why Peptides7?" 
+            className="text-4xl md:text-6xl font-serif text-white tracking-wide block" 
+            style={{ perspective: "1200px" }} 
+          />
+
+          <StaggeredText 
+            text="Peptides can be complicated." 
+            className="text-2xl sm:text-3xl md:text-4xl text-white/90 leading-[1.6] md:leading-[1.6] font-serif font-light tracking-wide flex flex-wrap justify-center gap-x-2 gap-y-1 md:gap-x-3 md:gap-y-2" 
+            style={{ perspective: "1200px" }} 
+          />
+
+          <ScrollReveal delay={0.1}>
+            <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-2xl mx-auto mt-4">
+              Hundreds of compounds. Scientific terminology. Endless opinions. For many researchers, knowing where to begin can feel overwhelming.
+            </p>
+          </ScrollReveal>
+          
+          <ScrollReveal delay={0.2}>
+            <p className="text-2xl md:text-3xl text-white/80 font-serif italic leading-relaxed py-8">
+              We believed there should be a better way.<br />
+              So we created Peptides7.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.3}>
+            <p className="text-base md:text-lg text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
+              Inspired by the idea that simplicity is the ultimate sophistication, we built a curated collection organized around seven core categories. Rather than offering everything, we focus on what matters—carefully selected compounds, transparent testing, and uncompromising quality standards.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.4}>
+            <p className="text-base md:text-lg text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
+              Every product is chosen with intention. Every batch is independently verified. Every Certificate of Analysis is readily available.
+            </p>
+          </ScrollReveal>
+
+          <ScrollReveal delay={0.5}>
+            <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl mx-auto mt-4">
+              We’ve taken the guesswork out of the process so you can move forward with greater clarity and confidence.
+            </p>
+          </ScrollReveal>
+          
+          <ScrollReveal delay={0.6}>
+            <div className="mt-12 pt-12 border-t border-white/10 flex flex-col items-center gap-4">
+              <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-white font-sans font-medium">
+                Curated with Purpose. Tested with Precision.
+              </span>
+              <span className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/50 font-sans">
+                Seven Categories. One Standard.
+              </span>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -359,7 +399,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
           <div 
             ref={scrollContainerRef}
             onScroll={handleScroll}
-            className="grid grid-flow-col auto-cols-[100%] sm:auto-cols-[calc(50%-12px)] lg:auto-cols-[calc(25%-18px)] gap-x-6 overflow-x-auto pt-32 pb-8 scroll-smooth hide-scrollbar w-full"
+            className="grid grid-flow-col auto-cols-[85%] sm:auto-cols-[calc(50%-12px)] lg:auto-cols-[calc(25%-18px)] gap-x-6 overflow-x-auto pt-32 pb-8 scroll-smooth hide-scrollbar w-full snap-x snap-mandatory px-4 md:px-0"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {infiniteProducts.map((product, i) => {
@@ -368,8 +408,9 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 : product.price;
 
               return (
-                <ScrollReveal key={`${product.slug}-${i}`} delay={0} direction="up" className="w-full">
-                  <Link href={`/product/${product.slug}`} className="group relative w-full h-full bg-white rounded-[2rem] p-6 pb-8 flex flex-col items-center text-center shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-shadow duration-500 hover:shadow-[0_30px_60px_rgba(0,0,0,0.7)] block">
+                <div key={`${product.slug}-${i}`} className="w-full h-full snap-center md:snap-start flex justify-center">
+                  <ScrollReveal delay={0} direction="up" className="w-full h-full">
+                    <Link href={`/product/${product.slug}`} className="group relative w-full h-full bg-white rounded-[2rem] p-6 pb-8 flex flex-col items-center text-center shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-shadow duration-500 hover:shadow-[0_30px_60px_rgba(0,0,0,0.7)] block">
                     
                     {/* Subtle Background Elements to match reference */}
                     <div className="absolute inset-0 overflow-hidden rounded-[2rem] pointer-events-none">
@@ -428,15 +469,23 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                               quantity: 1,
                               image: product.image,
                             });
+                            
+                            setAddedItems(prev => ({ ...prev, [product.slug]: true }));
+                            setTimeout(() => {
+                              setAddedItems(prev => ({ ...prev, [product.slug]: false }));
+                            }, 2000);
+                          } else {
+                            window.location.href = `/product/${product.slug}`;
                           }
                         }}
-                        className="w-full bg-black text-white py-4 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-white hover:text-black transition-colors duration-300 shadow-xl z-20 relative cursor-pointer"
+                        className={`w-full py-4 rounded-full text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-xl z-20 relative cursor-pointer pointer-events-auto ${addedItems[product.slug] ? 'bg-green-600 text-white scale-[1.02]' : 'bg-black text-white hover:bg-white hover:text-black'}`}
                       >
-                        {product.isVariable ? "Select Options" : "Add to Cart"}
+                        {product.isVariable ? "Select Options" : addedItems[product.slug] ? "Added to Cart ✓" : "Add to Cart"}
                       </button>
                     </div>
                   </Link>
-                </ScrollReveal>
+                  </ScrollReveal>
+                </div>
               );
             })}
           </div>
@@ -469,13 +518,14 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
         <div className="absolute inset-0 z-0 overflow-hidden bg-[#020202]">
           <motion.div 
             className="absolute inset-0 w-full h-[130%]"
-            style={{ y: categoryBgY }}
+            style={{ y: categoryBgY, willChange: "transform" }}
           >
             <Image 
               src="/images/img-8.webp" 
               alt="Laboratory background" 
               fill 
-              className="object-cover object-center mix-blend-luminosity opacity-60"
+              className="object-cover object-center grayscale opacity-60"
+              style={{ transform: "translateZ(0)" }}
             />
           </motion.div>
           {/* Fade edges to black, leave center visible */}
@@ -483,10 +533,11 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
           {/* Overall subtle darkening for readability */}
           <div className="absolute inset-0 bg-[#020202]/60"></div>
           
-          <div className="absolute top-0 right-0 w-[50vw] h-[50vw] rounded-full bg-white/[0.015] blur-[120px] pointer-events-none -translate-y-1/2 translate-x-1/3 z-0"></div>
-          <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] rounded-full bg-white/[0.015] blur-[100px] pointer-events-none translate-y-1/3 -translate-x-1/3 z-0"></div>
+          {/* Optimized ambient glows using radial gradients instead of expensive CSS blurs */}
+          <div className="absolute top-0 right-0 w-[50vw] h-[50vw] pointer-events-none -translate-y-1/2 translate-x-1/3 z-0 bg-[radial-gradient(circle,rgba(255,255,255,0.03)_0%,transparent_70%)]"></div>
+          <div className="absolute bottom-0 left-0 w-[40vw] h-[40vw] pointer-events-none translate-y-1/3 -translate-x-1/3 z-0 bg-[radial-gradient(circle,rgba(255,255,255,0.03)_0%,transparent_70%)]"></div>
           {/* Center glow for the features section */}
-          <div className="absolute top-[75%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.02] rounded-full blur-[100px] pointer-events-none z-0"></div>
+          <div className="absolute top-[75%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none z-0 bg-[radial-gradient(circle,rgba(255,255,255,0.04)_0%,transparent_70%)]"></div>
         </div>
 
         {/* 3.5 RESEARCH CATEGORIES */}
@@ -528,7 +579,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 {
                   label: "Proprietary",
                   headline: "Proprietary Blends",
-                  desc: "Exclusive Scarlett Hawkins formulations — GLOW and KLOW — crafted as premium multi-compound research blends not available anywhere else.",
+                  desc: "Exclusive Peptides 7 formulations — GLOW and KLOW — crafted as premium multi-compound research blends not available anywhere else.",
                   link: "/shop",
                   badge: "GLOW · KLOW"
                 }
@@ -669,7 +720,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   <strong className="text-white font-medium">Research peptides</strong> are short-chain amino acid sequences synthesized for in-vitro and preclinical study. They serve as invaluable tools for investigating signaling pathways, metabolic cascades, and cellular repair mechanisms that underpin modern longevity and metabolic science.
                 </p>
                 <p className="text-white/60">
-                  At Scarlett Hawkins, every compound — from the tri-agonist <span className="text-white font-medium">Retatrutide</span> and mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
+                  At Peptides 7, every compound — from the tri-agonist <span className="text-white font-medium">Retatrutide</span> and mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
                 </p>
                 <p className="text-white/60">
                   Impurities matter. TFA residues, heavy metals, and synthesis byproducts can skew results and compromise data integrity. Our ≥99% purity standard eliminates these variables, giving researchers a clean, reliable baseline for reproducible science.
@@ -688,8 +739,8 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
             {/* VISUAL COLUMN (Left) */}
             <div className="w-full lg:w-1/2">
               <ScrollReveal direction="left">
-                <TiltCard className="w-full">
-                  <div className="relative w-full aspect-[4/3] md:aspect-square lg:aspect-[4/3] bg-white/[0.03] backdrop-blur-3xl border border-white/10 rounded-[2rem] p-6 md:p-12 flex flex-col group overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+                <TiltCard className="w-full h-full">
+                  <div className="relative w-full min-h-[380px] md:aspect-square lg:aspect-[4/3] bg-white/[0.03] backdrop-blur-3xl border border-white/10 rounded-[2rem] p-6 md:p-12 flex flex-col group overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.5)] h-full">
                     {/* Minimalist glowing gradient */}
                     <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.05)_0%,rgba(0,0,0,0)_70%)] pointer-events-none"></div>
                     
@@ -822,7 +873,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "What does 'Research Use Only' (RUO) mean?",
-                    a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes — not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Scarlett Hawkins catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
+                    a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes — not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Peptides 7 catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
                   },
                   {
                     q: "What is Retatrutide and what is it studied for?",
@@ -842,15 +893,15 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "How does the ordering process work?",
-                    a: <>The Scarlett Hawkins storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation.</>
+                    a: <>The Peptides 7 storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation.</>
                   },
                   {
                     q: "How are the compounds shipped and stored?",
                     a: "All peptides are lyophilized (freeze-dried) prior to shipment, a process that stabilizes the molecular structure and extends shelf life without refrigeration during transit. Upon arrival, researchers should store lyophilized peptides at -20°C for long-term stability. Reconstitution should be performed using sterile bacteriostatic water; once reconstituted, vials should be stored at 2–8°C and used within the timeframes specified in the associated COA documentation."
                   },
                   {
-                    q: "What makes Scarlett Hawkins different from other research peptide suppliers?",
-                    a: "Most peptide suppliers are anonymous fulfillment operations. Scarlett Hawkins is a founder-curated catalog, built by Scarlett Hawkins — founder of Scarlett Hawkins Medspa in Charleston, SC — who applied the same standards she demands in a clinical medspa environment to this research catalog. Every compound was personally vetted. Every supplier relationship was personally established. The result is a boutique selection of only the most scientifically relevant, rigorously tested compounds — paired with full COA transparency and a checkout experience designed for serious researchers, not casual browsers."
+                    q: "What makes Peptides 7 different from other research peptide suppliers?",
+                    a: "Most peptide suppliers are anonymous fulfillment operations. Peptides 7 is a founder-curated catalog, built by Peptides 7 — founder of Peptides 7 Medspa in Charleston, SC — who applied the same standards she demands in a clinical medspa environment to this research catalog. Every compound was personally vetted. Every supplier relationship was personally established. The result is a boutique selection of only the most scientifically relevant, rigorously tested compounds — paired with full COA transparency and a checkout experience designed for serious researchers, not casual browsers."
                   }
                 ].map((faq, i) => (
                   <ScrollReveal key={i} delay={i * 0.05} direction="up">
@@ -942,7 +993,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               className="flex flex-col items-center gap-3 relative z-10"
             >
               <div style={{ backgroundColor: '#ffffff' }} className="w-16 h-px mb-4"></div>
-              <span style={{ color: '#ffffff' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Scarlett Hawkins</span>
+              <span style={{ color: '#ffffff' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Peptides 7</span>
               <span className="text-xs md:text-sm tracking-[0.2em] text-white/50 uppercase">Founder & CEO</span>
             </motion.div>
 

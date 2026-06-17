@@ -1,10 +1,21 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Outfit } from "next/font/google";
 import Link from "next/link";
+import Image from "next/image";
 import { CartProvider } from "@/context/CartContext";
 import Header from "@/components/Header";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import SmoothScroll from "@/components/SmoothScroll";
+import JsonLd from "@/components/JsonLd";
+import {
+  SITE_URL,
+  SITE_NAME,
+  SITE_DESCRIPTION,
+  SITE_LOCALE,
+  organizationJsonLd,
+  localBusinessJsonLd,
+  websiteSearchJsonLd,
+} from "@/lib/seo";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -20,8 +31,71 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Scarlett Hawkins | Curated Peptides",
-  description: "A curated peptide catalog.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | Premium Research Peptides — ≥99% Purity, Independently Verified`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "research peptides",
+    "buy peptides online",
+    "99% purity peptides",
+    "HPLC verified peptides",
+    "BPC-157",
+    "TB-500",
+    "GHK-Cu",
+    "Retatrutide",
+    "NAD+",
+    "peptide catalog",
+    "research use only peptides",
+    "lyophilized peptides",
+    "peptide purity testing",
+    "Certificate of Analysis peptides",
+  ],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    type: "website",
+    locale: SITE_LOCALE,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} — Premium Research Peptides, ≥99% Purity`,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: `${SITE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} — Curated Research Peptide Catalog`,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} — Premium Research Peptides`,
+    description: SITE_DESCRIPTION,
+    images: [`${SITE_URL}/og-image.jpg`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/manifest.json",
+  category: "science",
 };
 
 export default function RootLayout({
@@ -32,9 +106,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${outfit.variable} ${playfair.variable} h-full antialiased`}
+      className={`${outfit.variable} ${playfair.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#050505] text-[#faf6f5]" suppressHydrationWarning>
+      <body className="min-h-screen flex flex-col font-sans bg-[#050505] text-[#faf6f5]" suppressHydrationWarning>
+        <JsonLd data={[organizationJsonLd(), localBusinessJsonLd(), websiteSearchJsonLd()]} />
         <CartProvider>
           <SmoothScroll>
             <div className="fixed top-0 w-full z-50 flex flex-col">
@@ -58,8 +133,14 @@ export default function RootLayout({
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24 mb-16 md:mb-20">
                   <div className="col-span-1 md:col-span-2">
-                    <Link href="/" className="font-serif text-3xl md:text-4xl text-white tracking-widest block mb-6 hover:text-gray-300 transition-colors duration-300">
-                      SCARLETT HAWKINS
+                    <Link href="/" className="inline-block mb-6 hover:opacity-80 transition-opacity duration-300">
+                      <Image 
+                        src="/logo.png" 
+                        alt="Peptides 7" 
+                        width={300} 
+                        height={65} 
+                        className="h-14 md:h-20 w-auto object-contain mix-blend-difference" 
+                      />
                     </Link>
                     <p style={{ color: '#9ca3af' }} className="text-sm md:text-base max-w-sm leading-relaxed font-light">
                       A curated collection of premium research peptides. Elegance and absolute purity for your laboratory needs.
@@ -98,7 +179,7 @@ export default function RootLayout({
                 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
                   <p style={{ color: '#4b5563' }} className="text-[10px] md:text-xs tracking-widest uppercase">
-                    &copy; {new Date().getFullYear()} Scarlett Hawkins. All rights reserved.
+                    &copy; {new Date().getFullYear()} Peptides 7. All rights reserved.
                   </p>
                   <div className="flex gap-6 text-[10px] md:text-xs tracking-widest uppercase">
                     <Link href="/terms" style={{ color: '#4b5563' }} className="hover:text-white transition-colors">Terms</Link>

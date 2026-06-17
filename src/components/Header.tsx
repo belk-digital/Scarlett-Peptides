@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import HeaderCartIcon from "@/components/HeaderCartIcon";
 
 const NAV_ITEMS = [
@@ -17,6 +18,23 @@ const NAV_ITEMS = [
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    // Only hide the header on mobile screens
+    if (typeof window !== "undefined" && window.innerWidth >= 768) {
+      setHidden(false);
+      return;
+    }
+    const previous = scrollY.getPrevious() ?? 0;
+    // Hide when scrolling down, show when scrolling up
+    if (latest > previous && latest > 150) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
 
   // Close mobile menu when route changes
   useEffect(() => {
@@ -34,13 +52,28 @@ export default function Header() {
 
   return (
     <>
-      <header className="pt-4 pb-4 px-4 md:px-8 lg:px-12 flex items-center justify-between pointer-events-none w-full relative z-50">
+      <motion.header 
+        variants={{
+          visible: { y: 0 },
+          hidden: { y: "-180%" }
+        }}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ duration: 0.35, ease: "easeInOut" }}
+        className="pt-4 pb-4 px-4 md:px-8 lg:px-12 flex items-center justify-between pointer-events-none w-full relative z-50"
+      >
         {/* Logo (Visible on all breakpoints) */}
         <Link 
           href="/" 
-          className="font-serif text-base md:text-2xl text-white mix-blend-difference tracking-wider pointer-events-auto shrink-0 relative z-50"
+          className="pointer-events-auto shrink-0 relative z-50 flex items-center"
         >
-          SCARLETT HAWKINS
+          <Image 
+            src="/logo.png" 
+            alt="Peptides 7" 
+            width={240} 
+            height={60} 
+            className="h-12 md:h-16 w-auto object-contain mix-blend-difference hover:opacity-80 transition-opacity" 
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation Pill */}
@@ -77,7 +110,7 @@ export default function Header() {
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
-      </header>
+      </motion.header>
 
       {/* Fullscreen Mobile Menu Overlay */}
       <AnimatePresence>
@@ -117,7 +150,7 @@ export default function Header() {
               className="absolute bottom-12 flex flex-col items-center gap-4 text-center"
             >
               <span className="text-[10px] tracking-widest uppercase text-white/30">
-                SCARLETT HAWKINS COLLECTION
+                PEPTIDES 7 COLLECTION
               </span>
               <div className="w-12 h-px bg-white/10"></div>
             </motion.div>

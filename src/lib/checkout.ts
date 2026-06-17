@@ -25,25 +25,30 @@ export function buildCheckoutUrl(items: CartItem[]): string {
 
   const url = new URL(WOO_BASE_URL);
 
-  if (items.length === 1) {
-    // Single item native Add-to-Cart
-    const item = items[0];
-    const id = item?.variationId || item?.wooProductId;
+  // Flatten all items and bundles into a single list of ID:QTY pairs
+  const cartEntries: string[] = [];
+  
+  items.forEach(item => {
+    const idObj = item?.variationId || item?.wooProductId;
     const qty = item?.quantity || 1;
     
-    if (id) {
-      url.searchParams.append("add-to-cart", id.toString());
-      url.searchParams.append("quantity", qty.toString());
+    if (Array.isArray(idObj)) {
+      idObj.forEach(id => {
+        cartEntries.push(`${id}:${qty}`);
+      });
+    } else if (idObj) {
+      cartEntries.push(`${idObj}:${qty}`);
     }
-  } else {
-    // Multi-product format: ?add-to-cart=ID:QTY,ID:QTY
-    const cartString = items.map(item => {
-      const id = item?.variationId || item?.wooProductId || "";
-      const qty = item?.quantity || 1;
-      return `${id}:${qty}`;
-    }).filter(str => str && !str.startsWith(':')).join(',');
+  });
 
-    url.searchParams.append("add-to-cart", cartString);
+  if (cartEntries.length === 1) {
+    // Single item native Add-to-Cart
+    const [id, qty] = cartEntries[0].split(':');
+    url.searchParams.append("add-to-cart", id);
+    url.searchParams.append("quantity", qty);
+  } else if (cartEntries.length > 1) {
+    // Multi-product format: ?add-to-cart=ID:QTY,ID:QTY
+    url.searchParams.append("add-to-cart", cartEntries.join(','));
   }
 
   // Attempt to clear the WooCommerce cart before adding new items.

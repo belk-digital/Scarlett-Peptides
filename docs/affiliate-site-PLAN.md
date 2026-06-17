@@ -1,8 +1,8 @@
-# Scarlett Hawkins Affiliate Store — Full Website Plan
+# Peptides 7 Affiliate Store — Full Website Plan
 
 **Project owner:** Belk Digital
 **Parent store:** 99 Purity Peptides (`https://99puritypeptides.com`) — WooCommerce / WordPress
-**Affiliate client:** Scarlett Hawkins (medspa owner — reference: `scarletthawkinsmedspa.com`)
+**Affiliate client:** Peptides 7 (medspa owner — reference: `scarletthawkinsmedspa.com`)
 **Stack for new site:** Next.js (App Router) + Tailwind CSS, deployed on Vercel
 **Last updated:** June 16, 2026
 
@@ -157,7 +157,7 @@ Tesamorelin, TB-500/BPC-157, Semax/Selank, Semaglutide, Retatrutide, PT-141, KLO
 
 ## 6. Design Direction
 
-Mirror the **Scarlett Hawkins medspa aesthetic** (luxury, clean, feminine, Charleston boutique feel) rather than the clinical/scientific 99PP look — this is *her* brand to her audience. Pull palette and typography cues from `scarletthawkinsmedspa.com`. Keep the research-use-only disclaimer present but tasteful. Product photography should feel premium; reuse 99PP's product imagery where licensed.
+Mirror the **Peptides 7 medspa aesthetic** (luxury, clean, feminine, Charleston boutique feel) rather than the clinical/scientific 99PP look — this is *her* brand to her audience. Pull palette and typography cues from `scarletthawkinsmedspa.com`. Keep the research-use-only disclaimer present but tasteful. Product photography should feel premium; reuse 99PP's product imagery where licensed.
 
 ---
 

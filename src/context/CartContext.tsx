@@ -7,7 +7,7 @@ export type CartItem = {
   slug: string;
   name: string;
   wooProductId?: number;
-  variationId?: number;
+  variationId?: number | number[];
   attributes?: Record<string, string>;
   label?: string;
   price: number;
@@ -51,8 +51,10 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     }
   }, [items, isMounted]);
 
-  const generateKey = (wooProductId?: number, variationId?: number) => {
-    return `${wooProductId || 'nopid'}-${variationId || 'novid'}`;
+  const generateKey = (wooProductId?: number, variationId?: number | number[]) => {
+    const pId = wooProductId || 'nopid';
+    const vId = Array.isArray(variationId) ? variationId.join('-') : (variationId || 'novid');
+    return `${pId}-${vId}`;
   };
 
   const addItem = (item: Omit<CartItem, "key">) => {

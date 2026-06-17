@@ -1,0 +1,24 @@
+{
+  "name": "Peptides 7 — Premium Research Peptides",
+  "short_name": "Peptides 7",
+  "description": "A curated catalog of ≥99% purity research peptides, independently verified by third-party US labs.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["science", "shopping"],
+  "lang": "en"
+}
