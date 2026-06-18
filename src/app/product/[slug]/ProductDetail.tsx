@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
@@ -11,6 +11,10 @@ import type { Product } from "@/data/products";
 
 export default function ProductDetail({ product }: { product: Product }) {
   const { addItem } = useCart();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const parsedVariants = product.variants?.map(v => {
     const parts = v.label.split(' - ');

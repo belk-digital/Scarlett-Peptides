@@ -29,9 +29,7 @@ const CONTACT_CONTENT = {
   },
   directContact: {
     headline: "Concierge Contact",
-    text: "For questions about curation, product specifics, or general inquiries, contact our concierge directly.",
-    email: "hello@scarletthawkinsmedspa.com",
-    phone: "843-998-1172",
+    text: "For questions about curation, product specifics, or general inquiries, please use the form to contact our concierge directly.",
     partnerHeadline: "Existing Orders",
     partnerText: "For existing order or payment questions, contact our fulfillment partner 99 Purity Peptides directly.",
     partnerEmail: "support@99puritypeptides.com",
@@ -251,16 +249,7 @@ export default function ContactClient() {
                   </div>
                   <h3 className="font-serif text-2xl text-white mb-3">{CONTACT_CONTENT.directContact.headline}</h3>
                   <p className="text-sm text-white/50 mb-6 leading-relaxed font-light">{CONTACT_CONTENT.directContact.text}</p>
-                  <div className="space-y-4">
-                    <a href={`mailto:${CONTACT_CONTENT.directContact.email}`} className="flex items-center gap-3 text-sm text-white hover:text-white/70 transition-colors">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/30"></span>
-                      {CONTACT_CONTENT.directContact.email}
-                    </a>
-                    <a href={`tel:${CONTACT_CONTENT.directContact.phone}`} className="flex items-center gap-3 text-sm text-white hover:text-white/70 transition-colors">
-                      <span className="w-1.5 h-1.5 rounded-full bg-white/30"></span>
-                      {CONTACT_CONTENT.directContact.phone}
-                    </a>
-                  </div>
+
                 </div>
               </TiltCard>
             </ScrollReveal>

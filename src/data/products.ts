@@ -66,9 +66,9 @@ export const products: Product[] = [
     category: "Proprietary",
     isVariable: true,
     variants: [
-      { label: "Single", price: 115.0, regularPrice: 130.0, variationId: 3808 },
-      { label: "5 Kit (Save 10%)", price: 500.0, regularPrice: 650.0, variationId: 3809 },
-      { label: "10 Kit (Best Value)", price: 1000.0, regularPrice: 1300.0, variationId: 3810 },
+      { label: "Single", price: 100.0, regularPrice: 110.0, variationId: 3808 },
+      { label: "5 Kit (Save 10%)", price: 450.0, regularPrice: 550.0, variationId: 3809 },
+      { label: "10 Kit (Best Value)", price: 900.0, regularPrice: 1100.0, variationId: 3810 },
     ],
     tabs: [
       {
@@ -136,9 +136,9 @@ export const products: Product[] = [
     category: "Proprietary",
     isVariable: true,
     variants: [
-      { label: "Single", price: 100.0, regularPrice: 110.0, variationId: 3803 },
-      { label: "5 Kit (Save 10%)", price: 450.0, regularPrice: 550.0, variationId: 3804 },
-      { label: "10 Kit (Best Value)", price: 900.0, regularPrice: 1100.0, variationId: 3805 },
+      { label: "Single", price: 115.0, regularPrice: 130.0, variationId: 3803 },
+      { label: "5 Kit (Save 10%)", price: 500.0, regularPrice: 650.0, variationId: 3804 },
+      { label: "10 Kit (Best Value)", price: 1000.0, regularPrice: 1300.0, variationId: 3805 },
     ],
     tabs: [
       {
@@ -202,11 +202,11 @@ export const products: Product[] = [
     category: "Longevity",
     isVariable: true,
     variants: [
-      { label: "50mg - Single", price: 60.0, regularPrice: 60.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "50mg - Single", price: 65.0, regularPrice: 70.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
       { label: "50mg - 10 Kit", price: 400.0, regularPrice: 600.0, variationId: 3858, image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "100mg - Single", price: 75.0, regularPrice: 75.0, variationId: 991, image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "100mg - Single", price: 80.0, regularPrice: 90.0, variationId: 991, image: "/images/products/ghk-cu-100mg.jpg" },
       { label: "100mg - 10 Kit", price: 650.0, regularPrice: 750.0, variationId: 3860, image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "200mg - Single", price: 135.0, regularPrice: 135.0, variationId: 3857, image: "/images/products/ghk-cu-200mg.jpg" },
+      { label: "200mg - Single", price: 135.0, regularPrice: 150.0, variationId: 3857, image: "/images/products/ghk-cu-200mg.jpg" },
       { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, variationId: 3862, image: "/images/products/ghk-cu-200mg.jpg" },
     ],
     tabs: [
@@ -421,11 +421,12 @@ export const products: Product[] = [
     category: "Longevity",
     isVariable: true,
     variants: [
-      { label: "500mg - Single", price: 80.0, regularPrice: 90.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
+      { label: "500mg - Single", price: 87.50, regularPrice: 100.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
       { label: "500mg - 5 Kit", price: 375.0, regularPrice: 450.0, variationId: 3836, image: "/images/products/nadplus-500mg.jpg" },
       { label: "500mg - 10 Kit", price: 700.0, regularPrice: 900.0, variationId: 3835, image: "/images/products/nadplus-500mg.jpg" },
-      { label: "1000mg - Single", price: 100.0, regularPrice: 125.0, variationId: 975, image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - Single", price: 105.0, regularPrice: 125.0, variationId: 975, image: "/images/products/nad-1000mg.jpg" },
       { label: "1000mg - 5 Kit", price: 450.0, regularPrice: 625.0, variationId: 3838, image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - 10 Kit", price: 800.0, regularPrice: 1250.0, variationId: 3837, image: "/images/products/nad-1000mg.jpg" },
     ],
     tabs: [
       {
@@ -489,7 +490,7 @@ export const products: Product[] = [
     category: "Longevity",
     wooProductId: 1176,
     isVariable: false,
-    price: 60.0,
+    price: 65.0,
     regularPrice: 80.0,
     tabs: [
       {
@@ -626,8 +627,8 @@ export const products: Product[] = [
     category: "Recovery & Repair",
     wooProductId: 986,
     isVariable: false,
-    price: 55.0,
-    regularPrice: 55.0,
+    price: 60.0,
+    regularPrice: 65.0,
     tabs: [
       {
         title: "Product Details",
@@ -690,8 +691,8 @@ export const products: Product[] = [
     category: "Recovery & Repair",
     isVariable: true,
     variants: [
-      { label: "5mg - Single", price: 65.0, regularPrice: 65.0, variationId: 4821, image: "/images/products/tb-500-10mg.jpg" },
-      { label: "10mg - Single", price: 105.0, regularPrice: 105.0, variationId: 4820, image: "/images/products/tb-500-10mg.jpg" },
+      { label: "5mg - Single", price: 60.0, regularPrice: 70.0, variationId: 4821, image: "/images/products/tb-500-10mg.jpg" },
+      { label: "10mg - Single", price: 65.0, regularPrice: 90.0, variationId: 4820, image: "/images/products/tb-500-10mg.jpg" },
     ],
     tabs: [
       {
@@ -759,10 +760,10 @@ export const products: Product[] = [
     category: "Recovery & Repair",
     isVariable: true,
     variants: [
-      { label: "10mg BPC / 5mg TB - Single", price: 130.0, regularPrice: 130.0, variationId: [2839, 4821] },
-      { label: "10mg BPC / 10mg TB - Single", price: 170.0, regularPrice: 170.0, variationId: [2839, 4820] },
-      { label: "20mg BPC / 5mg TB - Single", price: 145.0, regularPrice: 145.0, variationId: [2840, 4821] },
-      { label: "20mg BPC / 10mg TB - Single", price: 185.0, regularPrice: 185.0, variationId: [2840, 4820] },
+      { label: "10mg BPC / 5mg TB - Single", price: 125.0, regularPrice: 135.0, variationId: [2839, 4821] },
+      { label: "10mg BPC / 10mg TB - Single", price: 130.0, regularPrice: 155.0, variationId: [2839, 4820] },
+      { label: "20mg BPC / 5mg TB - Single", price: 140.0, regularPrice: 150.0, variationId: [2840, 4821] },
+      { label: "20mg BPC / 10mg TB - Single", price: 145.0, regularPrice: 170.0, variationId: [2840, 4820] },
     ],
     tabs: [
       {

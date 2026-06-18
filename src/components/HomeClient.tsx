@@ -94,7 +94,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
     target: founderRef,
     offset: ["start start", "end end"]
   });
-  const founderQuoteWords = "As a female founder in the research space, I built this collection because I couldn't find a peptide source that met my exact standards for absolute purity, paired with an elegant, trustworthy experience.".split(" ");
+  const founderQuoteWords = "Peptides7 was built to simplify the search through a carefully selected collection of research compounds organized into seven foundational categories. Every product is chosen with intention, independently verified, and held to rigorous quality standards. Seven categories. One standard.".split(" ");
   const bgOpacity = useTransform(founderProgress, [0, 0.5], [1, 0.1]);
 
   const ctaRef = useRef<HTMLDivElement>(null);
@@ -266,7 +266,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               transition={{ duration: 1, delay: 0.8 }}
               className="text-base md:text-xl text-white/70 max-w-xl mb-12 font-light leading-relaxed"
             >
-              A collection of premium research peptides selected for purity, consistency, and excellence. Every batch is independently tested and held to rigorous quality standards.
+              A thoughtfully curated collection of premium research peptides organized into seven foundational categories and held to rigorous standards for quality, consistency, and transparency.
             </motion.p>
             
             <motion.div 
@@ -296,54 +296,26 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10 flex flex-col gap-8 md:gap-12">
           
           <StaggeredText 
-            text="Why Peptides7?" 
+            text="The Power of Seven" 
             className="text-4xl md:text-6xl font-serif text-white tracking-wide block" 
             style={{ perspective: "1200px" }} 
           />
 
-          <StaggeredText 
-            text="Peptides can be complicated." 
-            className="text-2xl sm:text-3xl md:text-4xl text-white/90 leading-[1.6] md:leading-[1.6] font-serif font-light tracking-wide flex flex-wrap justify-center gap-x-2 gap-y-1 md:gap-x-3 md:gap-y-2" 
-            style={{ perspective: "1200px" }} 
-          />
-
           <ScrollReveal delay={0.1}>
-            <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-2xl mx-auto mt-4">
-              Hundreds of compounds. Scientific terminology. Endless opinions. For many researchers, knowing where to begin can feel overwhelming.
+            <p className="text-xl sm:text-2xl md:text-3xl text-white/90 leading-[1.6] md:leading-[1.6] font-serif font-light tracking-wide max-w-3xl mx-auto mt-8">
+              Rather than offering an endless catalog, we organized our collection into seven foundational categories designed to make peptide selection more approachable.
             </p>
           </ScrollReveal>
           
           <ScrollReveal delay={0.2}>
-            <p className="text-2xl md:text-3xl text-white/80 font-serif italic leading-relaxed py-8">
-              We believed there should be a better way.<br />
-              So we created Peptides7.
+            <p className="text-lg md:text-xl text-white/70 font-light leading-relaxed max-w-2xl mx-auto py-8">
+              Every peptide is chosen intentionally. Every category serves a purpose.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.3}>
-            <p className="text-base md:text-lg text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
-              Inspired by the idea that simplicity is the ultimate sophistication, we built a curated collection organized around seven core categories. Rather than offering everything, we focus on what matters—carefully selected compounds, transparent testing, and uncompromising quality standards.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.4}>
-            <p className="text-base md:text-lg text-white/70 font-light leading-relaxed max-w-3xl mx-auto">
-              Every product is chosen with intention. Every batch is independently verified. Every Certificate of Analysis is readily available.
-            </p>
-          </ScrollReveal>
-
-          <ScrollReveal delay={0.5}>
-            <p className="text-lg md:text-xl text-white/80 font-light leading-relaxed max-w-3xl mx-auto mt-4">
-              We’ve taken the guesswork out of the process so you can move forward with greater clarity and confidence.
-            </p>
-          </ScrollReveal>
-          
-          <ScrollReveal delay={0.6}>
-            <div className="mt-12 pt-12 border-t border-white/10 flex flex-col items-center gap-4">
+            <div className="mt-8 pt-12 border-t border-white/10 flex flex-col items-center gap-4">
               <span className="text-xs md:text-sm tracking-[0.3em] uppercase text-white font-sans font-medium">
-                Curated with Purpose. Tested with Precision.
-              </span>
-              <span className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-white/50 font-sans">
                 Seven Categories. One Standard.
               </span>
             </div>
@@ -965,7 +937,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
           
           <motion.div style={{ opacity: bgOpacity }} className="absolute inset-0 z-0 pointer-events-none">
             <Image 
-              src="/images/flower-2.webp"
+              src="/images/IMG-9.webp"
               alt="Flower Background"
               fill
               className="object-cover mix-blend-luminosity scale-105"
@@ -994,7 +966,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
             >
               <div style={{ backgroundColor: '#ffffff' }} className="w-16 h-px mb-4"></div>
               <span style={{ color: '#ffffff' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Peptides 7</span>
-              <span className="text-xs md:text-sm tracking-[0.2em] text-white/50 uppercase">Founder & CEO</span>
+              <span className="text-xs md:text-sm tracking-[0.2em] text-white/50 uppercase">Our Commitment</span>
             </motion.div>
 
           </div>

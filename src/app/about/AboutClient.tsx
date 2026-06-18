@@ -37,20 +37,20 @@ export default function AboutClient() {
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-8 tracking-wide leading-[1.1]">
               Research-Grade Peptides,<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ffffff] to-[#e5e5e5] font-light">
-                Curated by a Medspa Founder
+                Curated for Clarity
               </span>
             </h1>
           </ScrollReveal>
 
           <ScrollReveal direction="up" delay={0.5}>
             <p className="text-lg md:text-xl text-white/60 font-light leading-relaxed max-w-2xl mx-auto font-sans">
-              Peptides 7 brings the uncompromising quality standards of her Charleston medspa directly into the laboratory research supply chain. Every compound. Every batch. Every COA — verified.
+              Peptides 7 brings uncompromising quality standards directly into the laboratory research supply chain. Every compound. Every batch. Every COA — verified.
             </p>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* 2. FOUNDER STORY - Glassmorphism Stagger */}
+      {/* 2. OUR STORY - Glassmorphism Stagger */}
       <section className="py-24 md:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 -mt-10 md:-mt-20">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center">
           {/* Image Side */}
@@ -74,43 +74,33 @@ export default function AboutClient() {
           <div className="w-full lg:w-7/12">
             <ScrollReveal direction="up" delay={0.3}>
               <span className="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-4 block font-sans">
-                The Founder
+                Our Story
               </span>
               <h2 className="font-serif text-3xl md:text-5xl text-white mb-10 leading-tight">
-                A Medspa Standard <br />
-                <span className="text-white">Applied to Research Supply</span>
+                Why Seven? <br />
+                <span className="text-white">Because thoughtful selection matters.</span>
               </h2>
             </ScrollReveal>
 
             <div className="space-y-6 text-white/50 font-light leading-relaxed font-sans text-sm md:text-base">
               <ScrollReveal direction="up" delay={0.4}>
                 <p className="text-white/70">
-                  Nestled in the heart of downtown Charleston, South Carolina, <strong className="text-white/80 font-normal">Peptides 7 Medspa</strong> was built on a singular vision: to merge the warmth of Southern hospitality with the precision of modern aesthetic medicine. For over a decade, Scarlett has guided her clients through transformative wellness journeys, earning a reputation for her uncompromising standards and meticulous eye for clinical quality.
+                  As the peptide landscape continued to expand, we found that more options often created more confusion. So we took a different approach: organizing our collection into seven foundational categories designed to simplify the discovery process.
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.5}>
                 <p className="text-white/70">
-                  As the aesthetic and anti-aging landscape evolved, so did Scarlett&apos;s exposure to the research compounds underpinning it. <strong className="text-white/80 font-normal">Peptides</strong> — short-chain amino acid sequences with extraordinary biological specificity — were becoming central to the most cutting-edge conversations in longevity science, metabolic research, and cellular repair. But finding a truly reliable, transparent source for research-grade peptides was, in her words, &ldquo;the most frustrating gap in the entire industry.&rdquo;
-                </p>
-              </ScrollReveal>
-              <ScrollReveal direction="up" delay={0.6}>
-                <p className="text-white/70">
-                  The market was saturated with anonymous suppliers, ambiguous purity claims, and a complete absence of verifiable documentation. There was no standard. There was no elegance. There was certainly no accountability. For someone who had spent years demanding the highest standards for her clients, it was unacceptable.
-                </p>
-              </ScrollReveal>
-              <ScrollReveal direction="up" delay={0.7}>
-                <p className="text-white/70">
-                  Scarlett built this catalog to change that narrative. Drawing on deep industry connections and her clinical background in aesthetic medicine, she personally vetted compounds, established an exclusive fulfillment partnership with <strong className="text-white/80 font-normal"><a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a></strong>, and created a boutique research catalog that delivers medspa-level standards to the world of laboratory research supply.
+                  Peptides 7 represents a philosophy of clarity over complexity, curation over clutter, and quality over quantity.
                 </p>
               </ScrollReveal>
             </div>
 
-            <ScrollReveal direction="up" delay={0.8}>
+            <ScrollReveal direction="up" delay={0.6}>
               <div className="mt-12 border-t border-white/10 pt-8 flex items-center gap-6">
                 <div className="w-12 h-px bg-white/50" />
                 <div>
-                  <p className="font-serif text-2xl text-white">Peptides 7</p>
-                  <span className="text-[9px] tracking-[0.2em] uppercase text-white mt-1 block font-sans">Founder &amp; CEO</span>
+                  <p className="font-serif text-2xl text-white">Seven categories.</p>
+                  <span className="text-[9px] tracking-[0.2em] uppercase text-white mt-1 block font-sans">One trusted destination.</span>
                 </div>
               </div>
             </ScrollReveal>

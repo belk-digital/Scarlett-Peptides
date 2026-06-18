@@ -14,7 +14,7 @@ export default function CartClient() {
   const handleCheckout = () => {
     if (items.length === 0) return;
     const checkoutUrl = buildCheckoutUrl(items);
-    
+     
     if (CLEAR_CART_ON_CHECKOUT) {
       clearCart();
     }
