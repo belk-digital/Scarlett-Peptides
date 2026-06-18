@@ -112,7 +112,7 @@ export default function ProductDetail({ product }: { product: Product }) {
                     src={selectedVariant?.image || product.image}
                     alt={`${product.name} — ${product.category} research peptide, ≥99% HPLC purity`}
                     fill
-                    className="object-cover rounded-[2rem] z-10 opacity-70 mix-blend-luminosity group-hover:mix-blend-normal group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
+                    className="object-cover rounded-[2rem] z-10 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
                     priority
                   />
                   <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-t from-[#050505] via-transparent to-transparent z-10 pointer-events-none opacity-80" />
