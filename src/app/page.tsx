@@ -8,16 +8,15 @@ import HomeClient from "@/components/HomeClient";
 export const metadata: Metadata = buildMetadata({
   title: `${SITE_NAME} | Premium Research Peptides — ≥99% Purity, Independently Verified`,
   description:
-    "Shop curated research peptides with ≥99% HPLC purity, LC-MS identity verification, and batch-specific Certificates of Analysis. BPC-157, GHK-Cu, NAD+, and more. Fulfilled by 99 Purity Peptides.",
+    "Shop curated research peptides with ≥99% HPLC purity, LC-MS identity verification, and batch-specific Certificates of Analysis. GHK-Cu, NAD+, Wolverine Stack, and more. Fulfilled by 99 Purity Peptides.",
   path: "",
   keywords: [
     "research peptides",
     "buy peptides online",
     "99% purity peptides",
-    "BPC-157",
     "GHK-Cu",
     "NAD+",
-    "TB-500",
+    "Wolverine Stack",
     "peptide catalog",
     "HPLC verified peptides",
     "Certificate of Analysis",

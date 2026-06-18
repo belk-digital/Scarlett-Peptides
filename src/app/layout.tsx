@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { CartProvider } from "@/context/CartContext";
 import Header from "@/components/Header";
-import AnnouncementBar from "@/components/AnnouncementBar";
 import SmoothScroll from "@/components/SmoothScroll";
 import JsonLd from "@/components/JsonLd";
 import {
@@ -42,10 +41,9 @@ export const metadata: Metadata = {
     "buy peptides online",
     "99% purity peptides",
     "HPLC verified peptides",
-    "BPC-157",
-    "TB-500",
     "GHK-Cu",
     "NAD+",
+    "Wolverine Stack",
     "peptide catalog",
     "research use only peptides",
     "lyophilized peptides",
@@ -116,10 +114,7 @@ export default function RootLayout({
         <CartProvider>
           <SmoothScroll>
             <div className="fixed top-0 w-full z-50 flex flex-col">
-              {/* Top Announcement Bar */}
-              <AnnouncementBar />
-
-              {/* Header */}
+              {/* Header (Now includes Announcement Bar internally) */}
               <Header />
             </div>
 

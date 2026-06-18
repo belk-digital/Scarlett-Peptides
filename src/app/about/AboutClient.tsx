@@ -19,7 +19,7 @@ export default function AboutClient() {
             src="/images/flower-1.webp"
             alt="Laboratory background"
             fill
-            className="object-cover opacity-20 grayscale mix-blend-luminosity scale-105"
+            className="object-cover opacity-20 grayscale mix-blend-luminosity md:scale-105"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/80 via-[#050505]/60 to-[#050505] mix-blend-overlay" />
@@ -62,7 +62,7 @@ export default function AboutClient() {
                     src="/images/img-2.webp"
                     alt="Peptides 7"
                     fill
-                    className="object-cover z-10 opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-105"
+                    className="object-cover z-10 opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 md:group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#050505]/80 via-transparent to-transparent z-20 pointer-events-none" />
                 </div>
@@ -109,9 +109,9 @@ export default function AboutClient() {
       </section>
 
       {/* 3. PHILOSOPHY / VALUES - Interactive Tilt Cards */}
-      <section className="py-24 md:py-32 relative overflow-hidden">
+      <section className="py-24 md:py-32 relative overflow-hidden clip-path-inset">
         {/* Subtle background element */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] aspect-square bg-white/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-full max-w-[800px] aspect-square bg-white/5 rounded-full blur-[60px] md:blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal direction="up" delay={0.1}>
@@ -311,7 +311,7 @@ export default function AboutClient() {
         <div className="max-w-4xl mx-auto">
           <ScrollReveal direction="up" delay={0.1}>
             <div className="rounded-3xl border border-white/10 bg-[#0A0A0A] p-10 md:p-16 text-center relative overflow-hidden">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-1/2 bg-white/5 blur-[60px] pointer-events-none" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[200px] md:w-1/2 h-1/2 bg-white/5 blur-[40px] md:blur-[60px] pointer-events-none" />
               
               <Lock className="w-8 h-8 text-white/20 mx-auto mb-6" />
               <h2 className="font-serif text-2xl md:text-3xl text-white mb-6">Research Use Classification</h2>
@@ -340,7 +340,7 @@ export default function AboutClient() {
                 src="/images/flower-3.webp" 
                 alt="Cinematic abstract texture" 
                 fill 
-                className="object-cover opacity-30 grayscale mix-blend-luminosity scale-105"
+                className="object-cover opacity-30 grayscale mix-blend-luminosity md:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-[#050505]/70 to-[#050505]/90" />
             </div>

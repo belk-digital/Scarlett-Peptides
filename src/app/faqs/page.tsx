@@ -6,7 +6,7 @@ import FaqsClient from "./FaqsClient";
 export const metadata: Metadata = buildMetadata({
   title: "Frequently Asked Questions — Ordering, Purity, Compliance & Research",
   description:
-    "Answers about ordering research peptides, ≥99% purity standards, HPLC and LC-MS testing, reconstitution protocols, research compliance, BPC-157, GHK-Cu, GLOW, KLOW, and more from Peptides 7.",
+    "Answers about ordering research peptides, ≥99% purity standards, HPLC and LC-MS testing, reconstitution protocols, research compliance, GHK-Cu, GLOW, KLOW, and more from Peptides 7.",
   path: "/faqs",
   keywords: [
     "peptide FAQ",
@@ -14,7 +14,6 @@ export const metadata: Metadata = buildMetadata({
     "peptide purity standards",
     "HPLC testing FAQ",
     "peptide reconstitution",
-    "BPC-157 FAQ",
     "Certificate of Analysis",
     "research use only",
     "peptide ordering help",
@@ -30,7 +29,6 @@ const FAQ_STRUCTURED_DATA = [
   { question: "Is my payment information secure?", answer: "Payment is processed entirely within 99 Purity Peptides secure checkout infrastructure. Peptides 7 does not handle or store any payment data. Their checkout uses industry-standard SSL encryption." },
   { question: "How quickly will my order ship?", answer: "Orders are typically processed and dispatched within 24 hours. Complimentary 2-day shipping is available on qualifying orders over $300." },
   { question: "What are GLOW and KLOW?", answer: "GLOW and KLOW are proprietary multi-peptide research blends exclusive to the Peptides 7 catalog. Each combines well-characterized peptide fragments for studying synergistic multi-peptide interactions in a single vial." },
-  { question: "What is BPC-157?", answer: "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide derived from human gastric juice, one of the most extensively referenced peptides in preclinical repair research." },
 ];
 
 export default function FAQs() {

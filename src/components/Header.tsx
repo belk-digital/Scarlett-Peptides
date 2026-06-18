@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import HeaderCartIcon from "@/components/HeaderCartIcon";
+import AnnouncementBar from "@/components/AnnouncementBar";
 
 const NAV_ITEMS = [
   { label: "Shop", href: "/shop" },
@@ -55,12 +56,17 @@ export default function Header() {
       <motion.header 
         variants={{
           visible: { y: 0 },
-          hidden: { y: "-180%" }
+          hidden: { y: "-100%" }
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="pt-4 pb-4 pl-4 pr-6 md:px-8 lg:px-12 flex items-center justify-between pointer-events-none w-full relative z-50"
+        className="pointer-events-none w-full relative z-50 flex flex-col"
       >
+        <div className="pointer-events-auto w-full">
+          <AnnouncementBar />
+        </div>
+        
+        <div className="pt-4 pb-4 pl-4 pr-6 md:px-8 lg:px-12 flex items-center justify-between w-full">
         {/* Logo (Visible on all breakpoints) */}
         <Link 
           href="/" 
@@ -109,6 +115,7 @@ export default function Header() {
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
+        </div>
         </div>
       </motion.header>
 

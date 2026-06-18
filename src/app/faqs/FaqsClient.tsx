@@ -252,35 +252,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
   },
   {
     id: "recovery",
-    title: "Recovery & Repair Peptides — BPC-157, TB500, KPV",
+    title: "Recovery & Repair Peptides — Wolverine Stack",
     faqs: [
       {
-        q: "What is BPC-157 and what is its origin?",
-        a: "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide (15 amino acids) derived from a protective protein isolated from human gastric juice. It is one of the most extensively referenced peptides in preclinical repair research, studied for its reported pro-angiogenic activity, nitric oxide pathway modulation, and influence on growth factor expression including VEGF."
+        q: "What is the Wolverine Stack?",
+        a: "The Wolverine Stack is a specialized combination product supplying both BPC-157 and TB-500. This combination is one of the most widely referenced pairs in preclinical musculoskeletal, tendon, and ligament repair models. While BPC-157 is studied primarily for its influence on angiogenesis and the nitric oxide pathway, TB-500 (a Thymosin Beta-4 fragment) is studied for its role in actin sequestration and cell migration. Together, they offer a multi-pathway approach to tissue regeneration research."
       },
       {
-        q: "What is TB500?",
-        a: "TB500 is a synthetic peptide corresponding to a specific fragment of Thymosin Beta-4 (sequence: Ac-LKKTETQ). It is studied for its reported ability to bind and sequester G-actin — a mechanism associated with promoting cell migration, proliferation, and tissue structural remodeling in preclinical research models."
-      },
-      {
-        q: "How do BPC-157 and TB500 differ mechanistically?",
-        a: "BPC-157 is primarily studied for angiogenesis (new blood vessel formation) and nitric oxide pathway modulation; TB500 is studied for actin sequestration and cell-migration promotion. Their mechanisms are complementary but distinct, which is why many research designs evaluate them separately to isolate each pathway's contribution to observed repair-related effects."
-      },
-      {
-        q: "What is KPV and what does it do?",
-        a: "KPV is the C-terminal tripeptide fragment of alpha-melanocyte-stimulating hormone (α-MSH). It is studied for its reported anti-inflammatory activity, particularly through inhibition of NF-κB — a transcription factor that regulates many genes involved in the inflammatory response. Research models have also examined KPV's reported ability to undergo nuclear uptake, suggesting receptor-independent mechanisms in addition to its MC1R-mediated activity."
-      },
-      {
-        q: "Is KPV the same as α-MSH?",
-        a: "KPV is a three-amino-acid fragment derived from the C-terminus of α-MSH, not the full hormone. Research interest in KPV centers specifically on whether its anti-inflammatory activity can occur independently of classical melanocortin receptor binding — a mechanistic question that distinguishes KPV research from full α-MSH research."
-      },
-      {
-        q: "Which peptide is more commonly studied for tendon and ligament research — BPC-157 or TB500?",
-        a: "Both are frequently referenced in musculoskeletal research. BPC-157 is more commonly cited in tendon and ligament repair models due to its reported angiogenic and growth-factor-modulating activity. TB500 is also studied in musculoskeletal models through its actin-regulation and cell-migration pathways. Many comparative research protocols include both to evaluate the distinct contributions of each mechanism."
-      },
-      {
-        q: "Are BPC-157, TB500, and KPV stable at room temperature?",
-        a: "In lyophilized form, these peptides are more temperature-stable than reconstituted solutions, but refrigerated or frozen storage is still recommended for optimal long-term integrity. Once reconstituted, solutions should be kept refrigerated and used within a defined stability window per your protocol. BPC-157 is considered relatively stable among research peptides, while KPV as a tripeptide is also structurally simple and correspondingly stable when handled properly."
+        q: "Are the two peptides mixed in one vial?",
+        a: "No. The stack provides distinct vials of BPC-157 and TB-500. This ensures maximum stability and allows researchers precise control over the dosing and administration of each compound."
       }
     ]
   },
@@ -310,7 +290,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Are GLOW and KLOW suitable for single-variable dose-response studies?",
-        a: "Because GLOW and KLOW are blends of multiple peptide fragments, they are best suited to exploratory or combinatorial research designs rather than single-variable dose-response work. Researchers who require strict single-compound isolation should use the individual compounds in the catalog (e.g., GHK-Cu, BPC-157) for controlled mechanistic studies."
+        a: "Because GLOW and KLOW are blends of multiple peptide fragments, they are best suited to exploratory or combinatorial research designs rather than single-variable dose-response work. Researchers who require strict single-compound isolation should use the individual compounds in the catalog (e.g., GHK-Cu, NAD+) for controlled mechanistic studies."
       },
       {
         q: "Can I request a custom proprietary blend?",

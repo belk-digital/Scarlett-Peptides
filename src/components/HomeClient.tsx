@@ -254,10 +254,10 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="text-5xl md:text-[5.5rem] lg:text-[7rem] font-serif tracking-tight mb-8 text-white leading-[0.95]"
+              className="text-4xl md:text-6xl lg:text-[5.5rem] font-serif tracking-tight mb-8 text-white leading-[1.05]"
             >
-              The Future of<br />
-              <span className="text-white">Wellness, Curated.</span>
+              Peptides7 is The Next<br />
+              <span className="text-white">Generation of Peptide Research</span>
             </motion.h1>
             
             <motion.p
@@ -537,9 +537,9 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 {
                   label: "Recovery & Repair",
                   headline: "Recovery & Repair",
-                  desc: "Body protection and actin-regulation peptides such as BPC-157 and TB500, used extensively in research focused on tissue integrity, healing cascades, and cellular protection mechanisms.",
+                  desc: "Specialized blends like Wolverine Stack, used extensively in research focused on tissue integrity, healing cascades, and cellular protection mechanisms.",
                   link: "/shop",
-                  badge: "BPC-157 · TB500 · KPV"
+                  badge: "Wolverine Stack"
                 },
                 {
                   label: "Longevity",
@@ -692,7 +692,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   <strong className="text-white font-medium">Research peptides</strong> are short-chain amino acid sequences synthesized for in-vitro and preclinical study. They serve as invaluable tools for investigating signaling pathways, metabolic cascades, and cellular repair mechanisms that underpin modern longevity and metabolic science.
                 </p>
                 <p className="text-white/60">
-                  At Peptides 7, every compound — from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
+                  At Peptides 7, every compound — from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and the synergistic <span className="text-white font-medium">Wolverine Stack</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
                 </p>
                 <p className="text-white/60">
                   Impurities matter. TFA residues, heavy metals, and synthesis byproducts can skew results and compromise data integrity. Our ≥99% purity standard eliminates these variables, giving researchers a clean, reliable baseline for reproducible science.
@@ -849,8 +849,8 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
 
                   {
-                    q: "What is the difference between BPC-157 and TB500?",
-                    a: "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide derived from a protective protein found in gastric juice, primarily studied for its role in tissue healing, gastric protection, and angiogenesis. TB500 (Thymosin Beta-4 fragment) is an actin-sequestering peptide researched for its role in cellular migration, wound healing, and inflammation modulation. They are often studied together due to their complementary mechanisms, though they are distinct molecular entities with different structures and receptor interactions."
+                    q: "What is the Wolverine Stack?",
+                    a: "The Wolverine Stack is a specialized combination product supplying both BPC-157 and TB-500. This combination is one of the most widely referenced pairs in preclinical musculoskeletal, tendon, and ligament repair models. Together, they offer a multi-pathway approach to tissue regeneration research."
                   },
                   {
                     q: "What is GHK-Cu and why is it relevant to longevity research?",
