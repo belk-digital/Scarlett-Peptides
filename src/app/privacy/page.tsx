@@ -5,8 +5,9 @@ import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy | Peptides 7",
-  description: "Privacy Policy explaining how Peptides 7 collects, uses, and protects your personal information.",
+  description: "Learn how Peptides 7 collects, uses, and protects your personal and browsing information. Review our data security practices and user privacy rights.",
   path: "/privacy",
+  noIndex: true,
 });
 
 export default function Privacy() {

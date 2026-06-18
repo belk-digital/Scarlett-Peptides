@@ -4,8 +4,9 @@ import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = buildMetadata({
   title: "Terms and Conditions | Peptides 7",
-  description: "Terms and conditions for using Peptides 7 services and purchasing research products.",
+  description: "Review the Terms and Conditions for using Peptides 7 services, including purchasing guidelines, user responsibilities, and research-use-only policies.",
   path: "/terms",
+  noIndex: true,
 });
 
 export default function Terms() {

@@ -1,26 +1,33 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { buildCheckoutUrl, CLEAR_CART_ON_CHECKOUT } from "@/lib/checkout";
 import ScrollReveal from "@/components/animations/ScrollReveal";
-import TiltCard from "@/components/animations/TiltCard";
 import { Lock, X, ArrowRight, ShoppingBag, ArrowLeft } from "lucide-react";
 
 export default function CartClient() {
   const { items, subtotal, updateQuantity, removeItem, clearCart } = useCart();
 
+  const [isRedirecting, setIsRedirecting] = useState(false);
+
   const handleCheckout = () => {
     if (items.length === 0) return;
+    setIsRedirecting(true);
+    
     const checkoutUrl = buildCheckoutUrl(items);
-     
-    if (CLEAR_CART_ON_CHECKOUT) {
-      clearCart();
-    }
     
     // Full redirect to WooCommerce Parent Site
     window.location.href = checkoutUrl;
+
+    // Clear the cart locally after a short delay. 
+    // This ensures the visual UI doesn't jarringly empty before the redirect completes,
+    // but ensures the cart is empty if the user later returns to the site.
+    setTimeout(() => {
+      clearCart();
+    }, 1500);
   };
 
   if (items.length === 0) {
@@ -138,9 +145,8 @@ export default function CartClient() {
           {/* RIGHT: ORDER SUMMARY */}
           <div className="lg:col-span-5 xl:col-span-4">
             <ScrollReveal direction="up" delay={0.3} className="sticky top-32">
-              <TiltCard className="w-full">
-                <div className="bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2rem] p-8 md:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+              <div className="w-full bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2rem] p-8 md:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
                   
                   <h2 className="font-serif text-2xl md:text-3xl text-white mb-8">Order Summary</h2>
                   
@@ -161,12 +167,21 @@ export default function CartClient() {
 
                   <button 
                     onClick={handleCheckout}
-                    disabled={items.length === 0}
+                    disabled={items.length === 0 || isRedirecting}
                     className="w-full bg-white text-black h-16 rounded-2xl font-bold tracking-widest uppercase text-[11px] sm:text-xs hover:bg-gray-200 transition-all duration-300 shadow-[0_10px_30px_rgba(255,255,255,0.1)] hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:shadow-none flex items-center justify-center gap-3 relative overflow-hidden group"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
-                    <span>Proceed to Checkout</span>
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    {!isRedirecting && (
+                      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+                    )}
+                    
+                    {isRedirecting ? (
+                      <div className="w-5 h-5 border-2 border-black/20 border-t-black rounded-full animate-spin"></div>
+                    ) : (
+                      <>
+                        <span>Proceed to Checkout</span>
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </>
+                    )}
                   </button>
                   
                   <div className="mt-8 text-center flex flex-col items-center gap-4">
@@ -179,7 +194,6 @@ export default function CartClient() {
                     </p>
                   </div>
                 </div>
-              </TiltCard>
             </ScrollReveal>
           </div>
 
