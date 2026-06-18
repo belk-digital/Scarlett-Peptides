@@ -12,10 +12,6 @@ import type { Product } from "@/data/products";
 export default function ProductDetail({ product }: { product: Product }) {
   const { addItem } = useCart();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const parsedVariants = product.variants?.map(v => {
     const parts = v.label.split(' - ');
     if (parts.length > 1) {
@@ -84,10 +80,10 @@ export default function ProductDetail({ product }: { product: Product }) {
   };
 
   return (
-    <div className="bg-[#050505] min-h-screen text-white pt-32 md:pt-40 pb-32 overflow-x-hidden">
+    <div className="bg-[#050505] min-h-screen text-white pt-32 md:pt-40 pb-32 overflow-hidden relative">
 
       {/* Background Ambient Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/[0.015] blur-[150px] rounded-full pointer-events-none z-0"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] aspect-square bg-white/[0.015] blur-[150px] rounded-full pointer-events-none z-0"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 

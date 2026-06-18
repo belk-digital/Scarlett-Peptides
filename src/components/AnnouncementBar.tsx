@@ -40,7 +40,7 @@ export default function AnnouncementBar() {
       </div>
       <button 
         onClick={() => setIsVisible(false)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-1 text-textmuted hover:text-white transition-colors z-10"
+        className="absolute right-6 md:right-8 top-1/2 -translate-y-1/2 p-1 text-textmuted hover:text-white transition-colors z-10"
         aria-label="Dismiss announcement"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">

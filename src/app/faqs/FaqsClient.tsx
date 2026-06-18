@@ -211,36 +211,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       }
     ]
   },
-  {
-    id: "metabolic",
-    title: "Metabolic Research — Retatrutide",
-    faqs: [
-      {
-        q: "What is Retatrutide and what makes it different from other metabolic peptides?",
-        a: "Retatrutide (LY3437943) is a triple-receptor agonist that simultaneously activates GLP-1, GIP, and glucagon receptors. This tri-agonist mechanism distinguishes it from semaglutide (single GLP-1 agonist) and tirzepatide (dual GLP-1/GIP agonist), making it a compound of significant interest in comparative metabolic receptor research."
-      },
-      {
-        q: "Why is the glucagon receptor component of Retatrutide significant?",
-        a: "In research models, glucagon receptor activation is associated with increased energy expenditure and hepatic lipid metabolism — mechanisms that operate differently from GLP-1-mediated appetite suppression. The inclusion of glucagon agonism is a key reason Retatrutide is studied separately from dual agonists as a distinct metabolic research model."
-      },
-      {
-        q: "What concentration and vial sizes does Retatrutide come in?",
-        a: "Retatrutide is available in 10mg, 20mg, 30mg, and 100mg vials. Most sizes are available as a Single vial, 5-Kit, or 10-Kit. The 100mg is currently available as a Single only."
-      },
-      {
-        q: "What does the fatty acid modification in Retatrutide do?",
-        a: "Retatrutide's structure incorporates a fatty acid modification that enables albumin binding, extending its half-life and allowing sustained receptor engagement. This pharmacokinetic feature is a subject of research interest in models comparing short-acting versus long-acting metabolic peptide delivery."
-      },
-      {
-        q: "How should Retatrutide be reconstituted and stored?",
-        a: "Reconstitute with bacteriostatic water using standard aseptic technique. Store the lyophilized vial frozen or refrigerated and protected from light. Avoid repeated freeze-thaw cycles with reconstituted solution. Refer to your protocol's stability requirements for specific handling."
-      },
-      {
-        q: "Is Retatrutide the same compound studied in pharmaceutical clinical trials?",
-        a: "Retatrutide (LY3437943) is the same compound studied in pharmaceutical contexts; however, our product is supplied strictly as a Research Use Only compound for in-vitro and preclinical laboratory research. It is not a pharmaceutical drug and has not been approved by any regulatory body for human use."
-      }
-    ]
-  },
+
   {
     id: "longevity",
     title: "Longevity Peptides — GHK-Cu, MOTS-C, NAD+, Glutathione",

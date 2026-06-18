@@ -111,7 +111,7 @@ export default function AboutClient() {
       {/* 3. PHILOSOPHY / VALUES - Interactive Tilt Cards */}
       <section className="py-24 md:py-32 relative overflow-hidden">
         {/* Subtle background element */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white/5 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] aspect-square bg-white/5 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal direction="up" delay={0.1}>

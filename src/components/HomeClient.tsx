@@ -530,9 +530,9 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 {
                   label: "Metabolic",
                   headline: "Metabolic Research",
-                  desc: "Tri-agonist and GLP-1 class compounds including Retatrutide and Tesamorelin, studied for their roles in energy metabolism, adipose tissue dynamics, and hormonal signaling pathways.",
+                  desc: "GLP-1 class compounds and Tesamorelin, studied for their roles in energy metabolism, adipose tissue dynamics, and hormonal signaling pathways.",
                   link: "/shop",
-                  badge: "Retatrutide · Tesamorelin"
+                  badge: "Tesamorelin"
                 },
                 {
                   label: "Recovery & Repair",
@@ -692,7 +692,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   <strong className="text-white font-medium">Research peptides</strong> are short-chain amino acid sequences synthesized for in-vitro and preclinical study. They serve as invaluable tools for investigating signaling pathways, metabolic cascades, and cellular repair mechanisms that underpin modern longevity and metabolic science.
                 </p>
                 <p className="text-white/60">
-                  At Peptides 7, every compound — from the tri-agonist <span className="text-white font-medium">Retatrutide</span> and mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
+                  At Peptides 7, every compound — from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and body-protective <span className="text-white font-medium">BPC-157</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
                 </p>
                 <p className="text-white/60">
                   Impurities matter. TFA residues, heavy metals, and synthesis byproducts can skew results and compromise data integrity. Our ≥99% purity standard eliminates these variables, giving researchers a clean, reliable baseline for reproducible science.
@@ -847,10 +847,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                     q: "What does 'Research Use Only' (RUO) mean?",
                     a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes — not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Peptides 7 catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
                   },
-                  {
-                    q: "What is Retatrutide and what is it studied for?",
-                    a: "Retatrutide is a novel tri-agonist peptide that simultaneously targets GLP-1, GIP, and glucagon receptors. In research settings, it is being studied for its potential effects on metabolic regulation, adipose tissue dynamics, and energy homeostasis. It has been a compound of significant interest in the metabolic and obesity research space. Our Retatrutide is available in 10mg, 20mg, 30mg, and 100mg formats, all third-party verified to ≥99% purity."
-                  },
+
                   {
                     q: "What is the difference between BPC-157 and TB500?",
                     a: "BPC-157 (Body Protection Compound-157) is a synthetic pentadecapeptide derived from a protective protein found in gastric juice, primarily studied for its role in tissue healing, gastric protection, and angiogenesis. TB500 (Thymosin Beta-4 fragment) is an actin-sequestering peptide researched for its role in cellular migration, wound healing, and inflammation modulation. They are often studied together due to their complementary mechanisms, though they are distinct molecular entities with different structures and receptor interactions."
@@ -976,7 +973,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
       {/* 6.5 JOURNAL / BLOG */}
       <section className="py-32 relative overflow-hidden bg-[#050505]">
         {/* Subtle Ambient Glow */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/[0.02] blur-[150px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
+        <div className="absolute top-0 right-0 w-full max-w-[800px] aspect-square bg-white/[0.02] blur-[150px] rounded-full pointer-events-none -translate-y-1/2 translate-x-1/3"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal>

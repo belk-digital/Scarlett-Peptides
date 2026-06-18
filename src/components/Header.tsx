@@ -59,7 +59,7 @@ export default function Header() {
         }}
         animate={hidden ? "hidden" : "visible"}
         transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="pt-4 pb-4 px-4 md:px-8 lg:px-12 flex items-center justify-between pointer-events-none w-full relative z-50"
+        className="pt-4 pb-4 pl-4 pr-6 md:px-8 lg:px-12 flex items-center justify-between pointer-events-none w-full relative z-50"
       >
         {/* Logo (Visible on all breakpoints) */}
         <Link 

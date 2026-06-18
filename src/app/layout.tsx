@@ -45,7 +45,6 @@ export const metadata: Metadata = {
     "BPC-157",
     "TB-500",
     "GHK-Cu",
-    "Retatrutide",
     "NAD+",
     "peptide catalog",
     "research use only peptides",
@@ -112,7 +111,7 @@ export default function RootLayout({
       lang="en"
       className={`${outfit.variable} ${playfair.variable} antialiased`}
     >
-      <body className="min-h-screen flex flex-col font-sans bg-[#050505] text-[#faf6f5]" suppressHydrationWarning>
+      <body className="min-h-screen flex flex-col font-sans bg-[#050505] text-[#faf6f5] overflow-x-hidden" suppressHydrationWarning>
         <JsonLd data={[organizationJsonLd(), localBusinessJsonLd(), websiteSearchJsonLd()]} />
         <CartProvider>
           <SmoothScroll>

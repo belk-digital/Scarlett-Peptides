@@ -33,7 +33,7 @@ export default function CartClient() {
   if (items.length === 0) {
     return (
       <div className="min-h-screen bg-[#050505] flex flex-col items-center justify-center relative overflow-hidden pt-24 pb-32">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.015] blur-[150px] rounded-full pointer-events-none z-0"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] aspect-square bg-white/[0.015] blur-[150px] rounded-full pointer-events-none z-0"></div>
         
         <ScrollReveal direction="up" delay={0.1} className="relative z-10 w-full max-w-2xl px-4">
           <div className="bg-white/[0.02] backdrop-blur-3xl border border-white/10 rounded-[2rem] p-12 md:p-20 text-center flex flex-col items-center shadow-2xl">

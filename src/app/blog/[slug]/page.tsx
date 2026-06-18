@@ -66,7 +66,7 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="flex flex-col w-full min-h-screen bg-bg-base">
 
         {/* 1. HERO HEADER */}
-        <section className="pt-24 pb-16 px-4 text-center relative overflow-hidden">
+        <section className="pt-36 md:pt-40 pb-16 px-4 text-center relative overflow-hidden">
           <div className="relative z-10 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 text-[10px] uppercase tracking-widest text-textmuted mb-6">
               <span className="text-mauve border border-mauve/30 px-3 py-1 rounded-full">{post.category}</span>

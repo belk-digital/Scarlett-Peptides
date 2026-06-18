@@ -227,7 +227,7 @@ export default function BlogClient({ posts }: { posts: BlogPost[] }) {
               />
               <div className="absolute inset-0 bg-gradient-to-b from-[#020202]/90 via-[#020202]/70 to-[#020202]/90" />
               {/* Subtle center glow */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-white/[0.02] rounded-full blur-[100px] pointer-events-none"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[600px] aspect-square bg-white/[0.02] rounded-full blur-[100px] pointer-events-none"></div>
             </div>
 
             <div className="relative z-10 max-w-2xl mx-auto w-full">
@@ -235,7 +235,7 @@ export default function BlogClient({ posts }: { posts: BlogPost[] }) {
                 <div className="flex items-center justify-center gap-4 mb-8">
                   <div className="h-px w-8 bg-gradient-to-r from-transparent to-white/30" />
                   <span className="text-[9px] tracking-[0.3em] uppercase text-white/50 font-sans">
-                    The Inner Circle
+                    Explore Our Catalog
                   </span>
                   <div className="h-px w-8 bg-gradient-to-l from-transparent to-white/30" />
                 </div>
@@ -243,19 +243,25 @@ export default function BlogClient({ posts }: { posts: BlogPost[] }) {
 
               <ScrollReveal direction="up" delay={0.3}>
                 <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white mb-6 tracking-tight">
-                  Elevate Your <br />
+                  Research-Grade <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 font-light">
-                    Knowledge Base
+                    Peptides
                   </span>
                 </h2>
                 <p className="text-white/50 font-light mb-12 text-sm md:text-base leading-relaxed max-w-lg mx-auto">
-                  Join our exclusive journal to receive the latest purity reports, research methodologies, and catalog updates directly from our laboratory.
+                  Discover our premium selection of lyophilized peptides, rigorously tested for absolute purity and verified by independent Certificates of Analysis.
                 </p>
               </ScrollReveal>
 
               <ScrollReveal direction="up" delay={0.5} className="w-full">
-                <div className="max-w-md mx-auto w-full bg-white/[0.03] backdrop-blur-xl p-6 rounded-3xl border border-white/10 shadow-2xl">
-                  <NewsletterForm ctaText="Subscribe to Journal" />
+                <div className="flex justify-center">
+                  <Link
+                    href="/shop"
+                    className="bg-white text-black px-12 py-5 rounded-full font-bold tracking-widest uppercase text-xs hover:scale-105 hover:bg-gray-100 transition-all duration-300 shadow-[0_10px_30px_rgba(255,255,255,0.15)] hover:shadow-[0_15px_40px_rgba(255,255,255,0.25)] flex items-center gap-3"
+                  >
+                    Shop The Collection
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
                 </div>
               </ScrollReveal>
             </div>
