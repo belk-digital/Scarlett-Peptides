@@ -525,39 +525,54 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               </div>
             </ScrollReveal>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            <div className="flex flex-wrap justify-center gap-6 lg:gap-8">
               {[
                 {
-                  label: "Metabolic",
-                  headline: "Metabolic Research",
-                  desc: "GLP-1 class compounds and Tesamorelin, studied for their roles in energy metabolism, adipose tissue dynamics, and hormonal signaling pathways.",
-                  link: "/shop",
-                  badge: "Tesamorelin"
-                },
-                {
-                  label: "Recovery & Repair",
-                  headline: "Recovery & Repair",
-                  desc: "Specialized blends like Wolverine Stack, used extensively in research focused on tissue integrity, healing cascades, and cellular protection mechanisms.",
-                  link: "/shop",
-                  badge: "Wolverine Stack"
-                },
-                {
                   label: "Longevity",
-                  headline: "Longevity & Wellness",
-                  desc: "NAD+, Glutathione, MOTS-C, and GHK-Cu — compounds at the frontier of aging biology, mitochondrial function, antioxidant capacity, and epigenetic research.",
-                  link: "/shop",
-                  badge: "NAD+ · GHK-Cu · MOTS-C"
+                  headline: "Longevity",
+                  desc: "Compounds at the frontier of aging biology, mitochondrial function, antioxidant capacity, and epigenetic research.",
+                  badge: "Longevity Focus"
                 },
                 {
-                  label: "Proprietary",
-                  headline: "Proprietary Blends",
-                  desc: "Exclusive Peptides 7 formulations — GLOW and KLOW — crafted as premium multi-compound research blends not available anywhere else.",
-                  link: "/shop",
-                  badge: "GLOW · KLOW"
+                  label: "Recovery",
+                  headline: "Recovery",
+                  desc: "Specialized compounds used extensively in research focused on tissue integrity, healing cascades, and cellular protection mechanisms.",
+                  badge: "Recovery Focus"
+                },
+                {
+                  label: "Metabolic",
+                  headline: "Metabolic",
+                  desc: "Compounds studied for their roles in energy metabolism, adipose tissue dynamics, and hormonal signaling pathways.",
+                  badge: "Metabolic Focus"
+                },
+                {
+                  label: "Performance",
+                  headline: "Performance",
+                  desc: "Research compounds evaluated for their potential impact on physical endurance, muscular output, and physiological adaptation.",
+                  badge: "Performance Focus"
+                },
+                {
+                  label: "Glow",
+                  headline: "Glow",
+                  desc: "Formulations focusing on dermal repair, collagen signaling, and fibroblast-related research pathways.",
+                  badge: "Glow Focus"
+                },
+                {
+                  label: "Cognitive",
+                  headline: "Cognitive",
+                  desc: "Peptides studied for their influence on neuroplasticity, memory retention, and neuroprotective pathways.",
+                  badge: "Cognitive Focus"
+                },
+                {
+                  label: "Vitality",
+                  headline: "Vitality",
+                  desc: "Specialized formulations aimed at researching overall cellular vitality, energy homeostasis, and systemic vigor.",
+                  badge: "Vitality Focus"
                 }
               ].map((cat, i) => (
-                <ScrollReveal key={i} delay={i * 0.1} direction="up" className="h-full">
-                  <Link href={`/shop?category=${encodeURIComponent(cat.label)}`} className="group block h-full">
+                <div key={i} className="w-full md:w-[calc(50%_-_12px)] lg:w-[calc(25%_-_24px)] flex-none">
+                  <ScrollReveal delay={i * 0.1} direction="up" className="h-full">
+                  <Link href="/shop" className="group block h-full">
                     <TiltCard className="h-full">
                       <div className="h-full rounded-3xl border border-white/10 bg-white/[0.06] backdrop-blur-2xl shadow-lg p-8 flex flex-col transition-all duration-500 hover:bg-white/[0.1] hover:border-white/20 hover:shadow-[0_20px_40px_rgba(255,255,255,0.05)] relative overflow-hidden">
                         
@@ -577,7 +592,8 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                       </div>
                     </TiltCard>
                   </Link>
-                </ScrollReveal>
+                  </ScrollReveal>
+                </div>
               ))}
             </div>
           </div>
