@@ -157,7 +157,7 @@ export default function Header() {
               className="absolute bottom-12 flex flex-col items-center gap-4 text-center"
             >
               <span className="text-[10px] tracking-widest uppercase text-white/30">
-                PEPTIDES 7 COLLECTION
+                PEPTIDES7 COLLECTION
               </span>
               <div className="w-12 h-px bg-white/10"></div>
             </motion.div>

@@ -176,9 +176,14 @@ export default function RootLayout({
                 </div>
                 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
-                  <p style={{ color: '#4b5563' }} className="text-[10px] md:text-xs tracking-widest uppercase">
-                    &copy; {new Date().getFullYear()} Peptides7. All rights reserved.
-                  </p>
+                  <div className="flex flex-col gap-2 md:gap-3 items-center md:items-start">
+                    <p style={{ color: '#4b5563' }} className="text-[10px] md:text-xs tracking-widest uppercase">
+                      &copy; {new Date().getFullYear()} Peptides7. All rights reserved.
+                    </p>
+                    <p style={{ color: '#4b5563' }} className="text-[10px] tracking-widest uppercase">
+                      Design & Developed by <a href="https://belkdigital.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Belk Digital</a>
+                    </p>
+                  </div>
                   <div className="flex gap-6 text-[10px] md:text-xs tracking-widest uppercase">
                     <Link href="/terms" style={{ color: '#4b5563' }} className="hover:text-white transition-colors">Terms</Link>
                     <Link href="/privacy" style={{ color: '#4b5563' }} className="hover:text-white transition-colors">Privacy</Link>

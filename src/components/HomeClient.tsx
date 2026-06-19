@@ -278,7 +278,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
         </div>
       </section>
 
-      {/* 2. WHY PEPTIDES 7 */}
+      {/* 2. WHY PEPTIDES7 */}
       <section ref={textSectionRef} className="py-24 md:py-32 bg-bg-base relative overflow-hidden flex flex-col items-center justify-center min-h-[60vh]">
         {/* Giant ambient quotation mark */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] md:text-[40rem] text-white/[0.02] font-serif leading-none select-none pointer-events-none mt-20">
