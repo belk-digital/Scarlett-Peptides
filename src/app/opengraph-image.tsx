@@ -12,6 +12,11 @@ export const size = {
 export const contentType = 'image/png';
 
 export default async function Image() {
+  // Read the logo from the public directory
+  const logoData = await fetch(
+    new URL('../../public/logo.png', import.meta.url)
+  ).then((res) => res.arrayBuffer());
+
   return new ImageResponse(
     (
       <div
@@ -71,18 +76,16 @@ export default async function Image() {
           }}
         >
           {/* Logo / Brand Name */}
-          <div
+          <img
+            // @ts-expect-error ImageResponse src accepts ArrayBuffer
+            src={logoData}
+            width={700}
             style={{
-              fontSize: 100,
-              fontWeight: 400,
-              color: '#ffffff',
-              letterSpacing: '-0.02em',
-              marginBottom: 20,
-              fontFamily: 'serif',
+              objectFit: 'contain',
+              marginBottom: 40,
+              filter: 'brightness(0) invert(1)', // Forces the logo to be pure white
             }}
-          >
-            Peptides7
-          </div>
+          />
 
           {/* Tagline */}
           <div
@@ -116,7 +119,9 @@ export default async function Image() {
                 letterSpacing: '0.05em',
               }}
             >
-              <span style={{ color: '#ffffff', marginRight: 12 }}>✓</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 12 }}>
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
               ≥99% HPLC Purity
             </div>
             <div
@@ -136,7 +141,9 @@ export default async function Image() {
                 letterSpacing: '0.05em',
               }}
             >
-              <span style={{ color: '#ffffff', marginRight: 12 }}>✓</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: 12 }}>
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
               Independent COAs
             </div>
           </div>
