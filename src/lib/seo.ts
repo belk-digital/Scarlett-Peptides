@@ -41,9 +41,7 @@ export function buildMetadata(overrides: {
   keywords?: string[];
 }): Metadata {
   const url = overrides.path ? `${SITE_URL}${overrides.path}` : SITE_URL;
-  const ogImage = overrides.ogImage || `${SITE_URL}/og-image.jpg`;
-
-  return {
+  const baseMetadata: Metadata = {
     title: overrides.title,
     description: overrides.description,
     keywords: overrides.keywords,
@@ -55,18 +53,24 @@ export function buildMetadata(overrides: {
       siteName: SITE_NAME,
       locale: SITE_LOCALE,
       type: (overrides.ogType || "website") as "website",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: overrides.title }],
+      ...(overrides.ogImage && {
+        images: [{ url: overrides.ogImage, width: 1200, height: 630, alt: overrides.title }],
+      }),
     },
     twitter: {
       card: "summary_large_image",
       title: overrides.title,
       description: overrides.description,
-      images: [ogImage],
+      ...(overrides.ogImage && {
+        images: [overrides.ogImage],
+      }),
     },
     robots: overrides.noIndex
       ? { index: false, follow: false }
       : { index: true, follow: true },
   };
+
+  return baseMetadata;
 }
 
 // --- JSON-LD Structured Data Helpers ---
