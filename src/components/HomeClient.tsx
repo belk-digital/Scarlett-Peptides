@@ -240,15 +240,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
           
           {/* Typography */}
           <div className="w-full max-w-4xl text-left">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            >
-              <span className="inline-flex items-center gap-3 text-[10px] md:text-xs tracking-[0.25em] uppercase text-textsub mb-8 backdrop-blur-md bg-white/5 border border-white/10 px-5 py-2 rounded-full">
-                PEPTIDES 7
-              </span>
-            </motion.div>
+
             
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
@@ -518,9 +510,9 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
             <ScrollReveal>
               <div className="text-center mb-20 flex flex-col items-center">
                 <span className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] uppercase text-white/50 mb-6 backdrop-blur-md bg-white/5 border border-white/10 px-5 py-2 rounded-full">What We Carry</span>
-                <h2 className="text-4xl md:text-5xl font-serif tracking-tight mb-6 text-white">Research by Category</h2>
+                <h2 className="text-4xl md:text-5xl font-serif tracking-tight mb-6 text-white">The Seven Pillars of Peptides7</h2>
                 <p className="text-white/60 font-light max-w-2xl mx-auto text-sm leading-relaxed">
-                  Our catalog spans four core areas of modern peptide research — each compound hand-selected for documented scientific relevance and verified purity.
+                  Rather than offering an endless catalog, we organized our collection into seven foundational categories designed to make peptide selection more approachable.
                 </p>
               </div>
             </ScrollReveal>
@@ -529,43 +521,43 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               {[
                 {
                   label: "Longevity",
-                  headline: "Longevity",
+                  headline: "Longevity Research",
                   desc: "Compounds at the frontier of aging biology, mitochondrial function, antioxidant capacity, and epigenetic research.",
                   badge: "Longevity Focus"
                 },
                 {
                   label: "Recovery",
-                  headline: "Recovery",
+                  headline: "Recovery Research",
                   desc: "Specialized compounds used extensively in research focused on tissue integrity, healing cascades, and cellular protection mechanisms.",
                   badge: "Recovery Focus"
                 },
                 {
                   label: "Metabolic",
-                  headline: "Metabolic",
+                  headline: "Metabolic Research",
                   desc: "Compounds studied for their roles in energy metabolism, adipose tissue dynamics, and hormonal signaling pathways.",
                   badge: "Metabolic Focus"
                 },
                 {
                   label: "Performance",
-                  headline: "Performance",
+                  headline: "Performance Research",
                   desc: "Research compounds evaluated for their potential impact on physical endurance, muscular output, and physiological adaptation.",
                   badge: "Performance Focus"
                 },
                 {
                   label: "Glow",
-                  headline: "Glow",
+                  headline: "Glow Research",
                   desc: "Formulations focusing on dermal repair, collagen signaling, and fibroblast-related research pathways.",
                   badge: "Glow Focus"
                 },
                 {
                   label: "Cognitive",
-                  headline: "Cognitive",
+                  headline: "Cognitive Research",
                   desc: "Peptides studied for their influence on neuroplasticity, memory retention, and neuroprotective pathways.",
                   badge: "Cognitive Focus"
                 },
                 {
                   label: "Vitality",
-                  headline: "Vitality",
+                  headline: "Vitality Research",
                   desc: "Specialized formulations aimed at researching overall cellular vitality, energy homeostasis, and systemic vigor.",
                   badge: "Vitality Focus"
                 }
@@ -708,7 +700,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   <strong className="text-white font-medium">Research peptides</strong> are short-chain amino acid sequences synthesized for in-vitro and preclinical study. They serve as invaluable tools for investigating signaling pathways, metabolic cascades, and cellular repair mechanisms that underpin modern longevity and metabolic science.
                 </p>
                 <p className="text-white/60">
-                  At Peptides 7, every compound — from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and the synergistic <span className="text-white font-medium">Wolverine Stack</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
+                  At Peptides7, every compound — from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and the synergistic <span className="text-white font-medium">Wolverine Stack</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
                 </p>
                 <p className="text-white/60">
                   Impurities matter. TFA residues, heavy metals, and synthesis byproducts can skew results and compromise data integrity. Our ≥99% purity standard eliminates these variables, giving researchers a clean, reliable baseline for reproducible science.
@@ -861,7 +853,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "What does 'Research Use Only' (RUO) mean?",
-                    a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes — not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Peptides 7 catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
+                    a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes — not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Peptides7 catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
                   },
 
                   {
@@ -878,15 +870,15 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "How does the ordering process work?",
-                    a: <>The Peptides 7 storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation.</>
+                    a: <>The Peptides7 storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation.</>
                   },
                   {
                     q: "How are the compounds shipped and stored?",
                     a: "All peptides are lyophilized (freeze-dried) prior to shipment, a process that stabilizes the molecular structure and extends shelf life without refrigeration during transit. Upon arrival, researchers should store lyophilized peptides at -20°C for long-term stability. Reconstitution should be performed using sterile bacteriostatic water; once reconstituted, vials should be stored at 2–8°C and used within the timeframes specified in the associated COA documentation."
                   },
                   {
-                    q: "What makes Peptides 7 different from other research peptide suppliers?",
-                    a: "Most peptide suppliers are anonymous fulfillment operations. Peptides 7 is a founder-curated catalog, built by Peptides 7 — founder of Peptides 7 Medspa in Charleston, SC — who applied the same standards she demands in a clinical medspa environment to this research catalog. Every compound was personally vetted. Every supplier relationship was personally established. The result is a boutique selection of only the most scientifically relevant, rigorously tested compounds — paired with full COA transparency and a checkout experience designed for serious researchers, not casual browsers."
+                    q: "What makes Peptides7 different from other research peptide suppliers?",
+                    a: "Most peptide suppliers are anonymous fulfillment operations. Peptides7 is a founder-curated catalog, built by Peptides7 — founder of Peptides7 Medspa in Charleston, SC — who applied the same standards she demands in a clinical medspa environment to this research catalog. Every compound was personally vetted. Every supplier relationship was personally established. The result is a boutique selection of only the most scientifically relevant, rigorously tested compounds — paired with full COA transparency and a checkout experience designed for serious researchers, not casual browsers."
                   }
                 ].map((faq, i) => (
                   <ScrollReveal key={i} delay={i * 0.05} direction="up">
@@ -965,7 +957,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               "
             </div>
             
-            <blockquote className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-white leading-[1.3] md:leading-[1.4] font-serif font-light mb-16 text-balance tracking-wide relative z-10 flex flex-wrap justify-center gap-x-3 gap-y-2">
+            <blockquote className="text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] text-white leading-[1.3] md:leading-[1.4] font-serif font-light mb-8 md:mb-16 text-balance tracking-wide relative z-10 flex flex-wrap justify-center gap-x-1.5 sm:gap-x-2 md:gap-x-3 gap-y-1 sm:gap-y-2 px-4 md:px-0">
               {founderQuoteWords.map((word, i) => {
                 const start = i / founderQuoteWords.length;
                 const end = start + (1 / founderQuoteWords.length);
@@ -978,7 +970,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               className="flex flex-col items-center gap-3 relative z-10"
             >
               <div style={{ backgroundColor: '#ffffff' }} className="w-16 h-px mb-4"></div>
-              <span style={{ color: '#ffffff' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Peptides 7</span>
+              <span style={{ color: '#ffffff' }} className="text-sm md:text-base tracking-[0.3em] uppercase font-medium">Peptides7</span>
               <span className="text-xs md:text-sm tracking-[0.2em] text-white/50 uppercase">Our Commitment</span>
             </motion.div>
 

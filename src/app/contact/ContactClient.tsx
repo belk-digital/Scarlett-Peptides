@@ -38,7 +38,7 @@ const CONTACT_CONTENT = {
   },
   location: {
     headline: "Boutique Location",
-    text: "Peptides 7 Medspa\n148 Line St. Suite D\nCharleston, SC 29403",
+    text: "Peptides7 Medspa\n148 Line St. Suite D\nCharleston, SC 29403",
     mapUrl: "https://goo.gl/maps/xaFMjHw2aHf7ReRv7",
     hours: "Monday - Friday: 9am-7pm"
   },

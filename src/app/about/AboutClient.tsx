@@ -44,7 +44,7 @@ export default function AboutClient() {
 
           <ScrollReveal direction="up" delay={0.5}>
             <p className="text-lg md:text-xl text-white/60 font-light leading-relaxed max-w-2xl mx-auto font-sans">
-              Peptides 7 brings uncompromising quality standards directly into the laboratory research supply chain. Every compound. Every batch. Every COA — verified.
+              Peptides7 brings uncompromising quality standards directly into the laboratory research supply chain. Every compound. Every batch. Every COA — verified.
             </p>
           </ScrollReveal>
         </div>
@@ -60,7 +60,7 @@ export default function AboutClient() {
                 <div className="aspect-[3/4] relative rounded-3xl overflow-hidden border border-white/10 bg-white/[0.03] backdrop-blur-xl group">
                   <Image
                     src="/images/img-2.webp"
-                    alt="Peptides 7"
+                    alt="Peptides7"
                     fill
                     className="object-cover z-10 opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-1000 md:group-hover:scale-105"
                   />
@@ -90,7 +90,7 @@ export default function AboutClient() {
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.5}>
                 <p className="text-white/70">
-                  Peptides 7 represents a philosophy of clarity over complexity, curation over clutter, and quality over quantity.
+                  Peptides7 represents a philosophy of clarity over complexity, curation over clutter, and quality over quantity.
                 </p>
               </ScrollReveal>
             </div>
@@ -186,7 +186,7 @@ export default function AboutClient() {
               <div className="space-y-6 text-white/50 font-light leading-relaxed text-sm md:text-base font-sans">
                 <ScrollReveal direction="up" delay={0.2}>
                   <p className="text-white/70">
-                    In the research peptide industry, &ldquo;high purity&rdquo; is a phrase deployed liberally and defined rarely. At Peptides 7, purity is not a marketing claim — it is a measurable, documented, and independently verified standard.
+                    In the research peptide industry, &ldquo;high purity&rdquo; is a phrase deployed liberally and defined rarely. At Peptides7, purity is not a marketing claim — it is a measurable, documented, and independently verified standard.
                   </p>
                 </ScrollReveal>
                 <ScrollReveal direction="up" delay={0.3}>
@@ -260,7 +260,7 @@ export default function AboutClient() {
               <span className="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-4 block font-sans">Fulfillment</span>
               <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">Our Partnership with <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300 transition-colors">99 Purity Peptides</a></h2>
               <p className="text-white/50 font-light text-sm md:text-base leading-relaxed font-sans">
-                Maintaining catalog standards at scale requires the right laboratory infrastructure. That is why Peptides 7 partners exclusively with <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>, a premier US-based supplier recognized for their rigorous quality control.
+                Maintaining catalog standards at scale requires the right laboratory infrastructure. That is why Peptides7 partners exclusively with <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>, a premier US-based supplier recognized for their rigorous quality control.
               </p>
             </ScrollReveal>
           </div>
@@ -270,7 +270,7 @@ export default function AboutClient() {
               {
                 step: "01",
                 label: "Curate & Cart",
-                desc: "Select compounds and build your research cart on the Peptides 7 storefront.",
+                desc: "Select compounds and build your research cart on the Peptides7 storefront.",
                 icon: <Award className="w-5 h-5 text-white" />
               },
               {
@@ -318,7 +318,7 @@ export default function AboutClient() {
               
               <div className="space-y-4 text-white/50 text-sm font-light leading-relaxed font-sans max-w-2xl mx-auto">
                 <p className="text-white/70">
-                  All compounds in the Peptides 7 catalog are classified as <strong className="text-white/80 font-normal">Research Use Only (RUO)</strong>. This is a regulatory designation indicating that these materials are intended exclusively for in-vitro laboratory testing, scientific research, and non-clinical development purposes.
+                  All compounds in the Peptides7 catalog are classified as <strong className="text-white/80 font-normal">Research Use Only (RUO)</strong>. This is a regulatory designation indicating that these materials are intended exclusively for in-vitro laboratory testing, scientific research, and non-clinical development purposes.
                 </p>
                 <p className="text-white/70">
                   They are not intended for, and must not be used for, human consumption, injection, topical self-application, or any form of self-experimentation.

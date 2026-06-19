@@ -134,7 +134,7 @@ export default function RootLayout({
                     <Link href="/" className="inline-block mb-6 hover:opacity-80 transition-opacity duration-300">
                       <Image 
                         src="/logo.png" 
-                        alt="Peptides 7" 
+                        alt="Peptides7" 
                         width={300} 
                         height={65} 
                         className="h-14 md:h-20 w-auto object-contain mix-blend-difference" 
@@ -177,7 +177,7 @@ export default function RootLayout({
                 
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
                   <p style={{ color: '#4b5563' }} className="text-[10px] md:text-xs tracking-widest uppercase">
-                    &copy; {new Date().getFullYear()} Peptides 7. All rights reserved.
+                    &copy; {new Date().getFullYear()} Peptides7. All rights reserved.
                   </p>
                   <div className="flex gap-6 text-[10px] md:text-xs tracking-widest uppercase">
                     <Link href="/terms" style={{ color: '#4b5563' }} className="hover:text-white transition-colors">Terms</Link>

@@ -3,8 +3,8 @@ import { buildMetadata, breadcrumbJsonLd, SITE_URL } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Terms and Conditions | Peptides 7",
-  description: "Review the Terms and Conditions for using Peptides 7 services, including purchasing guidelines, user responsibilities, and research-use-only policies.",
+  title: "Terms and Conditions | Peptides7",
+  description: "Review the Terms and Conditions for using Peptides7 services, including purchasing guidelines, user responsibilities, and research-use-only policies.",
   path: "/terms",
   noIndex: true,
 });
@@ -27,13 +27,13 @@ export default function Terms() {
 
           <div className="prose prose-invert prose-p:text-white/70 prose-li:text-white/70 prose-headings:font-serif prose-headings:text-white prose-headings:font-normal max-w-none space-y-8 text-sm md:text-base leading-relaxed">
             <p>
-              Welcome to Peptides 7. By accessing or using our website, purchasing products or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree, please do not use our website or services.
+              Welcome to Peptides7. By accessing or using our website, purchasing products or interacting with our services, you agree to be bound by the following Terms and Conditions. If you do not agree, please do not use our website or services.
             </p>
 
             <section>
               <h2 className="text-2xl mb-4">1. Purpose</h2>
               <p>
-                Peptides 7 provides research-grade peptides, small molecules and related compounds. All products are intended for laboratory and research purposes only. They are not for human or veterinary use, diagnosis or treatment. These Terms govern your access, use, and purchase of our products and services.
+                Peptides7 provides research-grade peptides, small molecules and related compounds. All products are intended for laboratory and research purposes only. They are not for human or veterinary use, diagnosis or treatment. These Terms govern your access, use, and purchase of our products and services.
               </p>
             </section>
 
@@ -72,7 +72,7 @@ export default function Terms() {
               <ul className="list-disc pl-5 space-y-2">
                 <li>We ship to approved regions only. Certain products may have restrictions due to local laws.</li>
                 <li>Shipping timelines are estimates and may vary due to logistics or customs processing.</li>
-                <li>Peptides 7 is not responsible for delays or damages during transit.</li>
+                <li>Peptides7 is not responsible for delays or damages during transit.</li>
               </ul>
             </section>
 
@@ -81,14 +81,14 @@ export default function Terms() {
               <ul className="list-disc pl-5 space-y-2">
                 <li>Products are not approved for human or veterinary use.</li>
                 <li>Users assume all risks associated with storage, handling and research applications.</li>
-                <li>Peptides 7 is not liable for misuse, accidental ingestion or unapproved applications.</li>
+                <li>Peptides7 is not liable for misuse, accidental ingestion or unapproved applications.</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-2xl mb-4">7. Intellectual Property</h2>
               <ul className="list-disc pl-5 space-y-2">
-                <li>All website content, images, product descriptions, branding and designs are the property of Peptides 7.</li>
+                <li>All website content, images, product descriptions, branding and designs are the property of Peptides7.</li>
                 <li>Unauthorized reproduction, distribution or commercial use is strictly prohibited.</li>
               </ul>
             </section>
@@ -108,14 +108,14 @@ export default function Terms() {
               <h2 className="text-2xl mb-4">9. Limitation of Liability</h2>
               <p>To the maximum extent permitted by law:</p>
               <ul className="list-disc pl-5 mt-4 space-y-2">
-                <li>Peptides 7 is not liable for damages resulting from misuse, unauthorized applications or website errors.</li>
+                <li>Peptides7 is not liable for damages resulting from misuse, unauthorized applications or website errors.</li>
                 <li>Liability for product issues is limited to the purchase price of the product.</li>
               </ul>
             </section>
 
             <section>
               <h2 className="text-2xl mb-4">10. Indemnification</h2>
-              <p>You agree to indemnify and hold harmless Peptides 7, its employees and affiliates from any claims, damages or expenses arising from:</p>
+              <p>You agree to indemnify and hold harmless Peptides7, its employees and affiliates from any claims, damages or expenses arising from:</p>
               <ul className="list-disc pl-5 mt-4 space-y-2">
                 <li>Improper use of products.</li>
                 <li>Violation of Terms and Conditions.</li>
@@ -126,21 +126,21 @@ export default function Terms() {
             <section>
               <h2 className="text-2xl mb-4">11. Governing Law</h2>
               <p>
-                These Terms are governed by the laws of the jurisdiction in which Peptides 7 operates. Any disputes will be resolved under these laws.
+                These Terms are governed by the laws of the jurisdiction in which Peptides7 operates. Any disputes will be resolved under these laws.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl mb-4">12. Privacy & Data Use</h2>
               <p>
-                Your use of Peptides 7 is also subject to our Privacy Policy, which outlines how we collect, use and protect your personal data.
+                Your use of Peptides7 is also subject to our Privacy Policy, which outlines how we collect, use and protect your personal data.
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl mb-4">13. Changes to Terms</h2>
               <p>
-                Peptides 7 reserves the right to update or modify these Terms at any time. Changes will be effective upon posting on the website. Your continued use of our website or products constitutes acceptance of the updated Terms.
+                Peptides7 reserves the right to update or modify these Terms at any time. Changes will be effective upon posting on the website. Your continued use of our website or products constitutes acceptance of the updated Terms.
               </p>
             </section>
 

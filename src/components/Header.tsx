@@ -74,7 +74,7 @@ export default function Header() {
         >
           <Image 
             src="/logo.png" 
-            alt="Peptides 7" 
+            alt="Peptides7" 
             width={240} 
             height={60} 
             className="h-12 md:h-16 w-auto object-contain mix-blend-difference hover:opacity-80 transition-opacity" 

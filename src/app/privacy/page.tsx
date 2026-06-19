@@ -4,8 +4,8 @@ import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Privacy Policy | Peptides 7",
-  description: "Learn how Peptides 7 collects, uses, and protects your personal and browsing information. Review our data security practices and user privacy rights.",
+  title: "Privacy Policy | Peptides7",
+  description: "Learn how Peptides7 collects, uses, and protects your personal and browsing information. Review our data security practices and user privacy rights.",
   path: "/privacy",
   noIndex: true,
 });
@@ -28,7 +28,7 @@ export default function Privacy() {
 
           <div className="prose prose-invert prose-p:text-white/70 prose-li:text-white/70 prose-headings:font-serif prose-headings:text-white prose-headings:font-normal max-w-none space-y-8 text-sm md:text-base leading-relaxed">
             <p>
-              At Peptides 7, your privacy is important to us. This Privacy Policy explains how we collect, use and protect your personal information when you interact with our website and services. By using our website, you consent to the practices described below.
+              At Peptides7, your privacy is important to us. This Privacy Policy explains how we collect, use and protect your personal information when you interact with our website and services. By using our website, you consent to the practices described below.
             </p>
 
             <section>
@@ -37,7 +37,7 @@ export default function Privacy() {
               <ul className="list-disc pl-5 mt-4 space-y-2">
                 <li><strong className="text-white/90">Personal Information:</strong> Name, email address, phone number, billing/shipping address.</li>
                 <li><strong className="text-white/90">Account Information:</strong> Login credentials, order history and account preferences (handled securely via our fulfillment network).</li>
-                <li><strong className="text-white/90">Financial Information:</strong> Payment details. Payment is processed entirely and securely within our fulfillment partner 99 Purity Peptides' secure checkout infrastructure. Peptides 7 does not directly handle, process, or store your payment data.</li>
+                <li><strong className="text-white/90">Financial Information:</strong> Payment details. Payment is processed entirely and securely within our fulfillment partner 99 Purity Peptides' secure checkout infrastructure. Peptides7 does not directly handle, process, or store your payment data.</li>
                 <li><strong className="text-white/90">Website Usage & Technical Data:</strong> IP address, browser type, pages visited, device information and website interactions.</li>
                 <li><strong className="text-white/90">Cookies & Tracking:</strong> Cookies and similar technologies to enhance your browsing experience, analyze website performance and provide targeted content.</li>
               </ul>
@@ -90,7 +90,7 @@ export default function Privacy() {
 
             <section>
               <h2 className="text-2xl mb-4">Research-Use Products Disclaimer</h2>
-              <p>All products curated by Peptides 7 are strictly for research use only:</p>
+              <p>All products curated by Peptides7 are strictly for research use only:</p>
               <ul className="list-disc pl-5 mt-4 space-y-2">
                 <li>Not for human or veterinary use.</li>
                 <li>Not intended for diagnosis, treatment or therapeutic purposes.</li>

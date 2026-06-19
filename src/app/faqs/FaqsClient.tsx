@@ -25,7 +25,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: <>Why am I redirected to <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> at checkout?</>,
-        a: <><a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> is our exclusive manufacturing and fulfillment partner. Peptides 7 curates the catalog, sets the purity standards, and selects every compound — 99 Purity Peptides handles synthesis, testing, payment processing, and dispatch. This structure lets us focus on curation while you benefit from their lab-grade logistics infrastructure.</>
+        a: <><a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> is our exclusive manufacturing and fulfillment partner. Peptides7 curates the catalog, sets the purity standards, and selects every compound — 99 Purity Peptides handles synthesis, testing, payment processing, and dispatch. This structure lets us focus on curation while you benefit from their lab-grade logistics infrastructure.</>
       },
       {
         q: "Will my cart items transfer when I click Checkout?",
@@ -55,7 +55,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     faqs: [
       {
         q: "Is my payment information secure?",
-        a: <>Payment is processed entirely within <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>' secure checkout infrastructure. Peptides 7 does not handle, process, or store any payment data. Their checkout uses industry-standard SSL encryption.</>
+        a: <>Payment is processed entirely within <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>' secure checkout infrastructure. Peptides7 does not handle, process, or store any payment data. Their checkout uses industry-standard SSL encryption.</>
       },
       {
         q: "What payment methods are accepted?",
@@ -63,7 +63,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Are prices shown on this site final?",
-        a: <>Prices shown in the Peptides 7 catalog are accurate to our current data and reflect the pricing at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. Final totals — including any applicable shipping charges, taxes, or discounts — are confirmed at checkout on the partner site.</>
+        a: <>Prices shown in the Peptides7 catalog are accurate to our current data and reflect the pricing at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. Final totals — including any applicable shipping charges, taxes, or discounts — are confirmed at checkout on the partner site.</>
       },
       {
         q: "Can I use a discount code or promo?",
@@ -110,12 +110,12 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     title: "Quality & Purity Standards",
     faqs: [
       {
-        q: "What purity standard do Peptides 7 products meet?",
-        a: "Every compound in the Peptides 7 catalog is independently verified to a minimum of ≥99% purity by HPLC (High-Performance Liquid Chromatography), with molecular identity confirmed by LC-MS (Liquid Chromatography–Mass Spectrometry). These standards apply to every batch, without exception."
+        q: "What purity standard do Peptides7 products meet?",
+        a: "Every compound in the Peptides7 catalog is independently verified to a minimum of ≥99% purity by HPLC (High-Performance Liquid Chromatography), with molecular identity confirmed by LC-MS (Liquid Chromatography–Mass Spectrometry). These standards apply to every batch, without exception."
       },
       {
         q: "What is a Certificate of Analysis (COA)?",
-        a: <>A COA is a formal laboratory document issued by an independent testing facility that details the exact purity percentage of a compound, the testing method used, the impurity profile, and confirmation of molecular identity. Every Peptides 7 product ships with a batch-specific COA, identifiable by the batch number printed on your vial. All COAs are published at <a href="https://99puritypeptides.com/certificates" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99puritypeptides.com/certificates</a>.</>
+        a: <>A COA is a formal laboratory document issued by an independent testing facility that details the exact purity percentage of a compound, the testing method used, the impurity profile, and confirmation of molecular identity. Every Peptides7 product ships with a batch-specific COA, identifiable by the batch number printed on your vial. All COAs are published at <a href="https://99puritypeptides.com/certificates" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99puritypeptides.com/certificates</a>.</>
       },
       {
         q: "What is HPLC and what does it measure?",
@@ -127,7 +127,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "What is TFA, and why does it matter in peptide research?",
-        a: "TFA (trifluoroacetic acid) is a solvent commonly used in the reversed-phase HPLC purification of peptides. Residual TFA in a finished peptide product can disrupt cellular assays, affect viability measurements, and confound research data — particularly in in-vitro work. Peptides 7 requires that TFA residue levels be reduced via ion-exchange protocols and verified in each COA."
+        a: "TFA (trifluoroacetic acid) is a solvent commonly used in the reversed-phase HPLC purification of peptides. Residual TFA in a finished peptide product can disrupt cellular assays, affect viability measurements, and confound research data — particularly in in-vitro work. Peptides7 requires that TFA residue levels be reduced via ion-exchange protocols and verified in each COA."
       },
       {
         q: "Are heavy metals tested?",
@@ -135,7 +135,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Who conducts the third-party testing?",
-        a: "Testing is performed by an independent, US-based third-party laboratory with no commercial affiliation to the manufacturer or to Peptides 7. This independence is a core requirement of our purity standard — we do not accept self-reported or manufacturer-conducted test results."
+        a: "Testing is performed by an independent, US-based third-party laboratory with no commercial affiliation to the manufacturer or to Peptides7. This independence is a core requirement of our purity standard — we do not accept self-reported or manufacturer-conducted test results."
       },
       {
         q: "How do I access the COA for my specific batch?",
@@ -169,11 +169,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Can I resell these products?",
-        a: "Redistribution of Peptides 7 products for non-research purposes is strictly prohibited. These compounds are sold under Research Use Only classification and may only change hands in compliance with applicable research compound regulations."
+        a: "Redistribution of Peptides7 products for non-research purposes is strictly prohibited. These compounds are sold under Research Use Only classification and may only change hands in compliance with applicable research compound regulations."
       },
       {
         q: "What happens if my country has restrictions on importing research peptides?",
-        a: "Import regulations for research compounds vary significantly by country. Buyers are solely responsible for understanding and complying with the applicable laws in their jurisdiction. Peptides 7 and 99 Purity Peptides are not responsible for any customs delays, seizures, or regulatory complications resulting from international orders."
+        a: "Import regulations for research compounds vary significantly by country. Buyers are solely responsible for understanding and complying with the applicable laws in their jurisdiction. Peptides7 and 99 Purity Peptides are not responsible for any customs delays, seizures, or regulatory complications resulting from international orders."
       }
     ]
   },
@@ -238,7 +238,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Are these the same compounds used in IV wellness clinics?",
-        a: "The base molecular compound is the same; however, Peptides 7 products are Research Use Only laboratory materials synthesized and tested under research-grade standards — not clinical-grade, pharmaceutical-grade, or human-administrable formulations. They are not intended for infusion, injection, or any form of personal administration."
+        a: "The base molecular compound is the same; however, Peptides7 products are Research Use Only laboratory materials synthesized and tested under research-grade standards — not clinical-grade, pharmaceutical-grade, or human-administrable formulations. They are not intended for infusion, injection, or any form of personal administration."
       },
       {
         q: "What research area is Glutathione's connection to GPx4 and ferroptosis?",
@@ -270,7 +270,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     faqs: [
       {
         q: "What are GLOW and KLOW?",
-        a: <>GLOW and KLOW are proprietary multi-peptide research blends exclusive to the Peptides 7 catalog, manufactured by <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. Each is a curated combination of well-characterized peptide fragments formulated to allow researchers to study synergistic multi-peptide interactions in a single vial, rather than sourcing and combining individual compounds separately.</>
+        a: <>GLOW and KLOW are proprietary multi-peptide research blends exclusive to the Peptides7 catalog, manufactured by <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. Each is a curated combination of well-characterized peptide fragments formulated to allow researchers to study synergistic multi-peptide interactions in a single vial, rather than sourcing and combining individual compounds separately.</>
       },
       {
         q: "What peptides are in GLOW and KLOW?",
@@ -286,7 +286,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Who decides what goes into the proprietary blends?",
-        a: <>The formulations are curated by Peptides 7 in direct partnership with the research and formulation team at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. The selection is driven by research relevance — each blend was created because it solves a specific combinatorial research design challenge, not for marketing reasons.</>
+        a: <>The formulations are curated by Peptides7 in direct partnership with the research and formulation team at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. The selection is driven by research relevance — each blend was created because it solves a specific combinatorial research design challenge, not for marketing reasons.</>
       },
       {
         q: "Are GLOW and KLOW suitable for single-variable dose-response studies?",

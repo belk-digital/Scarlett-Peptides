@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const SITE_URL = "https://peptides7.com";
-export const SITE_NAME = "Peptides 7";
+export const SITE_NAME = "Peptides7";
 export const SITE_DESCRIPTION =
   "A curated catalog of ≥99% purity research peptides, independently verified by third-party US labs. Fulfilled exclusively through 99 Purity Peptides.";
 export const SITE_LOCALE = "en_US";
 
 export const BUSINESS_INFO = {
-  name: "Peptides 7 Medspa",
+  name: "Peptides7 Medspa",
   legalName: "Scarlett Hawkins MedSpa",
   email: "hello@scarletthawkinsmedspa.com",
   phone: "+1-843-998-1172",
@@ -263,7 +263,7 @@ export function collectionPageJsonLd(products: {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Research Peptide Catalog — Peptides 7",
+    name: "Research Peptide Catalog — Peptides7",
     description: SITE_DESCRIPTION,
     url: `${SITE_URL}/shop`,
     mainEntity: {

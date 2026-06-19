@@ -4,12 +4,12 @@ import JsonLd from "@/components/JsonLd";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Peptides 7 — Concierge Support for Research Peptides",
+  title: "Contact Peptides7 — Concierge Support for Research Peptides",
   description:
-    "Get in touch with the Peptides 7 concierge team in Charleston, SC. Questions about peptide purity, compound selection, orders, or wholesale partnerships. Email, phone, and contact form available.",
+    "Get in touch with the Peptides7 concierge team in Charleston, SC. Questions about peptide purity, compound selection, orders, or wholesale partnerships. Email, phone, and contact form available.",
   path: "/contact",
   keywords: [
-    "contact Peptides 7",
+    "contact Peptides7",
     "peptide support",
     "research peptide help",
     "Charleston SC peptides",

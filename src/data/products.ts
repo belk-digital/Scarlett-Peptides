@@ -36,7 +36,7 @@ export type Product = {
 const QUALITY_TAB: Tab = {
   title: "Quality & Purity Standard",
   paragraphs: [
-    "Every compound in the Peptides 7 catalog — including this product — is tested by an independent, US-based third-party laboratory prior to release. Testing is never conducted by the manufacturer or any commercially affiliated entity.",
+    "Every compound in the Peptides7 catalog — including this product — is tested by an independent, US-based third-party laboratory prior to release. Testing is never conducted by the manufacturer or any commercially affiliated entity.",
     "Purity is verified by High-Performance Liquid Chromatography (HPLC) to a confirmed minimum of ≥99%. The HPLC chromatogram quantifies the target compound as a percentage of total peak area, confirming that synthesis byproducts, degradation products, and residual impurities fall below the 1% threshold.",
     "Molecular identity is confirmed by Liquid Chromatography–Mass Spectrometry (LC-MS), which verifies the exact molecular mass of the compound and rules out structural isomers, sequence deletions, or substitution errors that HPLC alone cannot detect.",
     "TFA (trifluoroacetic acid) — a common solvent used in reversed-phase HPLC purification of peptides — is reduced to minimal levels via exchange protocols and verified in each Certificate of Analysis. Residual TFA can disrupt cellular assays and confound biological data; its control is a non-negotiable element of our standard.",
@@ -50,7 +50,7 @@ const COMPLIANCE_TAB: Tab = {
     "This product is classified as Research Use Only (RUO). It is synthesized exclusively for in-vitro laboratory testing, preclinical research, and scientific development purposes. It is not a dietary supplement, pharmaceutical drug, cosmetic, food ingredient, or veterinary medicine.",
     "This product has not been evaluated by the U.S. Food and Drug Administration or any equivalent international regulatory body for safety or efficacy in human or animal subjects. It is not intended for, and must not be used for, human consumption, self-injection, topical self-application, veterinary administration, or any form of self-experimentation.",
     "By purchasing this product, the buyer represents that they are a qualified researcher or laboratory professional operating in full compliance with all applicable local, state, and federal laws and regulations governing the purchase, possession, handling, and use of research-grade chemical compounds.",
-    "Peptides 7 and its fulfillment partner <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> provide this product in good faith for legitimate scientific and research purposes. Any misuse of this compound is neither condoned nor supported. Redistribution of this product for non-research purposes is strictly prohibited.",
+    "Peptides7 and its fulfillment partner <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> provide this product in good faith for legitimate scientific and research purposes. Any misuse of this compound is neither condoned nor supported. Redistribution of this product for non-research purposes is strictly prohibited.",
   ],
 };
 
@@ -61,12 +61,12 @@ export const products: Product[] = [
     shortDescription:
       "A proprietary multi-peptide blend formulated for skin-quality, anti-aging, and cellular repair research. ≥99% HPLC purity, independently verified.",
     longDescription:
-      "GLOW is a proprietary research blend combining several well-characterized peptide fragments selected for their reported roles in dermal repair, collagen signaling, and tissue regeneration pathways. Formulated as part of the Peptides 7 curated catalog, GLOW is intended to give researchers a single, convenient vial to study synergistic effects between complementary peptide mechanisms rather than sourcing and combining individual compounds themselves. Each batch is synthesized via solid-phase peptide synthesis, purified by reversed-phase HPLC, and independently verified at ≥99% purity with a published Certificate of Analysis. GLOW reflects Peptides 7' philosophy of curation over volume: it exists because it solves a specific research formulation problem, not because it is trending.",
+      "GLOW is a proprietary research blend combining several well-characterized peptide fragments selected for their reported roles in dermal repair, collagen signaling, and tissue regeneration pathways. Formulated as part of the Peptides7 curated catalog, GLOW is intended to give researchers a single, convenient vial to study synergistic effects between complementary peptide mechanisms rather than sourcing and combining individual compounds themselves. Each batch is synthesized via solid-phase peptide synthesis, purified by reversed-phase HPLC, and independently verified at ≥99% purity with a published Certificate of Analysis. GLOW reflects Peptides7' philosophy of curation over volume: it exists because it solves a specific research formulation problem, not because it is trending.",
     image: "/images/products/glow.jpg",
-    category: "Proprietary",
+    category: "Glow Research",
     isVariable: true,
     variants: [
-      { label: "Single", price: 100.0, regularPrice: 110.0, variationId: 3808 },
+      { label: "Single", price: 110.0, regularPrice: 125.0, variationId: 3808 },
       { label: "5 Kit (Save 10%)", price: 450.0, regularPrice: 550.0, variationId: 3809 },
       { label: "10 Kit (Best Value)", price: 900.0, regularPrice: 1100.0, variationId: 3810 },
     ],
@@ -75,7 +75,7 @@ export const products: Product[] = [
         title: "Product Details",
         paragraphs: [
           "GLOW is supplied as a lyophilized (freeze-dried) powder in a sealed glass vial, packaged for stability during shipping and long-term cold storage. Each vial is labeled with a unique batch number that corresponds to its individual Certificate of Analysis.",
-          "As a proprietary blend, GLOW's exact peptide ratios are formulated by Peptides 7 in partnership with <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and are not published in granular detail; however, every component is independently tested for identity and purity prior to blending, and the finished blend is tested again post-formulation.",
+          "As a proprietary blend, GLOW's exact peptide ratios are formulated by Peptides7 in partnership with <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and are not published in granular detail; however, every component is independently tested for identity and purity prior to blending, and the finished blend is tested again post-formulation.",
           "GLOW is supplied for laboratory reconstitution using bacteriostatic water or sterile water for research purposes, following standard aseptic technique appropriate for in-vitro and preclinical research environments.",
         ],
       },
@@ -84,7 +84,7 @@ export const products: Product[] = [
         paragraphs: [
           "GLOW's formulation draws on peptide fragments studied for their roles in fibroblast signaling, collagen synthesis pathways, and dermal matrix remodeling — areas of active interest in cosmetic and regenerative peptide research.",
           "Researchers studying skin-aging models, wound-healing assays, or extracellular matrix dynamics may use GLOW to explore how multiple peptide mechanisms interact when introduced together, rather than evaluating each compound in isolation.",
-          "Because GLOW is a blend, it is best suited to exploratory and combinatorial research designs. Researchers requiring strict single-compound dose-response data should consider Peptides 7' individual compounds (such as GHK-Cu) instead.",
+          "Because GLOW is a blend, it is best suited to exploratory and combinatorial research designs. Researchers requiring strict single-compound dose-response data should consider Peptides7' individual compounds (such as GHK-Cu) instead.",
         ],
       },
       QUALITY_TAB,
@@ -93,10 +93,10 @@ export const products: Product[] = [
     faqs: [
       {
         q: "What is GLOW exactly?",
-        a: "GLOW is a proprietary multi-peptide research blend curated by Peptides 7 and manufactured by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>. It combines several peptide fragments associated with dermal and cellular repair research into a single vial for combinatorial research use.",
+        a: "GLOW is a proprietary multi-peptide research blend curated by Peptides7 and manufactured by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>. It combines several peptide fragments associated with dermal and cellular repair research into a single vial for combinatorial research use.",
       },
       {
-        q: "Why doesn't Peptides 7 publish the exact ratio of peptides in GLOW?",
+        q: "Why doesn't Peptides7 publish the exact ratio of peptides in GLOW?",
         a: "The specific formulation ratio is proprietary intellectual property developed in partnership with our manufacturing lab. While the exact blend ratio is not published, every individual component and the finished blend are independently tested for identity and purity, and a Certificate of Analysis is provided with every batch.",
       },
       {
@@ -131,12 +131,12 @@ export const products: Product[] = [
     shortDescription:
       "A proprietary peptide blend curated for skin, recovery, and cellular signaling research. Independently verified to ≥99% purity with full COA transparency.",
     longDescription:
-      "KLOW is a second proprietary peptide blend in the Peptides 7 catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design — not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
+      "KLOW is a second proprietary peptide blend in the Peptides7 catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design — not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
     image: "/images/products/klow.jpg",
-    category: "Proprietary",
+    category: "Glow Research",
     isVariable: true,
     variants: [
-      { label: "Single", price: 115.0, regularPrice: 130.0, variationId: 3803 },
+      { label: "Single", price: 125.0, regularPrice: 130.0, variationId: 3803 },
       { label: "5 Kit (Save 10%)", price: 500.0, regularPrice: 650.0, variationId: 3804 },
       { label: "10 Kit (Best Value)", price: 1000.0, regularPrice: 1300.0, variationId: 3805 },
     ],
@@ -144,7 +144,7 @@ export const products: Product[] = [
       {
         title: "Product Details",
         paragraphs: [
-          "KLOW is supplied as a lyophilized powder in a sealed glass vial with a unique batch number tied to its own Certificate of Analysis. Packaging and cold-chain handling follow the same protocol used across the Peptides 7 catalog.",
+          "KLOW is supplied as a lyophilized powder in a sealed glass vial with a unique batch number tied to its own Certificate of Analysis. Packaging and cold-chain handling follow the same protocol used across the Peptides7 catalog.",
           "As with GLOW, the precise blend ratio is proprietary, but each constituent peptide and the finished formulation are independently verified for identity and purity prior to release.",
           "KLOW is intended for laboratory reconstitution with bacteriostatic or sterile water, prepared using standard aseptic technique appropriate to in-vitro and preclinical research settings.",
         ],
@@ -163,7 +163,7 @@ export const products: Product[] = [
     faqs: [
       {
         q: "What is KLOW?",
-        a: "KLOW is a proprietary multi-peptide research blend curated by Peptides 7 and manufactured by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, formulated around peptide fragments studied for repair and inflammation-resolution research.",
+        a: "KLOW is a proprietary multi-peptide research blend curated by Peptides7 and manufactured by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, formulated around peptide fragments studied for repair and inflammation-resolution research.",
       },
       {
         q: "How is KLOW different from GLOW?",
@@ -197,14 +197,14 @@ export const products: Product[] = [
     shortDescription:
       "GHK-Cu copper peptide studied for gene expression, collagen synthesis, and wound-healing research. ≥99% pure, third-party verified.",
     longDescription:
-      "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Peptides 7 sources GHK-Cu exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
+      "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Peptides7 sources GHK-Cu exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
     image: "/images/products/ghk-cu-100mg.jpg",
-    category: "Longevity",
+    category: "Longevity Research",
     isVariable: true,
     variants: [
-      { label: "50mg - Single", price: 65.0, regularPrice: 70.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "50mg - Single", price: 50.0, regularPrice: 70.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
       { label: "50mg - 10 Kit", price: 400.0, regularPrice: 600.0, variationId: 3858, image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "100mg - Single", price: 80.0, regularPrice: 90.0, variationId: 991, image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "100mg - Single", price: 67.5, regularPrice: 90.0, variationId: 991, image: "/images/products/ghk-cu-100mg.jpg" },
       { label: "100mg - 10 Kit", price: 650.0, regularPrice: 750.0, variationId: 3860, image: "/images/products/ghk-cu-100mg.jpg" },
       { label: "200mg - Single", price: 135.0, regularPrice: 150.0, variationId: 3857, image: "/images/products/ghk-cu-200mg.jpg" },
       { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, variationId: 3862, image: "/images/products/ghk-cu-200mg.jpg" },
@@ -270,15 +270,15 @@ export const products: Product[] = [
     shortDescription:
       "Mitochondrial-derived peptide studied for AMPK activation and metabolic/exercise-mimetic research. ≥99% verified purity.",
     longDescription:
-      "MOTS-C (Mitochondrial Open Reading Frame of the 12S rRNA-c) is a 16-amino-acid peptide encoded within mitochondrial DNA and studied for its reported role as a regulator of cellular metabolic homeostasis. Research interest in MOTS-C centers on its ability to translocate to the nucleus under metabolic stress and activate the AMPK (AMP-activated protein kinase) pathway, a mechanism frequently associated with exercise-mimetic and metabolic-adaptation research models. Peptides 7 sources MOTS-C exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with independent third-party testing confirming ≥99% purity on every batch.",
+      "MOTS-C (Mitochondrial Open Reading Frame of the 12S rRNA-c) is a 16-amino-acid peptide encoded within mitochondrial DNA and studied for its reported role as a regulator of cellular metabolic homeostasis. Research interest in MOTS-C centers on its ability to translocate to the nucleus under metabolic stress and activate the AMPK (AMP-activated protein kinase) pathway, a mechanism frequently associated with exercise-mimetic and metabolic-adaptation research models. Peptides7 sources MOTS-C exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with independent third-party testing confirming ≥99% purity on every batch.",
     image: "/images/products/mots-c-10mg.jpg",
-    category: "Longevity",
+    category: "Metabolic Research",
     isVariable: true,
     variants: [
-      { label: "10mg - Single", price: 65.0, regularPrice: 70.0, variationId: 2816, image: "/images/products/mots-c-10mg.jpg" },
+      { label: "10mg - Single", price: 55.0, regularPrice: 70.0, variationId: 2816, image: "/images/products/mots-c-10mg.jpg" },
       { label: "10mg - 5 Kit", price: 320.0, regularPrice: 350.0, variationId: 3768, image: "/images/products/mots-c-10mg.jpg" },
       { label: "10mg - 10 Kit", price: 600.0, regularPrice: 700.0, variationId: 3767, image: "/images/products/mots-c-10mg.jpg" },
-      { label: "40mg - Single", price: 95.0, regularPrice: 110.0, variationId: 2815, image: "/images/products/mots-c-40mg.jpg" },
+      { label: "40mg - Single", price: 110.0, regularPrice: 120.0, variationId: 2815, image: "/images/products/mots-c-40mg.jpg" },
       { label: "40mg - 5 Kit", price: 470.0, regularPrice: 550.0, variationId: 3770, image: "/images/products/mots-c-40mg.jpg" },
       { label: "40mg - 10 Kit", price: 900.0, regularPrice: 1100.0, variationId: 3769, image: "/images/products/mots-c-40mg.jpg" },
     ],
@@ -340,15 +340,15 @@ export const products: Product[] = [
     shortDescription:
       "Nicotinamide Adenine Dinucleotide studied for sirtuin activation, cellular energy, and longevity research. ≥99% pure, COA-verified.",
     longDescription:
-      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38 — all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Peptides 7 offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38 — all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Peptides7 offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
     image: "/images/products/nadplus-500mg.jpg",
-    category: "Longevity",
+    category: "Longevity Research",
     isVariable: true,
     variants: [
-      { label: "500mg - Single", price: 87.50, regularPrice: 100.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
+      { label: "500mg - Single", price: 60.0, regularPrice: 100.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
       { label: "500mg - 5 Kit", price: 375.0, regularPrice: 450.0, variationId: 3836, image: "/images/products/nadplus-500mg.jpg" },
       { label: "500mg - 10 Kit", price: 700.0, regularPrice: 900.0, variationId: 3835, image: "/images/products/nadplus-500mg.jpg" },
-      { label: "1000mg - Single", price: 105.0, regularPrice: 125.0, variationId: 975, image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - Single", price: 100.0, regularPrice: 125.0, variationId: 975, image: "/images/products/nad-1000mg.jpg" },
       { label: "1000mg - 5 Kit", price: 450.0, regularPrice: 625.0, variationId: 3838, image: "/images/products/nad-1000mg.jpg" },
       { label: "1000mg - 10 Kit", price: 800.0, regularPrice: 1250.0, variationId: 3837, image: "/images/products/nad-1000mg.jpg" },
     ],
@@ -409,9 +409,9 @@ export const products: Product[] = [
     shortDescription:
       "Tripeptide antioxidant studied for redox balance and oxidative stress research. ≥99% purity, independently verified by COA.",
     longDescription:
-      "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Peptides 7 sources Glutathione exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
+      "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Peptides7 sources Glutathione exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
     image: "/images/products/glutathione-200mg.jpg",
-    category: "Longevity",
+    category: "Longevity Research",
     wooProductId: 1176,
     isVariable: false,
     price: 65.0,
@@ -422,7 +422,7 @@ export const products: Product[] = [
         paragraphs: [
           "Glutathione is supplied as a lyophilized powder in a sealed glass vial, labeled with a unique batch number corresponding to its individual Certificate of Analysis.",
           "Glutathione is a relatively oxidation-sensitive molecule; vials should be stored frozen and protected from light to preserve the reduced (GSH) form prior to reconstitution.",
-          "Reconstitution should be performed with bacteriostatic or sterile water under standard aseptic technique, consistent with handling protocols across the Peptides 7 catalog.",
+          "Reconstitution should be performed with bacteriostatic or sterile water under standard aseptic technique, consistent with handling protocols across the Peptides7 catalog.",
         ],
       },
       {
@@ -473,15 +473,15 @@ export const products: Product[] = [
     shortDescription:
       "A synergistic research stack combining BPC-157 and TB-500. Formulated for advanced tissue repair, angiogenesis, and structural remodeling research.",
     longDescription:
-      "The Wolverine Stack is a specialized combination product supplying both BPC-157 and TB-500. This combination is one of the most widely referenced pairs in preclinical musculoskeletal, tendon, and ligament repair models. While BPC-157 is studied primarily for its influence on angiogenesis and the nitric oxide pathway, TB-500 (a Thymosin Beta-4 fragment) is studied for its role in actin sequestration and cell migration. Together, they offer a multi-pathway approach to tissue regeneration research. Peptides 7 sources both compounds exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified to ≥99% purity and accompanied by full Certificates of Analysis.",
-    image: "/images/products/bpc-157-and-tb-500-stack.webp",
-    category: "Recovery & Repair",
+      "The Wolverine Stack is a specialized combination product supplying both BPC-157 and TB-500. This combination is one of the most widely referenced pairs in preclinical musculoskeletal, tendon, and ligament repair models. While BPC-157 is studied primarily for its influence on angiogenesis and the nitric oxide pathway, TB-500 (a Thymosin Beta-4 fragment) is studied for its role in actin sequestration and cell migration. Together, they offer a multi-pathway approach to tissue regeneration research. Peptides7 sources both compounds exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified to ≥99% purity and accompanied by full Certificates of Analysis.",
+    image: "/images/products/wolverine-10-10-mg.jpg",
+    category: "Recovery Research",
     isVariable: true,
     variants: [
-      { label: "10mg BPC / 5mg TB - Single", price: 125.0, regularPrice: 135.0, variationId: [2839, 4821] },
-      { label: "10mg BPC / 10mg TB - Single", price: 130.0, regularPrice: 155.0, variationId: [2839, 4820] },
-      { label: "20mg BPC / 5mg TB - Single", price: 140.0, regularPrice: 150.0, variationId: [2840, 4821] },
-      { label: "20mg BPC / 10mg TB - Single", price: 145.0, regularPrice: 170.0, variationId: [2840, 4820] },
+      { label: "5/5mg - Single", price: 70.0, regularPrice: 80.0, variationId: [3816], image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "10/10mg - Single", price: 95.0, regularPrice: 110.0, variationId: [3813], image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "10/10mg - 5 Kit", price: 475.0, regularPrice: 525.0, variationId: [3814], image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "10/10mg - 10 Kit (Best Value)", price: 800.0, regularPrice: 1050.0, variationId: [3815], image: "/images/products/wolverine-10-10-mg.jpg" },
     ],
     tabs: [
       {
@@ -489,7 +489,7 @@ export const products: Product[] = [
         paragraphs: [
           "The Wolverine Stack provides two distinct lyophilized vials (one BPC-157 and one TB-500) per unit purchased, allowing researchers to control reconstitution and administration parameters for each compound independently.",
           "Each vial carries its own unique batch number corresponding to its respective Certificate of Analysis.",
-          "Reconstitution should be performed with bacteriostatic or sterile water under standard aseptic technique, consistent with handling protocols across the Peptides 7 catalog."
+          "Reconstitution should be performed with bacteriostatic or sterile water under standard aseptic technique, consistent with handling protocols across the Peptides7 catalog."
         ],
       },
       {
