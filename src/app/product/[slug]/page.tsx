@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : product.price || 0;
 
   return buildMetadata({
-    title: `${product.name} — ${product.category} Research Peptide | ≥99% Purity`,
+    title: `${product.name} - ${product.category} Research Peptide | ≥99% Purity`,
     description: product.shortDescription,
     path: `/product/${product.slug}`,
     ogType: "website",

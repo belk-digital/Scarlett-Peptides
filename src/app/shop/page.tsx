@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import ShopClient from "./ShopClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Shop Research Peptides — ≥99% Purity Catalog",
+  title: "Shop Research Peptides - ≥99% Purity Catalog",
   description:
     "Browse our full catalog of research peptides: GHK-Cu, NAD+, Glutathione, MOTS-C, Wolverine Stack, and proprietary blends. Every compound independently verified at ≥99% HPLC purity with batch-specific COA.",
   path: "/shop",

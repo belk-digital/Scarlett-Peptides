@@ -7,28 +7,10 @@ export const SITE_DESCRIPTION =
 export const SITE_LOCALE = "en_US";
 
 export const BUSINESS_INFO = {
-  name: "Peptides7 Medspa",
-  legalName: "Scarlett Hawkins MedSpa",
-  email: "hello@scarletthawkinsmedspa.com",
+  name: "Peptides7",
+  legalName: "Peptides7",
+  email: "hello@peptides7.com",
   phone: "+1-843-998-1172",
-  address: {
-    street: "148 Line St. Suite D",
-    city: "Charleston",
-    state: "SC",
-    zip: "29403",
-    country: "US",
-  },
-  socials: {
-    instagram: "https://www.instagram.com/scarletthawkinschs",
-    facebook:
-      "https://www.facebook.com/Scarlett-Hawkins-MedSpa-101224386084392/",
-    tiktok: "https://www.tiktok.com/@scarletthawkins.medspa",
-  },
-  hours: "Mo-Fr 09:00-19:00",
-  geo: {
-    latitude: 32.7876,
-    longitude: -79.9403,
-  },
 };
 
 export function buildMetadata(overrides: {
@@ -86,26 +68,13 @@ export function organizationJsonLd() {
     description: SITE_DESCRIPTION,
     email: BUSINESS_INFO.email,
     telephone: BUSINESS_INFO.phone,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: BUSINESS_INFO.address.street,
-      addressLocality: BUSINESS_INFO.address.city,
-      addressRegion: BUSINESS_INFO.address.state,
-      postalCode: BUSINESS_INFO.address.zip,
-      addressCountry: BUSINESS_INFO.address.country,
-    },
-    sameAs: [
-      BUSINESS_INFO.socials.instagram,
-      BUSINESS_INFO.socials.facebook,
-      BUSINESS_INFO.socials.tiktok,
-    ],
   };
 }
 
 export function localBusinessJsonLd() {
   return {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": "Organization",
     "@id": `${SITE_URL}/#business`,
     name: BUSINESS_INFO.name,
     url: SITE_URL,
@@ -114,31 +83,6 @@ export function localBusinessJsonLd() {
     description: SITE_DESCRIPTION,
     email: BUSINESS_INFO.email,
     telephone: BUSINESS_INFO.phone,
-    priceRange: "$$",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: BUSINESS_INFO.address.street,
-      addressLocality: BUSINESS_INFO.address.city,
-      addressRegion: BUSINESS_INFO.address.state,
-      postalCode: BUSINESS_INFO.address.zip,
-      addressCountry: BUSINESS_INFO.address.country,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: BUSINESS_INFO.geo.latitude,
-      longitude: BUSINESS_INFO.geo.longitude,
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-      opens: "09:00",
-      closes: "19:00",
-    },
-    sameAs: [
-      BUSINESS_INFO.socials.instagram,
-      BUSINESS_INFO.socials.facebook,
-      BUSINESS_INFO.socials.tiktok,
-    ],
   };
 }
 
@@ -267,7 +211,7 @@ export function collectionPageJsonLd(products: {
   return {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "Research Peptide Catalog — Peptides7",
+    name: "Research Peptide Catalog - Peptides7",
     description: SITE_DESCRIPTION,
     url: `${SITE_URL}/shop`,
     mainEntity: {

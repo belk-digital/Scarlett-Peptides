@@ -34,7 +34,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   // Rehydrate from localStorage
   useEffect(() => {
     setIsMounted(true);
-    const savedCart = localStorage.getItem("scarlett_cart");
+    const savedCart = localStorage.getItem("peptides7_cart");
     if (savedCart) {
       try {
         setItems(JSON.parse(savedCart));
@@ -47,7 +47,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   // Save to localStorage when items change
   useEffect(() => {
     if (isMounted) {
-      localStorage.setItem("scarlett_cart", JSON.stringify(items));
+      localStorage.setItem("peptides7_cart", JSON.stringify(items));
     }
   }, [items, isMounted]);
 

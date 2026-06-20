@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import BlogClient from "./BlogClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Research Journal — Peptide Purity, Compounding Science & Lab Best Practices",
+  title: "Research Journal - Peptide Purity, Compounding Science & Lab Best Practices",
   description:
     "Deep dives into peptide purity testing, HPLC analysis, reconstitution protocols, Certificate of Analysis guides, and laboratory best practices from the Peptides7 research team.",
   path: "/blog",

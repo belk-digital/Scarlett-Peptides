@@ -36,10 +36,10 @@ export type Product = {
 const QUALITY_TAB: Tab = {
   title: "Quality & Purity Standard",
   paragraphs: [
-    "Every compound in the Peptides7 catalog — including this product — is tested by an independent, US-based third-party laboratory prior to release. Testing is never conducted by the manufacturer or any commercially affiliated entity.",
+    "Every compound in the Peptides7 catalog, including this product, is tested by an independent, US-based third-party laboratory prior to release. Testing is never conducted by the manufacturer or any commercially affiliated entity.",
     "Purity is verified by High-Performance Liquid Chromatography (HPLC) to a confirmed minimum of ≥99%. The HPLC chromatogram quantifies the target compound as a percentage of total peak area, confirming that synthesis byproducts, degradation products, and residual impurities fall below the 1% threshold.",
     "Molecular identity is confirmed by Liquid Chromatography–Mass Spectrometry (LC-MS), which verifies the exact molecular mass of the compound and rules out structural isomers, sequence deletions, or substitution errors that HPLC alone cannot detect.",
-    "TFA (trifluoroacetic acid) — a common solvent used in reversed-phase HPLC purification of peptides — is reduced to minimal levels via exchange protocols and verified in each Certificate of Analysis. Residual TFA can disrupt cellular assays and confound biological data; its control is a non-negotiable element of our standard.",
+    "TFA (trifluoroacetic acid), a common solvent used in reversed-phase HPLC purification of peptides, is reduced to minimal levels via exchange protocols and verified in each Certificate of Analysis. Residual TFA can disrupt cellular assays and confound biological data; its control is a non-negotiable element of our standard.",
     "Heavy metal contamination (lead, arsenic, mercury, and cadmium) is screened for in every production batch. A batch-specific Certificate of Analysis (COA) is available for all purchases and is cross-referenceable by the unique batch number printed on your vial.",
   ],
 };
@@ -82,7 +82,7 @@ export const products: Product[] = [
       {
         title: "Research Focus & Mechanism Overview",
         paragraphs: [
-          "GLOW's formulation draws on peptide fragments studied for their roles in fibroblast signaling, collagen synthesis pathways, and dermal matrix remodeling — areas of active interest in cosmetic and regenerative peptide research.",
+          "GLOW's formulation draws on peptide fragments studied for their roles in fibroblast signaling, collagen synthesis pathways, and dermal matrix remodeling, areas of active interest in cosmetic and regenerative peptide research.",
           "Researchers studying skin-aging models, wound-healing assays, or extracellular matrix dynamics may use GLOW to explore how multiple peptide mechanisms interact when introduced together, rather than evaluating each compound in isolation.",
           "Because GLOW is a blend, it is best suited to exploratory and combinatorial research designs. Researchers requiring strict single-compound dose-response data should consider Peptides7' individual compounds (such as GHK-Cu) instead.",
         ],
@@ -113,7 +113,7 @@ export const products: Product[] = [
       },
       {
         q: "What is the difference between GLOW and KLOW?",
-        a: "GLOW and KLOW are distinct proprietary blends formulated for different research applications. Each is built from a different selection of peptide fragments — see each product's Research Focus tab for details on their respective areas of interest.",
+        a: "GLOW and KLOW are distinct proprietary blends formulated for different research applications. Each is built from a different selection of peptide fragments. See each product's Research Focus tab for details on their respective areas of interest.",
       },
       {
         q: "Can I get the Certificate of Analysis for my specific batch?",
@@ -131,7 +131,7 @@ export const products: Product[] = [
     shortDescription:
       "A proprietary peptide blend curated for skin, recovery, and cellular signaling research. Independently verified to ≥99% purity with full COA transparency.",
     longDescription:
-      "KLOW is a second proprietary peptide blend in the Peptides7 catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design — not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
+      "KLOW is a second proprietary peptide blend in the Peptides7 catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design, not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
     image: "/images/products/klow.jpg",
     category: "Glow Research",
     isVariable: true,
@@ -167,7 +167,7 @@ export const products: Product[] = [
       },
       {
         q: "How is KLOW different from GLOW?",
-        a: "GLOW and KLOW use different peptide selections aimed at different research angles — GLOW leans toward dermal and collagen-signaling research, while KLOW leans toward connective tissue repair and inflammation-resolution research. Review each product's Research Focus tab to determine which aligns with your study.",
+        a: "GLOW and KLOW use different peptide selections aimed at different research angles. GLOW leans toward dermal and collagen-signaling research, while KLOW leans toward connective tissue repair and inflammation-resolution research. Review each product's Research Focus tab to determine which aligns with your study.",
       },
       {
         q: "Is the exact composition of KLOW published?",
@@ -214,7 +214,7 @@ export const products: Product[] = [
         title: "Product Details",
         paragraphs: [
           "GHK-Cu is supplied as a lyophilized powder, available in 50mg, 100mg, and 200mg vial sizes to support a range of research protocol concentrations. Each vial displays a unique batch number tied to its Certificate of Analysis.",
-          "The copper-complexed structure gives GHK-Cu solutions a characteristic pale blue to blue-green tint when reconstituted — a visual indicator consistent with the compound's copper content, not an impurity.",
+          "The copper-complexed structure gives GHK-Cu solutions a characteristic pale blue to blue-green tint when reconstituted, a visual indicator consistent with the compound's copper content, not an impurity.",
           "GHK-Cu should be reconstituted with bacteriostatic or sterile water under standard aseptic technique and is intended strictly for in-vitro laboratory research applications.",
         ],
       },
@@ -236,7 +236,7 @@ export const products: Product[] = [
       },
       {
         q: "Why is the reconstituted solution blue or blue-green?",
-        a: "The blue-green tint comes from the copper ion complexed within the peptide structure. This coloration is expected and consistent with authentic GHK-Cu — it is not a sign of contamination.",
+        a: "The blue-green tint comes from the copper ion complexed within the peptide structure. This coloration is expected and consistent with authentic GHK-Cu. It is not a sign of contamination.",
       },
       {
         q: "What vial sizes are available?",
@@ -309,7 +309,7 @@ export const products: Product[] = [
       },
       {
         q: "Why is MOTS-C of interest in exercise and metabolic research?",
-        a: "Research models report that MOTS-C levels increase with exercise and that the peptide can activate AMPK signaling — a pathway central to cellular energy regulation — making it a peptide of interest in exercise-mimetic research.",
+        a: "Research models report that MOTS-C levels increase with exercise and that the peptide can activate AMPK signaling, a pathway central to cellular energy regulation, making it a peptide of interest in exercise-mimetic research.",
       },
       {
         q: "What vial sizes are available for MOTS-C?",
@@ -325,7 +325,7 @@ export const products: Product[] = [
       },
       {
         q: "Why does mitochondrial origin matter for this peptide's research relevance?",
-        a: "Because MOTS-C is encoded within mitochondrial rather than nuclear DNA, it is studied as a unique signaling link between mitochondrial function and nuclear gene expression — a mechanism distinct from most nuclear-encoded research peptides.",
+        a: "Because MOTS-C is encoded within mitochondrial rather than nuclear DNA, it is studied as a unique signaling link between mitochondrial function and nuclear gene expression, a mechanism distinct from most nuclear-encoded research peptides.",
       },
       {
         q: "Can I get the COA for my specific MOTS-C batch?",
@@ -340,7 +340,7 @@ export const products: Product[] = [
     shortDescription:
       "Nicotinamide Adenine Dinucleotide studied for sirtuin activation, cellular energy, and longevity research. ≥99% pure, COA-verified.",
     longDescription:
-      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38 — all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Peptides7 offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
+      "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38, all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Peptides7 offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
     image: "/images/products/nadplus-500mg.jpg",
     category: "Longevity Research",
     isVariable: true,
@@ -364,7 +364,7 @@ export const products: Product[] = [
       {
         title: "Research Focus & Mechanism Overview",
         paragraphs: [
-          "NAD+ functions as an essential cofactor for sirtuins (SIRT1-7), a family of enzymes widely studied for their roles in DNA repair, metabolic regulation, and cellular stress resistance — core mechanisms in longevity research.",
+          "NAD+ functions as an essential cofactor for sirtuins (SIRT1-7), a family of enzymes widely studied for their roles in DNA repair, metabolic regulation, and cellular stress resistance, core mechanisms in longevity research.",
           "NAD+ is also consumed by PARP enzymes during DNA damage repair and by CD38, an enzyme whose activity is reported to increase with age and contribute to NAD+ depletion in various research models.",
           "Researchers distinguish NAD+ from its precursors NMN and NR, which require conversion through the salvage pathway; NAD+ itself is the terminal coenzyme studied directly in mitochondrial function and cellular energy assays.",
         ],
@@ -375,7 +375,7 @@ export const products: Product[] = [
     faqs: [
       {
         q: "What is NAD+?",
-        a: "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, serving as a required cofactor for sirtuins, PARP enzymes, and CD38 — pathways widely studied in longevity and metabolic research.",
+        a: "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme central to cellular energy metabolism, serving as a required cofactor for sirtuins, PARP enzymes, and CD38, pathways widely studied in longevity and metabolic research.",
       },
       {
         q: "How is NAD+ different from NMN or NR?",
@@ -383,7 +383,7 @@ export const products: Product[] = [
       },
       {
         q: "Why is NAD+ relevant to aging research?",
-        a: "NAD+ levels have been reported to decline with age across multiple research models, and this decline is linked to reduced sirtuin activity and impaired DNA repair capacity — making NAD+ a focal molecule in cellular aging research.",
+        a: "NAD+ levels have been reported to decline with age across multiple research models, and this decline is linked to reduced sirtuin activity and impaired DNA repair capacity, making NAD+ a focal molecule in cellular aging research.",
       },
       {
         q: "What vial sizes are available?",
@@ -430,7 +430,7 @@ export const products: Product[] = [
         paragraphs: [
           "Glutathione is studied extensively for its role in maintaining intracellular redox homeostasis, acting as a primary substrate for glutathione peroxidase (GPx) enzymes that neutralize reactive oxygen species.",
           "The GSH:GSSG ratio is a widely used biomarker in oxidative stress research, with a lower ratio generally associated with greater oxidative burden in cellular models.",
-          "Glutathione's relationship to GPx4 and ferroptosis — an iron-dependent form of regulated cell death — has made it a molecule of growing interest in cellular death pathway and redox biology research.",
+          "Glutathione's relationship to GPx4 and ferroptosis, an iron-dependent form of regulated cell death, has made it a molecule of growing interest in cellular death pathway and redox biology research.",
         ],
       },
       QUALITY_TAB,
@@ -447,7 +447,7 @@ export const products: Product[] = [
       },
       {
         q: "Why is Glutathione relevant to ferroptosis research?",
-        a: "Glutathione is a required cofactor for glutathione peroxidase 4 (GPx4), an enzyme that protects cells from ferroptosis, an iron-dependent form of regulated cell death — making glutathione availability a key variable in ferroptosis research models.",
+        a: "Glutathione is a required cofactor for glutathione peroxidase 4 (GPx4), an enzyme that protects cells from ferroptosis, an iron-dependent form of regulated cell death, making glutathione availability a key variable in ferroptosis research models.",
       },
       {
         q: "How should Glutathione be stored?",

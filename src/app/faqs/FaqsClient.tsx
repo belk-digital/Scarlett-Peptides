@@ -21,11 +21,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     faqs: [
       {
         q: "How do I place an order?",
-        a: <>Browse the catalog here and add your chosen products and variants to your cart. When ready, click Checkout — you will be securely redirected to our fulfillment partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>, where your cart loads automatically and you can complete your order.</>
+        a: <>Browse the catalog here and add your chosen products and variants to your cart. When ready, click Checkout and you will be securely redirected to our fulfillment partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>, where your cart loads automatically and you can complete your order.</>
       },
       {
         q: <>Why am I redirected to <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> at checkout?</>,
-        a: <><a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> is our exclusive manufacturing and fulfillment partner. Peptides7 curates the catalog, sets the purity standards, and selects every compound — 99 Purity Peptides handles synthesis, testing, payment processing, and dispatch. This structure lets us focus on curation while you benefit from their lab-grade logistics infrastructure.</>
+        a: <><a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> is our exclusive manufacturing and fulfillment partner. Peptides7 curates the catalog, sets the purity standards, and selects every compound. 99 Purity Peptides handles synthesis, testing, payment processing, and dispatch. This structure lets us focus on curation while you benefit from their lab-grade logistics infrastructure.</>
       },
       {
         q: "Will my cart items transfer when I click Checkout?",
@@ -63,7 +63,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Are prices shown on this site final?",
-        a: <>Prices shown in the Peptides7 catalog are accurate to our current data and reflect the pricing at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. Final totals — including any applicable shipping charges, taxes, or discounts — are confirmed at checkout on the partner site.</>
+        a: <>Prices shown in the Peptides7 catalog are accurate to our current data and reflect the pricing at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. Final totals, including any applicable shipping charges, taxes, or discounts, are confirmed at checkout on the partner site.</>
       },
       {
         q: "Can I use a discount code or promo?",
@@ -89,7 +89,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Do you ship internationally?",
-        a: <>International shipping availability and restrictions are determined by our fulfillment partner. Please review the <a href="https://99puritypeptides.com/shipping-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides Shipping Policy</a> for active international regions. Note that import regulations for research compounds vary by country — buyers are responsible for understanding the applicable regulations in their jurisdiction.</>
+        a: <>International shipping availability and restrictions are determined by our fulfillment partner. Please review the <a href="https://99puritypeptides.com/shipping-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides Shipping Policy</a> for active international regions. Note that import regulations for research compounds vary by country, and buyers are responsible for understanding the applicable regulations in their jurisdiction.</>
       },
       {
         q: "How should I store my order upon arrival?",
@@ -119,7 +119,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "What is HPLC and what does it measure?",
-        a: "High-Performance Liquid Chromatography (HPLC) is a chromatographic technique that separates the components of a compound mixture and quantifies each as a percentage of total peak area. For peptide purity testing, the target peptide's peak area is expressed as a percentage of all detected peaks — our standard requires the target compound to represent ≥99% of total peak area, meaning synthesis byproducts and impurities collectively total less than 1%."
+        a: "High-Performance Liquid Chromatography (HPLC) is a chromatographic technique that separates the components of a compound mixture and quantifies each as a percentage of total peak area. For peptide purity testing, the target peptide's peak area is expressed as a percentage of all detected peaks. Our standard requires the target compound to represent ≥99% of total peak area, meaning synthesis byproducts and impurities collectively total less than 1%."
       },
       {
         q: "What is LC-MS and why is it used in addition to HPLC?",
@@ -127,7 +127,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "What is TFA, and why does it matter in peptide research?",
-        a: "TFA (trifluoroacetic acid) is a solvent commonly used in the reversed-phase HPLC purification of peptides. Residual TFA in a finished peptide product can disrupt cellular assays, affect viability measurements, and confound research data — particularly in in-vitro work. Peptides7 requires that TFA residue levels be reduced via ion-exchange protocols and verified in each COA."
+        a: "TFA (trifluoroacetic acid) is a solvent commonly used in the reversed-phase HPLC purification of peptides. Residual TFA in a finished peptide product can disrupt cellular assays, affect viability measurements, and confound research data, particularly in in-vitro work. Peptides7 requires that TFA residue levels be reduced via ion-exchange protocols and verified in each COA."
       },
       {
         q: "Are heavy metals tested?",
@@ -135,7 +135,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Who conducts the third-party testing?",
-        a: "Testing is performed by an independent, US-based third-party laboratory with no commercial affiliation to the manufacturer or to Peptides7. This independence is a core requirement of our purity standard — we do not accept self-reported or manufacturer-conducted test results."
+        a: "Testing is performed by an independent, US-based third-party laboratory with no commercial affiliation to the manufacturer or to Peptides7. This independence is a core requirement of our purity standard. We do not accept self-reported or manufacturer-conducted test results."
       },
       {
         q: "How do I access the COA for my specific batch?",
@@ -161,11 +161,11 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Can these products be used on myself or administered to another person?",
-        a: "No. Self-injection, self-administration, or administration to any other person — regardless of the purpose — is strictly prohibited. These compounds are synthesized for controlled laboratory environments, not for personal wellness or therapeutic use."
+        a: "No. Self-injection, self-administration, or administration to any other person, regardless of the purpose, is strictly prohibited. These compounds are synthesized for controlled laboratory environments, not for personal wellness or therapeutic use."
       },
       {
         q: "What is the difference between in-vitro and in-vivo research?",
-        a: "In-vitro research refers to experiments conducted in a controlled environment outside a living organism — typically in cell culture dishes, test tubes, or laboratory equipment. In-vivo research involves experiments conducted in a living organism. All products sold here are designated for in-vitro laboratory use only."
+        a: "In-vitro research refers to experiments conducted in a controlled environment outside a living organism, typically in cell culture dishes, test tubes, or laboratory equipment. In-vivo research involves experiments conducted in a living organism. All products sold here are designated for in-vitro laboratory use only."
       },
       {
         q: "Can I resell these products?",
@@ -183,7 +183,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
     faqs: [
       {
         q: "How do I reconstitute a lyophilized peptide?",
-        a: "Lyophilized (freeze-dried) peptides must be reconstituted before use in solution-based assays. Using standard aseptic technique, add bacteriostatic water (or sterile water) slowly to the vial using a syringe, directing the liquid down the side of the vial rather than directly onto the powder. Gently swirl — do not shake vigorously. Allow the powder to dissolve completely before use."
+        a: "Lyophilized (freeze-dried) peptides must be reconstituted before use in solution-based assays. Using standard aseptic technique, add bacteriostatic water (or sterile water) slowly to the vial using a syringe, directing the liquid down the side of the vial rather than directly onto the powder. Gently swirl and do not shake vigorously. Allow the powder to dissolve completely before use."
       },
       {
         q: "What is bacteriostatic water and why is it preferred?",
@@ -195,7 +195,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Is there a tool to help me calculate peptide reconstitution volumes?",
-        a: <><a href="http://99puritypeptides.com/peptide-calculator" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Yes — use the 99 Purity Peptides Peptide Calculator</a> for precise reconstitution calculations. Enter the peptide amount (mg), desired concentration (mg/mL or μg/mL), or molecular weight for molar conversions. It is free to use and available to all researchers.</>
+        a: <><a href="http://99puritypeptides.com/peptide-calculator" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Yes. Use the 99 Purity Peptides Peptide Calculator</a> for precise reconstitution calculations. Enter the peptide amount (mg), desired concentration (mg/mL or μg/mL), or molecular weight for molar conversions. It is free to use and available to all researchers.</>
       },
       {
         q: "How long does reconstituted peptide remain stable?",
@@ -203,7 +203,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Can I use sterile water instead of bacteriostatic water?",
-        a: "Sterile water may be used for single-use reconstitution — where the entire volume is used immediately in one experiment. If you need the reconstituted solution to remain stable for multiple uses over time, bacteriostatic water is recommended to inhibit microbial contamination during refrigerated storage."
+        a: "Sterile water may be used for single-use reconstitution, where the entire volume is used immediately in one experiment. If you need the reconstituted solution to remain stable for multiple uses over time, bacteriostatic water is recommended to inhibit microbial contamination during refrigerated storage."
       },
       {
         q: "How do I convert mg to micrograms (mcg) or micromoles (μmol) for my assay?",
@@ -214,15 +214,15 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
 
   {
     id: "longevity",
-    title: "Longevity Peptides — GHK-Cu, MOTS-C, NAD+, Glutathione",
+    title: "Longevity Peptides: GHK-Cu, MOTS-C, NAD+, Glutathione",
     faqs: [
       {
         q: "What is GHK-Cu and why does it appear blue when reconstituted?",
-        a: "GHK-Cu (Glycyl-L-Histidyl-L-Lysine, CAS 49557-75-7) is a copper-binding tripeptide studied in dermal regeneration, collagen synthesis, and antioxidant enzyme research. The characteristic blue or blue-green color when reconstituted is the result of the copper ion complexed within the peptide structure — this coloration is expected and indicates authentic GHK-Cu, not contamination."
+        a: "GHK-Cu (Glycyl-L-Histidyl-L-Lysine, CAS 49557-75-7) is a copper-binding tripeptide studied in dermal regeneration, collagen synthesis, and antioxidant enzyme research. The characteristic blue or blue-green color when reconstituted is the result of the copper ion complexed within the peptide structure. This coloration is expected and indicates authentic GHK-Cu. It is not contamination."
       },
       {
         q: "What is MOTS-C and why is it unique among research peptides?",
-        a: "MOTS-C is a 16-amino-acid peptide encoded within mitochondrial DNA — making it one of a rare class of mitochondrially-derived peptides. It is studied for its reported ability to translocate to the cell nucleus under metabolic stress and activate the AMPK pathway, a master regulator of cellular energy balance. Its mitochondrial origin gives it a mechanistic profile distinct from nuclear-encoded research peptides."
+        a: "MOTS-C is a 16-amino-acid peptide encoded within mitochondrial DNA, making it one of a rare class of mitochondrially-derived peptides. It is studied for its reported ability to translocate to the cell nucleus under metabolic stress and activate the AMPK pathway, a master regulator of cellular energy balance. Its mitochondrial origin gives it a mechanistic profile distinct from nuclear-encoded research peptides."
       },
       {
         q: "What is NAD+ and how is it different from NMN or NR?",
@@ -230,19 +230,19 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "What is Glutathione and what does the GSH:GSSG ratio measure?",
-        a: "Glutathione is a tripeptide (γ-glutamyl-cysteinyl-glycine) that serves as the body's primary endogenous antioxidant. GSH is the reduced, active antioxidant form; GSSG is its oxidized form produced after neutralizing reactive oxygen species. The GSH:GSSG ratio is a standard biomarker used in oxidative stress research — a lower ratio indicates greater oxidative burden in a cellular model."
+        a: "Glutathione is a tripeptide (γ-glutamyl-cysteinyl-glycine) that serves as the body's primary endogenous antioxidant. GSH is the reduced, active antioxidant form; GSSG is its oxidized form produced after neutralizing reactive oxygen species. The GSH:GSSG ratio is a standard biomarker used in oxidative stress research. A lower ratio indicates greater oxidative burden in a cellular model."
       },
       {
         q: "Why is NAD+ relevant to aging research?",
-        a: "NAD+ levels are reported to decline with age in numerous research models, and this decline is associated with reduced sirtuin activity and impaired DNA repair capacity. Because sirtuins require NAD+ as a cofactor, declining NAD+ availability is considered a mechanism of interest in cellular aging models — making NAD+ one of the most studied molecules in longevity research."
+        a: "NAD+ levels are reported to decline with age in numerous research models, and this decline is associated with reduced sirtuin activity and impaired DNA repair capacity. Because sirtuins require NAD+ as a cofactor, declining NAD+ availability is considered a mechanism of interest in cellular aging models, making NAD+ one of the most studied molecules in longevity research."
       },
       {
         q: "Are these the same compounds used in IV wellness clinics?",
-        a: "The base molecular compound is the same; however, Peptides7 products are Research Use Only laboratory materials synthesized and tested under research-grade standards — not clinical-grade, pharmaceutical-grade, or human-administrable formulations. They are not intended for infusion, injection, or any form of personal administration."
+        a: "The base molecular compound is the same; however, Peptides7 products are Research Use Only laboratory materials synthesized and tested under research-grade standards, not clinical-grade, pharmaceutical-grade, or human-administrable formulations. They are not intended for infusion, injection, or any form of personal administration."
       },
       {
         q: "What research area is Glutathione's connection to GPx4 and ferroptosis?",
-        a: "Glutathione is a required cofactor for glutathione peroxidase 4 (GPx4), an enzyme that protects cells from ferroptosis — an iron-dependent form of regulated cell death. GPx4 uses glutathione to reduce lipid peroxides; when intracellular glutathione is depleted, ferroptosis can be triggered. This relationship makes glutathione availability a key variable in ferroptosis and redox biology research."
+        a: "Glutathione is a required cofactor for glutathione peroxidase 4 (GPx4), an enzyme that protects cells from ferroptosis, an iron-dependent form of regulated cell death. GPx4 uses glutathione to reduce lipid peroxides; when intracellular glutathione is depleted, ferroptosis can be triggered. This relationship makes glutathione availability a key variable in ferroptosis and redox biology research."
       },
       {
         q: "How should longevity peptides be stored?",
@@ -252,7 +252,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
   },
   {
     id: "recovery",
-    title: "Recovery & Repair Peptides — Wolverine Stack",
+    title: "Recovery & Repair Peptides: Wolverine Stack",
     faqs: [
       {
         q: "What is the Wolverine Stack?",
@@ -266,7 +266,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
   },
   {
     id: "proprietary",
-    title: "Proprietary Blends — GLOW & KLOW",
+    title: "Proprietary Blends: GLOW & KLOW",
     faqs: [
       {
         q: "What are GLOW and KLOW?",
@@ -278,7 +278,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "How are GLOW and KLOW different from each other?",
-        a: "GLOW's formulation draws on peptide fragments studied in dermal repair, collagen signaling, and fibroblast-related research pathways. KLOW's formulation emphasizes peptide fragments studied in connective tissue repair, inflammation-resolution, and cellular regeneration. They are distinct blends designed for different research angles — not duplicates."
+        a: "GLOW's formulation draws on peptide fragments studied in dermal repair, collagen signaling, and fibroblast-related research pathways. KLOW's formulation emphasizes peptide fragments studied in connective tissue repair, inflammation-resolution, and cellular regeneration. They are distinct blends designed for different research angles, not duplicates."
       },
       {
         q: "Are proprietary blends tested to the same standard as single-compound products?",
@@ -286,7 +286,7 @@ export const FAQ_CATEGORIES: FaqCategory[] = [
       },
       {
         q: "Who decides what goes into the proprietary blends?",
-        a: <>The formulations are curated by Peptides7 in direct partnership with the research and formulation team at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. The selection is driven by research relevance — each blend was created because it solves a specific combinatorial research design challenge, not for marketing reasons.</>
+        a: <>The formulations are curated by Peptides7 in direct partnership with the research and formulation team at <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>. The selection is driven by research relevance. Each blend was created because it solves a specific combinatorial research design challenge, not for marketing reasons.</>
       },
       {
         q: "Are GLOW and KLOW suitable for single-variable dose-response studies?",
@@ -323,7 +323,7 @@ export default function FaqsClient() {
             Frequently Asked Questions
           </h1>
           <p className="text-textsub text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-            Answers on ordering, purity standards, individual compounds, reconstitution, and research compliance — all in one place.
+            Answers on ordering, purity standards, individual compounds, reconstitution, and research compliance, all in one place.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             {FAQ_CATEGORIES.map(cat => (

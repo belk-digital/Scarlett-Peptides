@@ -53,7 +53,7 @@ function ShopContent() {
                 <div className="relative w-full h-full rounded-[58px] overflow-hidden group-hover:rounded-[17px] transition-all duration-500">
                   <Image
                     src={product.image}
-                    alt={`${product.name} — ${product.category} research peptide`}
+                    alt={`${product.name}, ${product.category} research peptide`}
                     fill
                     className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />

@@ -60,10 +60,10 @@ export function buildCheckoutUrl(items: CartItem[]): string {
 
   // --- ORIGIN TRACKING ---
   // Append explicit origin for custom snippets
-  url.searchParams.append("origin", "scarlett");
-  
+  url.searchParams.append("origin", "peptides7");
+
   // Append standard UTM parameters for built-in WooCommerce Order Attribution and Analytics
-  url.searchParams.append("utm_source", "scarlett_peptides");
+  url.searchParams.append("utm_source", "peptides7");
   url.searchParams.append("utm_medium", "referral");
   url.searchParams.append("utm_campaign", "storefront");
 

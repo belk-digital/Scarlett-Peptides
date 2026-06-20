@@ -6,7 +6,7 @@ import JsonLd from "@/components/JsonLd";
 import HomeClient from "@/components/HomeClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: `${SITE_NAME} | Premium Research Peptides — ≥99% Purity, Independently Verified`,
+  title: `${SITE_NAME} | Premium Research Peptides - ≥99% Purity, Independently Verified`,
   description:
     "Shop curated research peptides with ≥99% HPLC purity, LC-MS identity verification, and batch-specific Certificates of Analysis. GHK-Cu, NAD+, Wolverine Stack, and more. Fulfilled by 99 Purity Peptides.",
   path: "",

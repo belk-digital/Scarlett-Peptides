@@ -323,7 +323,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               <div className="flex flex-col items-center p-6">
                 <Truck className="w-6 h-6 text-textsub mb-4" strokeWidth={1.5} />
                 <h3 className="text-sm tracking-widest uppercase mb-2">Rapid Fulfillment</h3>
-                <p className="text-xs text-textmuted leading-relaxed max-w-xs">Orders dispatched within 24 hours via our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a> - keeping your research timeline on track.</p>
+                <p className="text-xs text-textmuted leading-relaxed max-w-xs">Orders dispatched within 24 hours via our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">99 Purity Peptides</a>, keeping your research timeline on track.</p>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
@@ -337,7 +337,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               <div className="flex flex-col items-center p-6">
                 <Headphones className="w-6 h-6 text-textsub mb-4" strokeWidth={1.5} />
                 <h3 className="text-sm tracking-widest uppercase mb-2">Dedicated Support</h3>
-                <p className="text-xs text-textmuted leading-relaxed max-w-xs">Expert support available for order inquiries, COA requests, and compound documentation — not chatbots, real people.</p>
+                <p className="text-xs text-textmuted leading-relaxed max-w-xs">Expert support available for order inquiries, COA requests, and compound documentation. Not chatbots, real people.</p>
               </div>
             </ScrollReveal>
           </div>
@@ -700,7 +700,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   <strong className="text-white font-medium">Research peptides</strong> are short-chain amino acid sequences synthesized for in-vitro and preclinical study. They serve as invaluable tools for investigating signaling pathways, metabolic cascades, and cellular repair mechanisms that underpin modern longevity and metabolic science.
                 </p>
                 <p className="text-white/60">
-                  At Peptides7, every compound — from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and the synergistic <span className="text-white font-medium">Wolverine Stack</span> — is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
+                  At Peptides7, every compound, from the mitochondrial activator <span className="text-white font-medium">MOTS-C</span>, to the copper-chelating <span className="text-white font-medium">GHK-Cu</span> and the synergistic <span className="text-white font-medium">Wolverine Stack</span>, is sourced exclusively through our laboratory partner, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white font-medium underline hover:text-gray-300">99 Purity Peptides</a>. Each batch undergoes independent HPLC chromatography and LC-MS mass confirmation before it reaches your lab.
                 </p>
                 <p className="text-white/60">
                   Impurities matter. TFA residues, heavy metals, and synthesis byproducts can skew results and compromise data integrity. Our ≥99% purity standard eliminates these variables, giving researchers a clean, reliable baseline for reproducible science.
@@ -776,13 +776,13 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 </h2>
                 <div className="space-y-6 font-light leading-relaxed text-sm md:text-base">
                   <p className="text-white/60">
-                    We don't ask you to trust us blindly. Every single compound in our catalog is backed by a verifiable <strong className="text-white font-medium">Certificate of Analysis (COA)</strong> produced by an independent, US-based third-party testing facility — not an in-house lab.
+                    We don't ask you to trust us blindly. Every single compound in our catalog is backed by a verifiable <strong className="text-white font-medium">Certificate of Analysis (COA)</strong> produced by an independent, US-based third-party testing facility, not an in-house lab.
                   </p>
                   <p className="text-white/60">
                     Each COA includes HPLC purity chromatograms confirming <span className="text-white font-medium">≥99% purity</span> and LC-MS data verifying the exact molecular identity of the compound. Batch numbers are cross-referenceable, so you can confirm your specific vial at any time.
                   </p>
                   <p className="text-white/60">
-                    In peptide research, knowing precisely what you are working with isn't a luxury — it's a methodological requirement. That's why transparency is not a feature here; it's the foundation.
+                    In peptide research, knowing precisely what you are working with isn't a luxury. It's a methodological requirement. That's why transparency is not a feature here; it's the foundation.
                   </p>
                 </div>
                 <div className="mt-8 md:mt-12">
@@ -845,15 +845,15 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                 {[
                   {
                     q: "What are research peptides and how are they used in scientific research?",
-                    a: "Research peptides are short-chain amino acid sequences synthesized in a laboratory setting for scientific investigation. They are used by researchers to study biological signaling, metabolic pathways, tissue repair mechanisms, hormonal interactions, and cellular aging processes. Unlike pharmaceutical drugs approved for clinical use, research peptides are classified as Research Use Only (RUO) — meaning their scientific potential is studied in controlled, in-vitro and preclinical environments."
+                    a: "Research peptides are short-chain amino acid sequences synthesized in a laboratory setting for scientific investigation. They are used by researchers to study biological signaling, metabolic pathways, tissue repair mechanisms, hormonal interactions, and cellular aging processes. Unlike pharmaceutical drugs approved for clinical use, research peptides are classified as Research Use Only (RUO), meaning their scientific potential is studied in controlled, in-vitro and preclinical environments."
                   },
                   {
                     q: "Are your research compounds third-party tested?",
-                    a: "Yes — unconditionally. Every single batch in our catalog is tested by an independent, US-based third-party laboratory. We provide Certificates of Analysis (COAs) for every compound, which include HPLC chromatograms confirming ≥99% purity and LC-MS data verifying the exact molecular identity. You can cross-reference your batch number at any time."
+                    a: "Yes, unconditionally. Every single batch in our catalog is tested by an independent, US-based third-party laboratory. We provide Certificates of Analysis (COAs) for every compound, which include HPLC chromatograms confirming ≥99% purity and LC-MS data verifying the exact molecular identity. You can cross-reference your batch number at any time."
                   },
                   {
                     q: "What does 'Research Use Only' (RUO) mean?",
-                    a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes — not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Peptides7 catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
+                    a: "Research Use Only (RUO) is a regulatory classification indicating that a compound is intended strictly for laboratory and scientific research purposes, not for human consumption, veterinary use, diagnostic procedures, or cosmetic application. All compounds in the Peptides7 catalog carry this designation and must be used in full compliance with the applicable laws and regulations of your jurisdiction."
                   },
 
                   {
@@ -862,7 +862,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "What is GHK-Cu and why is it relevant to longevity research?",
-                    a: "GHK-Cu (Copper Peptide GHK-Cu) is a naturally occurring copper-chelating tripeptide — Glycyl-L-Histidyl-L-Lysine — found in human plasma, saliva, and urine. It has been studied extensively for its roles in stimulating collagen synthesis, activating antioxidant pathways, modulating gene expression related to aging, and promoting tissue repair. Its relevance to longevity research lies in its apparent ability to reset the gene expression patterns of aged cells toward a younger state, making it one of the most scientifically interesting compounds in the aging biology field."
+                    a: "GHK-Cu (Copper Peptide GHK-Cu) is a naturally occurring copper-chelating tripeptide (Glycyl-L-Histidyl-L-Lysine) found in human plasma, saliva, and urine. It has been studied extensively for its roles in stimulating collagen synthesis, activating antioxidant pathways, modulating gene expression related to aging, and promoting tissue repair. Its relevance to longevity research lies in its apparent ability to reset the gene expression patterns of aged cells toward a younger state, making it one of the most scientifically interesting compounds in the aging biology field."
                   },
                   {
                     q: "What are NAD+ and MOTS-C used to study?",
@@ -870,7 +870,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "How does the ordering process work?",
-                    a: <>The Peptides7 storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility — typically within 24 hours of order confirmation.</>
+                    a: <>The Peptides7 storefront is a curated boutique catalog. When you add compounds to your cart and proceed to checkout, you are seamlessly and securely redirected to our exclusive fulfillment partner, <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' className='underline hover:text-white transition-colors'>99 Purity Peptides</a>. You sign in or create an account on their platform, complete your secure payment, and your order ships directly from their dedicated laboratory facility, typically within 24 hours of order confirmation.</>
                   },
                   {
                     q: "How are the compounds shipped and stored?",
@@ -878,7 +878,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                   },
                   {
                     q: "What makes Peptides7 different from other research peptide suppliers?",
-                    a: "Most peptide suppliers are anonymous fulfillment operations. Peptides7 is a founder-curated catalog, built by Peptides7 — founder of Peptides7 Medspa in Charleston, SC — who applied the same standards she demands in a clinical medspa environment to this research catalog. Every compound was personally vetted. Every supplier relationship was personally established. The result is a boutique selection of only the most scientifically relevant, rigorously tested compounds — paired with full COA transparency and a checkout experience designed for serious researchers, not casual browsers."
+                    a: "Most peptide suppliers are anonymous fulfillment operations. Peptides7 is a founder-curated catalog built on uncompromising quality standards. Every compound was personally vetted. Every supplier relationship was personally established. The result is a boutique selection of only the most scientifically relevant, rigorously tested compounds, paired with full COA transparency and a checkout experience designed for serious researchers, not casual browsers."
                   }
                 ].map((faq, i) => (
                   <ScrollReveal key={i} delay={i * 0.05} direction="up">

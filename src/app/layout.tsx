@@ -32,7 +32,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Premium Research Peptides — ≥99% Purity, Independently Verified`,
+    default: `${SITE_NAME} | Premium Research Peptides - ≥99% Purity, Independently Verified`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -59,12 +59,12 @@ export const metadata: Metadata = {
     locale: SITE_LOCALE,
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} — Premium Research Peptides, ≥99% Purity`,
+    title: `${SITE_NAME} - Premium Research Peptides, ≥99% Purity`,
     description: SITE_DESCRIPTION,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} — Premium Research Peptides`,
+    title: `${SITE_NAME} - Premium Research Peptides`,
     description: SITE_DESCRIPTION,
   },
   robots: {
@@ -132,7 +132,7 @@ export default function RootLayout({
                       />
                     </Link>
                     <p style={{ color: '#9ca3af' }} className="text-sm md:text-base max-w-sm leading-relaxed font-light">
-                      A curated collection of premium research peptides. Elegance and absolute purity for your laboratory needs.
+                      A curated collection of premium research peptides with absolute purity for your laboratory needs.
                     </p>
                   </div>
                   <div>

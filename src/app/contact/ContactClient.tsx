@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import TiltCard from "@/components/animations/TiltCard";
-import { Mail, Phone, MapPin, Share2, ShieldCheck, CheckCircle2, Building2 } from "lucide-react";
+import { Mail, Phone, MapPin, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 // --- CONTENT CONSTANTS ---
 const CONTACT_CONTENT = {
@@ -14,7 +14,7 @@ const CONTACT_CONTENT = {
     tagline: "Questions about a compound or your order? Our expert team is here to help."
   },
   form: {
-    endpoint: "https://formspree.io/f/placeholder", // Replace with actual Formspree endpoint
+    endpoint: "/api/contact",
     subjects: [
       "General Inquiry",
       "Product Question",
@@ -35,20 +35,6 @@ const CONTACT_CONTENT = {
     partnerEmail: "support@99puritypeptides.com",
     partnerEmail2: "orders@99puritypeptides.com",
     partnerLink: "http://99puritypeptides.com/"
-  },
-  location: {
-    headline: "Boutique Location",
-    text: "Peptides7 Medspa\n148 Line St. Suite D\nCharleston, SC 29403",
-    mapUrl: "https://goo.gl/maps/xaFMjHw2aHf7ReRv7",
-    hours: "Monday - Friday: 9am-7pm"
-  },
-  socials: {
-    headline: "Connect",
-    links: [
-      { name: "Instagram", url: "https://www.instagram.com/scarletthawkinschs" },
-      { name: "Facebook", url: "https://www.facebook.com/Scarlett-Hawkins-MedSpa-101224386084392/" },
-      { name: "TikTok", url: "https://www.tiktok.com/@scarletthawkins.medspa" }
-    ]
   },
   disclaimer: "All compounds featured in this catalog are intended strictly for in-vitro testing and laboratory research purposes. They are explicitly not for human consumption, diagnostic purposes, or veterinary use."
 };
@@ -284,38 +270,6 @@ export default function ContactClient() {
               </TiltCard>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10 h-full">
-              <ScrollReveal direction="up" delay={0.5} className="h-full">
-                <TiltCard className="w-full h-full">
-                  <div className="p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl hover:bg-white/[0.06] transition-colors duration-500 group h-full flex flex-col relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <Building2 className="w-5 h-5 text-white/30 mb-5 group-hover:text-white/70 transition-colors" />
-                    <h3 className="font-serif text-xl text-white mb-3">{CONTACT_CONTENT.location.headline}</h3>
-                    <a href={CONTACT_CONTENT.location.mapUrl} target="_blank" rel="noopener noreferrer" className="text-xs text-white/50 whitespace-pre-line leading-relaxed mb-6 font-light flex-grow hover:text-white transition-colors">
-                      {CONTACT_CONTENT.location.text}
-                    </a>
-                    <p className="text-[9px] text-white/30 uppercase tracking-[0.2em]">{CONTACT_CONTENT.location.hours}</p>
-                  </div>
-                </TiltCard>
-              </ScrollReveal>
-
-              <ScrollReveal direction="up" delay={0.6} className="h-full">
-                <TiltCard className="w-full h-full">
-                  <div className="p-8 rounded-3xl border border-white/10 bg-white/[0.03] backdrop-blur-2xl hover:bg-white/[0.06] transition-colors duration-500 group h-full flex flex-col relative overflow-hidden">
-                    <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    <Share2 className="w-5 h-5 text-white/30 mb-5 group-hover:text-white/70 transition-colors" />
-                    <h3 className="font-serif text-xl text-white mb-4">{CONTACT_CONTENT.socials.headline}</h3>
-                    <div className="space-y-3 text-xs mt-auto">
-                      {CONTACT_CONTENT.socials.links.map(social => (
-                        <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="block text-white/50 hover:text-white transition-colors">
-                          {social.name}
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                </TiltCard>
-              </ScrollReveal>
-            </div>
 
           </div>
         </div>

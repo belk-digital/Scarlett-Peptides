@@ -4,18 +4,16 @@ import JsonLd from "@/components/JsonLd";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = buildMetadata({
-  title: "About Peptides7 — Research-Grade Peptides, Curated by a Medspa Founder",
+  title: "About Peptides7 - Research-Grade Peptides, Curated for Clarity",
   description:
-    "Learn how Peptides7 Medspa in Charleston, SC built a boutique catalog of ≥99% purity research peptides, exclusively fulfilled through 99 Purity Peptides. Radical transparency. Medspa standards. Independent third-party lab testing.",
+    "Discover how Peptides7 built a boutique catalog of ≥99% purity research peptides, exclusively fulfilled through 99 Purity Peptides. Radical transparency. Rigorous standards. Independent third-party lab testing.",
   path: "/about",
   keywords: [
     "Peptides7",
     "about Peptides7",
-    "research peptides Charleston SC",
-    "medspa peptides",
+    "research peptides",
     "99 Purity Peptides",
     "peptide purity standards",
-    "Scarlett Hawkins MedSpa",
   ],
 });
 

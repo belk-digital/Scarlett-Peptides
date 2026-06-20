@@ -44,7 +44,7 @@ export default function AboutClient() {
 
           <ScrollReveal direction="up" delay={0.5}>
             <p className="text-lg md:text-xl text-white/60 font-light leading-relaxed max-w-2xl mx-auto font-sans">
-              Peptides7 brings uncompromising quality standards directly into the laboratory research supply chain. Every compound. Every batch. Every COA — verified.
+              Peptides7 brings uncompromising quality standards directly into the laboratory research supply chain. Every compound. Every batch. Every COA. Verified.
             </p>
           </ScrollReveal>
         </div>
@@ -85,12 +85,12 @@ export default function AboutClient() {
             <div className="space-y-6 text-white/50 font-light leading-relaxed font-sans text-sm md:text-base">
               <ScrollReveal direction="up" delay={0.4}>
                 <p className="text-white/70">
-                  As the peptide landscape continued to expand, we found that more options often created more confusion. So we took a different approach: organizing our collection into seven foundational categories designed to simplify the discovery process.
+                  As the research peptide landscape continued to expand, we found that more options often created more confusion. So we took a different approach: organizing our collection into seven foundational categories designed to simplify the discovery process for serious researchers.
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.5}>
                 <p className="text-white/70">
-                  Peptides7 represents a philosophy of clarity over complexity, curation over clutter, and quality over quantity.
+                  Peptides7 represents a philosophy of clarity over complexity, curation over clutter, and quality over quantity. Every compound is classified as Research Use Only and held to rigorous independent testing standards.
                 </p>
               </ScrollReveal>
             </div>
@@ -130,7 +130,7 @@ export default function AboutClient() {
                 num: "01",
                 icon: <Microscope className="w-6 h-6 text-white" />,
                 title: "Purity First",
-                text: "Research is only as valid as the materials used. We accept nothing less than ≥99% verified purity across our entire catalog — confirmed by independent HPLC and LC-MS testing."
+                text: "Research is only as valid as the materials used. We accept nothing less than ≥99% verified purity across our entire catalog, confirmed by independent HPLC and LC-MS testing."
               },
               {
                 num: "02",
@@ -142,7 +142,7 @@ export default function AboutClient() {
                 num: "03",
                 icon: <Award className="w-6 h-6 text-white" />,
                 title: "Curated Collection",
-                text: "We don't stock every compound on the market. We stock the right compounds — hand-selected for documented scientific relevance and research-community demand."
+                text: "We don't stock every compound on the market. We stock the right compounds, hand-selected for documented scientific relevance and research-community demand."
               },
               {
                 num: "04",
@@ -186,7 +186,7 @@ export default function AboutClient() {
               <div className="space-y-6 text-white/50 font-light leading-relaxed text-sm md:text-base font-sans">
                 <ScrollReveal direction="up" delay={0.2}>
                   <p className="text-white/70">
-                    In the research peptide industry, &ldquo;high purity&rdquo; is a phrase deployed liberally and defined rarely. At Peptides7, purity is not a marketing claim — it is a measurable, documented, and independently verified standard.
+                    In the research peptide industry, &ldquo;high purity&rdquo; is a phrase deployed liberally and defined rarely. At Peptides7, purity is not a marketing claim. It is a measurable, documented, and independently verified standard.
                   </p>
                 </ScrollReveal>
                 <ScrollReveal direction="up" delay={0.3}>

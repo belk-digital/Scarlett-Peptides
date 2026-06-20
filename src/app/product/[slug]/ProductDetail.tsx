@@ -106,7 +106,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
                   <Image
                     src={selectedVariant?.image || product.image}
-                    alt={`${product.name} — ${product.category} research peptide, ≥99% HPLC purity`}
+                    alt={`${product.name}, ${product.category} research peptide, ≥99% HPLC purity`}
                     fill
                     className="object-cover rounded-[2rem] z-10 opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
                     priority
