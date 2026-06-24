@@ -172,7 +172,7 @@ export default function RootLayout({
                       &copy; {new Date().getFullYear()} Peptides7. All rights reserved.
                     </p>
                     <p style={{ color: '#4b5563' }} className="text-[10px] tracking-widest uppercase">
-                      Design & Developed by <a href="https://belkdigital.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Belk Digital</a>
+                      Design & Developed by <a href="https://belkdigital.com" target="_blank" rel="noopener noreferrer" className="text-[#8c8273] hover:text-[#b3a895] transition-colors">Belk Digital</a>
                     </p>
                   </div>
                   <div className="flex gap-6 text-[10px] md:text-xs tracking-widest uppercase">

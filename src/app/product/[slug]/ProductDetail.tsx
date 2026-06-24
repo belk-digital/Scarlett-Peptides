@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 import TiltCard from "@/components/animations/TiltCard";
-import { ArrowLeft, ShieldAlert, ChevronDown, Check } from "lucide-react";
+import { ArrowLeft, ShieldAlert, ChevronDown, Check, FileText, ShieldCheck } from "lucide-react";
 import type { Product } from "@/data/products";
 
 export default function ProductDetail({ product }: { product: Product }) {
@@ -46,8 +46,18 @@ export default function ProductDetail({ product }: { product: Product }) {
     : product.price;
 
   const displayRegularPrice = product.isVariable
-    ? (selectedVariant ? selectedVariant.regularPrice : undefined)
+    ? selectedVariant?.regularPrice
     : product.regularPrice;
+
+  const coaMap: Record<string, string> = {
+    'bpc-157': '/coa/BPC 157 BP5526.pdf',
+    'ghkcu': '/coa/GHK-Cu GK61726.pdf',
+    'glow': '/coa/GLOW GL61626.pdf',
+    'glutathione': '/coa/Glutathione GL61526.pdf',
+    'klow': '/coa/KLOW KL6926.pdf',
+    'nad': '/coa/NAD ND6826.pdf',
+  };
+  const coaUrl = coaMap[product.slug] || null;
 
   const handleAddToCart = () => {
     if (product.isVariable && !selectedVariant) {
@@ -80,7 +90,7 @@ export default function ProductDetail({ product }: { product: Product }) {
   };
 
   return (
-    <div className="bg-[#050505] min-h-screen text-white pt-32 md:pt-40 pb-32 overflow-hidden relative">
+    <div className="bg-[#050505] min-h-screen text-white pt-32 md:pt-40 pb-32 overflow-clip relative">
 
       {/* Background Ambient Glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[800px] aspect-square bg-white/[0.015] blur-[150px] rounded-full pointer-events-none z-0"></div>
@@ -97,8 +107,8 @@ export default function ProductDetail({ product }: { product: Product }) {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
 
           {/* LEFT: PRODUCT IMAGE */}
-          <div className="lg:col-span-5 relative">
-            <ScrollReveal direction="up" delay={0.2} className="sticky top-32">
+          <div className="lg:col-span-5 relative lg:sticky lg:top-32 self-start">
+            <ScrollReveal direction="up" delay={0.2}>
               <TiltCard className="w-full">
                 <div className="relative w-full aspect-[4/5] bg-black rounded-[2rem] overflow-hidden border border-white/10 group shadow-[0_20px_60px_rgba(0,0,0,0.8)] [transform:translateZ(0)]">
                   {/* Subtle shine effect */}
@@ -115,7 +125,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
                   {/* Badge */}
                   <div className="absolute top-6 left-6 z-30">
-                    <span className="bg-white/10 backdrop-blur-md text-white border border-white/20 text-[9px] tracking-widest uppercase px-3 py-1.5 rounded-full shadow-lg font-sans">
+                    <span className="bg-black/50 backdrop-blur-md text-white border border-white/10 text-[9px] tracking-widest uppercase px-3 py-1.5 rounded-full shadow-lg font-sans">
                       {product.category}
                     </span>
                   </div>
@@ -250,6 +260,24 @@ export default function ProductDetail({ product }: { product: Product }) {
               </div>
             </ScrollReveal>
 
+            {/* Option 1: High Trust COA Button */}
+            {coaUrl && (
+              <ScrollReveal direction="up" delay={0.65}>
+                <a href={coaUrl} target="_blank" rel="noopener noreferrer" className="mt-6 flex items-center justify-between bg-white/[0.03] backdrop-blur-sm border border-white/10 hover:border-white/30 hover:bg-white/[0.05] p-4 rounded-2xl transition-all duration-300 group">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-white/10 p-2.5 rounded-xl group-hover:bg-white/20 transition-colors">
+                      <ShieldCheck className="w-5 h-5 text-white" strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-medium text-white tracking-wide">Certificate of Analysis</h4>
+                      <p className="text-[10px] text-white/50 uppercase tracking-widest mt-1">≥99% Purity Verified</p>
+                    </div>
+                  </div>
+                  <FileText className="w-5 h-5 text-white/30 group-hover:text-white transition-colors" strokeWidth={1.5} />
+                </a>
+              </ScrollReveal>
+            )}
+
             {/* Disclaimer */}
             <ScrollReveal direction="up" delay={0.7}>
               <div className="mt-8 bg-red-500/5 p-5 rounded-2xl border border-red-500/10 flex gap-4 items-start">
@@ -266,7 +294,7 @@ export default function ProductDetail({ product }: { product: Product }) {
         {/* TABS SECTION */}
         {product.tabs && product.tabs.length > 0 && (
           <ScrollReveal direction="up" delay={0.2}>
-            <div className="mt-32 max-w-4xl border border-white/10 bg-white/[0.02] backdrop-blur-lg rounded-[2rem] p-6 md:p-10 shadow-2xl relative overflow-hidden">
+            <div className="mt-32 w-full border border-white/10 bg-white/[0.02] backdrop-blur-lg rounded-[2rem] p-6 md:p-10 shadow-2xl relative overflow-hidden">
               {/* Subtle top glow */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
 
@@ -289,6 +317,14 @@ export default function ProductDetail({ product }: { product: Product }) {
                 {product.tabs[activeTab].paragraphs.map((p, i) => (
                   <p key={i} dangerouslySetInnerHTML={{ __html: p }} />
                 ))}
+                {product.tabs[activeTab].title === "Quality & Purity Standard" && coaUrl && (
+                  <div className="pt-6 mt-6 border-t border-white/10">
+                    <a href={coaUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 bg-white text-black px-6 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors shadow-lg">
+                      <FileText className="w-4 h-4" />
+                      View Lab Report (PDF)
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </ScrollReveal>
@@ -296,7 +332,7 @@ export default function ProductDetail({ product }: { product: Product }) {
 
         {/* FAQS SECTION */}
         {product.faqs && product.faqs.length > 0 && (
-          <div className="mt-32 max-w-4xl">
+          <div className="mt-32 w-full">
             <ScrollReveal direction="up" delay={0.1}>
               <div className="flex items-center gap-4 mb-10">
                 <div className="w-12 h-px bg-white/20"></div>
