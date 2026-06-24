@@ -957,7 +957,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
               "
             </div>
             
-            <blockquote className="text-2xl sm:text-3xl md:text-4xl lg:text-[3.25rem] text-white leading-[1.3] md:leading-[1.4] font-serif font-light mb-8 md:mb-16 text-balance tracking-wide relative z-10 flex flex-wrap justify-center gap-x-1.5 sm:gap-x-2 md:gap-x-3 gap-y-1 sm:gap-y-2 px-4 md:px-0">
+            <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[2.75rem] text-white leading-[1.4] md:leading-[1.5] font-serif font-light mb-8 md:mb-12 text-balance tracking-wide relative z-10 flex flex-wrap justify-center gap-x-1 sm:gap-x-1.5 md:gap-x-2 gap-y-1 sm:gap-y-2 px-4 lg:px-8">
               {founderQuoteWords.map((word, i) => {
                 const start = i / founderQuoteWords.length;
                 const end = start + (1 / founderQuoteWords.length);
