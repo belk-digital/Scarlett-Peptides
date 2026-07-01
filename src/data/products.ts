@@ -526,9 +526,9 @@ export const products: Product[] = [
     slug: "retatrutide",
     name: "Retatrutide",
     shortDescription:
-      "Retatrutide research peptide. ≥99% HPLC purity, independently verified.",
+      "Retatrutide (LY3437943) triple-agonist peptide studied for GLP-1, GIP, and GCGR receptor activation in metabolic research. ≥99% HPLC verified purity.",
     longDescription:
-      "Retatrutide is a multi-receptor agonist peptide currently studied for its effects on metabolism and weight regulation. Peptides7 sources Retatrutide exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
+      "Retatrutide (LY3437943) is a novel synthetic peptide functioning as a triple hormone receptor agonist, targeting the GLP-1 (glucagon-like peptide-1), GIP (glucose-dependent insulinotropic polypeptide), and GCGR (glucagon receptor) pathways. In preclinical and clinical research models, this tri-agonist mechanism has been extensively studied for its synergistic effects on metabolic regulation, energy expenditure, and lipid metabolism. Peptides7 sources Retatrutide exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, ensuring that every batch is independently verified by HPLC and LC-MS prior to release and accompanied by a comprehensive Certificate of Analysis.",
     image: "/images/products/retatrutide-10mg.jpg",
     category: "Metabolic Research",
     isVariable: true,
@@ -549,8 +549,16 @@ export const products: Product[] = [
       {
         title: "Product Details",
         paragraphs: [
-          "Retatrutide is supplied as a lyophilized powder. Each vial displays a unique batch number tied to its Certificate of Analysis.",
-          "It should be reconstituted with bacteriostatic or sterile water under standard aseptic technique and is intended strictly for in-vitro laboratory research applications.",
+          "Retatrutide is supplied as a lyophilized powder across various vial sizes (10mg, 20mg, 30mg, 50mg, and 100mg) to accommodate diverse research protocols. Each vial displays a unique batch number tied to its Certificate of Analysis.",
+          "Reconstitution should be performed with bacteriostatic or sterile water under standard aseptic technique. The compound is intended strictly for in-vitro laboratory research applications.",
+        ],
+      },
+      {
+        title: "Research Focus & Mechanism Overview",
+        paragraphs: [
+          "Retatrutide's primary research interest lies in its unique triple-agonist profile, simultaneously activating GLP-1, GIP, and glucagon receptors. This synergistic approach is studied for its potential to amplify metabolic responses compared to single or dual agonists.",
+          "In research models, GLP-1 and GIP activation are primarily associated with glucose-dependent insulin secretion and satiety signaling, while glucagon receptor activation is investigated for its role in increasing hepatic glucose output and enhancing energy expenditure.",
+          "Researchers frequently utilize Retatrutide in studies examining complex metabolic disorders, lipid metabolism, and the physiological mechanisms underlying weight regulation and energy homeostasis.",
         ],
       },
       QUALITY_TAB,
@@ -559,11 +567,27 @@ export const products: Product[] = [
     faqs: [
       {
         q: "What is Retatrutide?",
-        a: "Retatrutide is a triple hormone receptor agonist studied in research contexts for its reported roles in metabolic regulation.",
+        a: "Retatrutide (LY3437943) is a triple hormone receptor agonist peptide that targets GLP-1, GIP, and glucagon receptors. It is widely studied in research contexts for its reported roles in comprehensive metabolic regulation and energy homeostasis.",
+      },
+      {
+        q: "How does the triple-agonist mechanism of Retatrutide work?",
+        a: "Retatrutide is studied for its simultaneous activation of three key metabolic receptors: GLP-1, GIP, and GCGR (glucagon receptor). This combined activation is theorized in research models to produce synergistic effects on lipid metabolism and energy expenditure beyond what single or dual agonists achieve.",
+      },
+      {
+        q: "What vial sizes are available for Retatrutide?",
+        a: "Retatrutide is available in a wide range of vial sizes including 10mg, 20mg, 30mg, 50mg, and 100mg to accommodate varying concentration requirements in research protocols.",
       },
       {
         q: "How is Retatrutide purity verified?",
-        a: "Each batch is tested by an independent third-party laboratory using HPLC for purity quantification and LC-MS for molecular identity confirmation, with results published in a batch-specific COA.",
+        a: "Each batch is rigorously tested by an independent third-party laboratory using HPLC for precise purity quantification and LC-MS for molecular identity confirmation, with results published in a batch-specific COA.",
+      },
+      {
+        q: "How should Retatrutide be reconstituted and stored?",
+        a: "Reconstitute with bacteriostatic or sterile water using standard aseptic technique. Unreconstituted lyophilized vials should be stored refrigerated or frozen away from light. Once reconstituted, solutions should be refrigerated and used according to your protocol's specific stability requirements.",
+      },
+      {
+        q: "Is Retatrutide intended for human use?",
+        a: "No. Retatrutide is classified as a Research Use Only (RUO) laboratory compound. It is strictly intended for in-vitro testing and preclinical research, and is not for human consumption or self-administration.",
       },
     ],
   },

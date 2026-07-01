@@ -56,6 +56,7 @@ export default function ProductDetail({ product }: { product: Product }) {
     'glutathione': '/coa/Glutathione GL61526.pdf',
     'klow': '/coa/KLOW KL6926.pdf',
     'nad': '/coa/NAD ND6826.pdf',
+    'retatrutide': '/coa/Reta RT61626.pdf',
   };
   const coaUrl = coaMap[product.slug] || null;
 
