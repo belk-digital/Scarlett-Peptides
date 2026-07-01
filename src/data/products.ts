@@ -522,6 +522,51 @@ export const products: Product[] = [
       }
     ],
   },
+  {
+    slug: "retatrutide",
+    name: "Retatrutide",
+    shortDescription:
+      "Retatrutide research peptide. ≥99% HPLC purity, independently verified.",
+    longDescription:
+      "Retatrutide is a multi-receptor agonist peptide currently studied for its effects on metabolism and weight regulation. Peptides7 sources Retatrutide exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
+    image: "/images/products/retatrutide-10mg.jpg",
+    category: "Metabolic Research",
+    isVariable: true,
+    variants: [
+      { label: "10mg - Single", price: 100.0, variationId: 1136, image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "10mg - 5 Kit", price: 500.0, variationId: 3756, image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "10mg - 10 Kit", price: 950.0, variationId: 3755, image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "20mg - Single", price: 140.0, variationId: 1137, image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "20mg - 5 Kit", price: 700.0, variationId: 3758, image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "20mg - 10 Kit", price: 1400.0, variationId: 3757, image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "30mg - Single", price: 170.0, variationId: 1138, image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "30mg - 5 Kit", price: 850.0, variationId: 3760, image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "30mg - 10 Kit", price: 1700.0, variationId: 3759, image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "50mg - Single", price: 240.0, variationId: 1139, image: "/images/products/retatrutide-50mg.jpg" },
+      { label: "100mg - Single", price: 390.0, variationId: 3544, image: "/images/products/retatrutide-100mg.jpg" },
+    ],
+    tabs: [
+      {
+        title: "Product Details",
+        paragraphs: [
+          "Retatrutide is supplied as a lyophilized powder. Each vial displays a unique batch number tied to its Certificate of Analysis.",
+          "It should be reconstituted with bacteriostatic or sterile water under standard aseptic technique and is intended strictly for in-vitro laboratory research applications.",
+        ],
+      },
+      QUALITY_TAB,
+      COMPLIANCE_TAB,
+    ],
+    faqs: [
+      {
+        q: "What is Retatrutide?",
+        a: "Retatrutide is a triple hormone receptor agonist studied in research contexts for its reported roles in metabolic regulation.",
+      },
+      {
+        q: "How is Retatrutide purity verified?",
+        a: "Each batch is tested by an independent third-party laboratory using HPLC for purity quantification and LC-MS for molecular identity confirmation, with results published in a batch-specific COA.",
+      },
+    ],
+  },
 ];
 
 export function getAllProducts(): Product[] {
