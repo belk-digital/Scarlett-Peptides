@@ -133,7 +133,7 @@ export const products: Product[] = [
     longDescription:
       "KLOW is a second proprietary peptide blend in the Peptides7 catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design, not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
     image: "/images/products/klow.jpg",
-    category: "Glow Research",
+    category: "Vitality Research",
     isVariable: true,
     variants: [
       { label: "Single", price: 125.0, regularPrice: 130.0, variationId: 3803 },
@@ -199,7 +199,7 @@ export const products: Product[] = [
     longDescription:
       "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Peptides7 sources GHK-Cu exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
     image: "/images/products/ghk-cu-100mg.jpg",
-    category: "Longevity Research",
+    category: "Cognitive Research",
     isVariable: true,
     variants: [
       { label: "50mg - Single", price: 50.0, regularPrice: 70.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
@@ -411,7 +411,7 @@ export const products: Product[] = [
     longDescription:
       "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Peptides7 sources Glutathione exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
     image: "/images/products/glutathione-200mg.jpg",
-    category: "Longevity Research",
+    category: "Recovery Research",
     wooProductId: 1176,
     isVariable: false,
     price: 65.0,
@@ -475,7 +475,7 @@ export const products: Product[] = [
     longDescription:
       "The Wolverine Stack is a specialized combination product supplying both BPC-157 and TB-500. This combination is one of the most widely referenced pairs in preclinical musculoskeletal, tendon, and ligament repair models. While BPC-157 is studied primarily for its influence on angiogenesis and the nitric oxide pathway, TB-500 (a Thymosin Beta-4 fragment) is studied for its role in actin sequestration and cell migration. Together, they offer a multi-pathway approach to tissue regeneration research. Peptides7 sources both compounds exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified to ≥99% purity and accompanied by full Certificates of Analysis.",
     image: "/images/products/wolverine-10-10-mg.jpg",
-    category: "Recovery Research",
+    category: "Performance Research",
     isVariable: true,
     variants: [
       { label: "5/5mg - Single", price: 70.0, regularPrice: 80.0, variationId: [3816], image: "/images/products/wolverine-5-5-mg.jpg" },
