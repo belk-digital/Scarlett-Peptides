@@ -199,7 +199,7 @@ export const products: Product[] = [
     longDescription:
       "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Peptides7 sources GHK-Cu exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
     image: "/images/products/ghk-cu-100mg.jpg",
-    category: "Cognitive Research",
+    category: "Longevity Research",
     isVariable: true,
     variants: [
       { label: "50mg - Single", price: 50.0, regularPrice: 70.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
@@ -342,7 +342,7 @@ export const products: Product[] = [
     longDescription:
       "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38, all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Peptides7 offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
     image: "/images/products/nadplus-500mg.jpg",
-    category: "Longevity Research",
+    category: "Cognitive Research",
     isVariable: true,
     variants: [
       { label: "500mg - Single", price: 60.0, regularPrice: 100.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
