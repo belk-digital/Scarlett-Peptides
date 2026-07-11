@@ -2,16 +2,10 @@ import { CartItem } from "@/context/CartContext";
 
 // --- CONFIGURATION CONSTANTS ---
 
-// 1. Base URL for WooCommerce Cart
-export const WOO_BASE_URL = "https://99puritypeptides.com/cart/";
+// 1. Base URL for Cart
+export const NEXTJS_BASE_URL = "http://localhost:3000/cart"; // Update this to production URL when deployed
 
-// 2. Checkout Mode
-// "multi" uses comma-separated ?add-to-cart=ID:QTY
-// "single-variation" uses native Woo fallback for exactly 1 variable item
-export type CheckoutMode = "multi" | "single-variation";
-export const CHECKOUT_MODE: CheckoutMode = "single-variation";
-
-// 3. Affiliate Referral Config
+// 2. Affiliate Referral Config
 // Removed for now per request.
 
 
@@ -21,35 +15,21 @@ export const CLEAR_CART_ON_CHECKOUT = true;
 // --- URL BUILDER FUNCTION ---
 
 export function buildCheckoutUrl(items: CartItem[]): string {
-  if (items.length === 0) return WOO_BASE_URL;
+  // Use production URL in production, local for testing
+  const baseUrl = typeof window !== "undefined" && window.location.hostname === "localhost" 
+    ? "http://localhost:3000/cart" 
+    : "https://99puritypeptides.com/cart";
 
-  const url = new URL(WOO_BASE_URL);
+  if (items.length === 0) return baseUrl;
 
-  // Flatten all items and bundles into a single list of ID:QTY pairs
-  const cartEntries: string[] = [];
-  
-  items.forEach(item => {
-    const idObj = item?.variationId || item?.wooProductId;
-    const qty = item?.quantity || 1;
-    
-    if (Array.isArray(idObj)) {
-      idObj.forEach(id => {
-        cartEntries.push(`${id}:${qty}`);
-      });
-    } else if (idObj) {
-      cartEntries.push(`${idObj}:${qty}`);
-    }
+  const url = new URL(baseUrl);
+
+  // Format: slug:sku:qty,slug:sku:qty
+  const cartEntries: string[] = items.map(item => {
+    return `${item.slug}:${item.sku}:${item.quantity}`;
   });
 
-  if (cartEntries.length === 1) {
-    // Single item native Add-to-Cart
-    const [id, qty] = cartEntries[0].split(':');
-    url.searchParams.append("add-to-cart", id);
-    url.searchParams.append("quantity", qty);
-  } else if (cartEntries.length > 1) {
-    // Multi-product format: ?add-to-cart=ID:QTY,ID:QTY
-    url.searchParams.append("add-to-cart", cartEntries.join(','));
-  }
+  url.searchParams.append("affiliate-cart", cartEntries.join(','));
 
   // Attempt to clear the WooCommerce cart before adding new items.
   // Note: This requires the parent WooCommerce site to have a snippet intercepting ?clear-cart=1

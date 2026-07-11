@@ -2,7 +2,7 @@ export type Variant = {
   label: string;
   price: number;
   regularPrice?: number;
-  variationId: number | number[];    // Unique product ID for this variant (WooCommerce)
+  sku: string;
   attributes?: Record<string, string>;
   image?: string;         // Variant-specific image
 };
@@ -24,7 +24,6 @@ export type Product = {
   longDescription: string;
   image: string;          // Default/Parent image
   category: string;
-  wooProductId?: number;  // For simple products
   isVariable: boolean;
   price?: number;         // Sale price for simple products
   regularPrice?: number;  // Regular price for simple products
@@ -66,9 +65,9 @@ export const products: Product[] = [
     category: "Glow Research",
     isVariable: true,
     variants: [
-      { label: "Single", price: 110.0, regularPrice: 125.0, variationId: 3808 },
-      { label: "5 Kit (Save 10%)", price: 450.0, regularPrice: 550.0, variationId: 3809 },
-      { label: "10 Kit (Best Value)", price: 900.0, regularPrice: 1100.0, variationId: 3810 },
+      { label: "Single", price: 110.0, regularPrice: 125.0, sku: "GLOW" },
+      { label: "5 Kit (Save 10%)", price: 450.0, regularPrice: 550.0, sku: "GLOW-K5" },
+      { label: "10 Kit (Best Value)", price: 900.0, regularPrice: 1100.0, sku: "GLOW-K10" },
     ],
     tabs: [
       {
@@ -136,9 +135,9 @@ export const products: Product[] = [
     category: "Vitality Research",
     isVariable: true,
     variants: [
-      { label: "Single", price: 125.0, regularPrice: 130.0, variationId: 3803 },
-      { label: "5 Kit (Save 10%)", price: 500.0, regularPrice: 650.0, variationId: 3804 },
-      { label: "10 Kit (Best Value)", price: 1000.0, regularPrice: 1300.0, variationId: 3805 },
+      { label: "Single", price: 125.0, regularPrice: 130.0, sku: "KLOW" },
+      { label: "5 Kit (Save 10%)", price: 500.0, regularPrice: 650.0, sku: "KLOW-K5" },
+      { label: "10 Kit (Best Value)", price: 1000.0, regularPrice: 1300.0, sku: "KLOW-K10" },
     ],
     tabs: [
       {
@@ -192,7 +191,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "ghkcu",
+    slug: "ghk-cu",
     name: "GhkCU",
     shortDescription:
       "GHK-Cu copper peptide studied for gene expression, collagen synthesis, and wound-healing research. ≥99% pure, third-party verified.",
@@ -202,12 +201,15 @@ export const products: Product[] = [
     category: "Longevity Research",
     isVariable: true,
     variants: [
-      { label: "50mg - Single", price: 50.0, regularPrice: 70.0, variationId: 990, image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "50mg - 10 Kit", price: 400.0, regularPrice: 600.0, variationId: 3858, image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "100mg - Single", price: 67.5, regularPrice: 90.0, variationId: 991, image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "100mg - 10 Kit", price: 650.0, regularPrice: 750.0, variationId: 3860, image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "200mg - Single", price: 135.0, regularPrice: 150.0, variationId: 3857, image: "/images/products/ghk-cu-200mg.jpg" },
-      { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, variationId: 3862, image: "/images/products/ghk-cu-200mg.jpg" },
+      { label: "50mg - Single", price: 50.0, regularPrice: 70.0, sku: "GHKCU-50", image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "50mg - 5 Kit", price: 210.0, regularPrice: 300.0, sku: "GHKCU-50-K5", image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "50mg - 10 Kit", price: 400.0, regularPrice: 600.0, sku: "GHKCU-50-K10", image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "100mg - Single", price: 67.5, regularPrice: 90.0, sku: "GHKCU-100", image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "100mg - 5 Kit", price: 330.0, regularPrice: 400.0, sku: "GHKCU-100-K5", image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "100mg - 10 Kit", price: 650.0, regularPrice: 750.0, sku: "GHKCU-100-K10", image: "/images/products/ghk-cu-100mg.jpg" },
+      // 200mg commented out per user instructions
+      // { label: "200mg - Single", price: 135.0, regularPrice: 150.0, sku: "GHKCU-200", image: "/images/products/ghk-cu-200mg.jpg" },
+      // { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, sku: "GHKCU-200-K10", image: "/images/products/ghk-cu-200mg.jpg" },
     ],
     tabs: [
       {
@@ -275,12 +277,12 @@ export const products: Product[] = [
     category: "Metabolic Research",
     isVariable: true,
     variants: [
-      { label: "10mg - Single", price: 55.0, regularPrice: 70.0, variationId: 2816, image: "/images/products/mots-c-10mg.jpg" },
-      { label: "10mg - 5 Kit", price: 320.0, regularPrice: 350.0, variationId: 3768, image: "/images/products/mots-c-10mg.jpg" },
-      { label: "10mg - 10 Kit", price: 600.0, regularPrice: 700.0, variationId: 3767, image: "/images/products/mots-c-10mg.jpg" },
-      { label: "40mg - Single", price: 110.0, regularPrice: 120.0, variationId: 2815, image: "/images/products/mots-c-40mg.jpg" },
-      { label: "40mg - 5 Kit", price: 470.0, regularPrice: 550.0, variationId: 3770, image: "/images/products/mots-c-40mg.jpg" },
-      { label: "40mg - 10 Kit", price: 900.0, regularPrice: 1100.0, variationId: 3769, image: "/images/products/mots-c-40mg.jpg" },
+      { label: "10mg - Single", price: 55.0, regularPrice: 70.0, sku: "MOTS-C-10", image: "/images/products/mots-c-10mg.jpg" },
+      { label: "10mg - 5 Kit", price: 320.0, regularPrice: 350.0, sku: "MOTS-C-10-K5", image: "/images/products/mots-c-10mg.jpg" },
+      { label: "10mg - 10 Kit", price: 600.0, regularPrice: 700.0, sku: "MOTS-C-10-K10", image: "/images/products/mots-c-10mg.jpg" },
+      { label: "40mg - Single", price: 110.0, regularPrice: 120.0, sku: "MOTS-C-40", image: "/images/products/mots-c-40mg.jpg" },
+      { label: "40mg - 5 Kit", price: 470.0, regularPrice: 550.0, sku: "MOTS-C-40-K5", image: "/images/products/mots-c-40mg.jpg" },
+      { label: "40mg - 10 Kit", price: 900.0, regularPrice: 1100.0, sku: "MOTS-C-40-K10", image: "/images/products/mots-c-40mg.jpg" },
     ],
     tabs: [
       {
@@ -345,12 +347,12 @@ export const products: Product[] = [
     category: "Cognitive Research",
     isVariable: true,
     variants: [
-      { label: "500mg - Single", price: 60.0, regularPrice: 100.0, variationId: 976, image: "/images/products/nadplus-500mg.jpg" },
-      { label: "500mg - 5 Kit", price: 375.0, regularPrice: 450.0, variationId: 3836, image: "/images/products/nadplus-500mg.jpg" },
-      { label: "500mg - 10 Kit", price: 700.0, regularPrice: 900.0, variationId: 3835, image: "/images/products/nadplus-500mg.jpg" },
-      { label: "1000mg - Single", price: 100.0, regularPrice: 125.0, variationId: 975, image: "/images/products/nad-1000mg.jpg" },
-      { label: "1000mg - 5 Kit", price: 450.0, regularPrice: 625.0, variationId: 3838, image: "/images/products/nad-1000mg.jpg" },
-      { label: "1000mg - 10 Kit", price: 800.0, regularPrice: 1250.0, variationId: 3837, image: "/images/products/nad-1000mg.jpg" },
+      { label: "500mg - Single", price: 60.0, regularPrice: 100.0, sku: "NAD-500", image: "/images/products/nadplus-500mg.jpg" },
+      { label: "500mg - 5 Kit", price: 375.0, regularPrice: 450.0, sku: "NAD-500-K5", image: "/images/products/nadplus-500mg.jpg" },
+      { label: "500mg - 10 Kit", price: 700.0, regularPrice: 900.0, sku: "NAD-500-K10", image: "/images/products/nadplus-500mg.jpg" },
+      { label: "1000mg - Single", price: 100.0, regularPrice: 125.0, sku: "NAD-1000", image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - 5 Kit", price: 450.0, regularPrice: 625.0, sku: "NAD-1000-K5", image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - 10 Kit", price: 800.0, regularPrice: 1250.0, sku: "NAD-1000-K10", image: "/images/products/nad-1000mg.jpg" },
     ],
     tabs: [
       {
@@ -404,7 +406,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "glutathione",
+    slug: "glutathione-600-1500",
     name: "Glutathione",
     shortDescription:
       "Tripeptide antioxidant studied for redox balance and oxidative stress research. ≥99% purity, independently verified by COA.",
@@ -412,10 +414,11 @@ export const products: Product[] = [
       "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Peptides7 sources Glutathione exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
     image: "/images/products/glutathione-200mg.jpg",
     category: "Recovery Research",
-    wooProductId: 1176,
-    isVariable: false,
-    price: 65.0,
-    regularPrice: 80.0,
+    isVariable: true,
+    variants: [
+      { label: "600mg", price: 65.0, sku: "GLUTATHIONE-600" },
+      { label: "1500mg", price: 95.0, sku: "GLUTATHIONE-1500" },
+    ],
     tabs: [
       {
         title: "Product Details",
@@ -468,7 +471,7 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "wolverine-stack",
+    slug: "bpc-tb-500-research-peptide-blend",
     name: "Wolverine Stack",
     shortDescription:
       "A synergistic research stack combining BPC-157 and TB-500. Formulated for advanced tissue repair, angiogenesis, and structural remodeling research.",
@@ -478,10 +481,12 @@ export const products: Product[] = [
     category: "Performance Research",
     isVariable: true,
     variants: [
-      { label: "5/5mg - Single", price: 70.0, regularPrice: 80.0, variationId: [3816], image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "10/10mg - Single", price: 95.0, regularPrice: 110.0, variationId: [3813], image: "/images/products/wolverine-10-10-mg.jpg" },
-      { label: "10/10mg - 5 Kit", price: 475.0, regularPrice: 525.0, variationId: [3814], image: "/images/products/wolverine-10-10-mg.jpg" },
-      { label: "10/10mg - 10 Kit (Best Value)", price: 800.0, regularPrice: 1050.0, variationId: [3815], image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "5/5mg - Single", price: 70.0, regularPrice: 80.0, sku: "BPCTB-0505", image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "5/5mg - 5 Kit", price: 315.0, regularPrice: 350.0, sku: "BPCTB-0505-K5", image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "5/5mg - 10 Kit", price: 550.0, regularPrice: 600.0, sku: "BPCTB-0505-K10", image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "10/10mg - Single", price: 95.0, regularPrice: 110.0, sku: "BPCTB-1010", image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "10/10mg - 5 Kit", price: 475.0, regularPrice: 525.0, sku: "BPCTB-1010-K5", image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "10/10mg - 10 Kit (Best Value)", price: 800.0, regularPrice: 1050.0, sku: "BPCTB-1010-K10", image: "/images/products/wolverine-10-10-mg.jpg" },
     ],
     tabs: [
       {
@@ -533,17 +538,20 @@ export const products: Product[] = [
     category: "Metabolic Research",
     isVariable: true,
     variants: [
-      { label: "10mg - Single", price: 100.0, variationId: 1136, image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "10mg - 5 Kit", price: 500.0, variationId: 3756, image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "10mg - 10 Kit", price: 950.0, variationId: 3755, image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "20mg - Single", price: 140.0, variationId: 1137, image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "20mg - 5 Kit", price: 700.0, variationId: 3758, image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "20mg - 10 Kit", price: 1400.0, variationId: 3757, image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "30mg - Single", price: 170.0, variationId: 1138, image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "30mg - 5 Kit", price: 850.0, variationId: 3760, image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "30mg - 10 Kit", price: 1700.0, variationId: 3759, image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "50mg - Single", price: 240.0, variationId: 1139, image: "/images/products/retatrutide-50mg.jpg" },
-      { label: "100mg - Single", price: 390.0, variationId: 3544, image: "/images/products/retatrutide-100mg.jpg" },
+      { label: "10mg - Single", price: 100.0, sku: "RETATRUTIDE-10", image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "10mg - 5 Kit", price: 500.0, sku: "RETATRUTIDE-10-K5", image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "10mg - 10 Kit", price: 950.0, sku: "RETATRUTIDE-10-K10", image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "20mg - Single", price: 140.0, sku: "RETATRUTIDE-20", image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "20mg - 5 Kit", price: 700.0, sku: "RETATRUTIDE-20-K5", image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "20mg - 10 Kit", price: 1400.0, sku: "RETATRUTIDE-20-K10", image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "30mg - Single", price: 170.0, sku: "RETATRUTIDE-30", image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "30mg - 5 Kit", price: 850.0, sku: "RETATRUTIDE-30-K5", image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "30mg - 10 Kit", price: 1700.0, sku: "RETATRUTIDE-30-K10", image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "60mg - Single", price: 280.0, sku: "RETATRUTIDE-60", image: "/images/products/retatrutide-50mg.jpg" },
+      { label: "60mg - 5 Kit", price: 1400.0, sku: "RETATRUTIDE-60-K5", image: "/images/products/retatrutide-50mg.jpg" },
+      { label: "60mg - 10 Kit", price: 2800.0, sku: "RETATRUTIDE-60-K10", image: "/images/products/retatrutide-50mg.jpg" },
+      // { label: "50mg - Single", price: 240.0, sku: "RETATRUTIDE-50", image: "/images/products/retatrutide-50mg.jpg" },
+      // { label: "100mg - Single", price: 390.0, sku: "RETATRUTIDE-100", image: "/images/products/retatrutide-100mg.jpg" },
     ],
     tabs: [
       {

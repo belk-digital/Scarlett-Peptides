@@ -95,7 +95,7 @@ function ShopContent() {
                       addItem({
                         slug: product.slug,
                         name: product.name,
-                        wooProductId: product.wooProductId,
+                        sku: product.slug,
                         price: product.price,
                         quantity: 1,
                         image: product.image,

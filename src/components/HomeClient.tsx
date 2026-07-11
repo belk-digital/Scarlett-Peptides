@@ -428,7 +428,7 @@ export default function HomeClient({ allProducts, featuredProducts, recentPosts 
                             addItem({
                               slug: product.slug,
                               name: product.name,
-                              wooProductId: product.wooProductId,
+                              sku: product.slug, // fallback for simple products
                               price: product.price,
                               quantity: 1,
                               image: product.image,

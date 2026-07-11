@@ -72,8 +72,7 @@ export default function ProductDetail({ product }: { product: Product }) {
       addItem({
         slug: product.slug,
         name: product.name,
-        wooProductId: product.wooProductId,
-        variationId: selectedVariant?.variationId,
+        sku: selectedVariant?.sku || product.slug,
         attributes: selectedVariant?.attributes,
         label: selectedVariant?.label,
         price: displayPrice || 0,
