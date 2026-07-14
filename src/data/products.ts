@@ -65,9 +65,9 @@ export const products: Product[] = [
     category: "Glow Research",
     isVariable: true,
     variants: [
-      { label: "Single", price: 110.0, regularPrice: 125.0, sku: "GLOW" },
-      { label: "5 Kit (Save 10%)", price: 450.0, regularPrice: 550.0, sku: "GLOW-K5" },
-      { label: "10 Kit (Best Value)", price: 900.0, regularPrice: 1100.0, sku: "GLOW-K10" },
+      { label: "Single", price: 110.0, sku: "GLOW" },
+      { label: "5 Kit (Save 10%)", price: 522.5, regularPrice: 550.0, sku: "GLOW-K5" },
+      { label: "10 Kit (Best Value)", price: 990.0, regularPrice: 1100.0, sku: "GLOW-K10" },
     ],
     tabs: [
       {
@@ -135,9 +135,9 @@ export const products: Product[] = [
     category: "Vitality Research",
     isVariable: true,
     variants: [
-      { label: "Single", price: 125.0, regularPrice: 130.0, sku: "KLOW" },
-      { label: "5 Kit (Save 10%)", price: 500.0, regularPrice: 650.0, sku: "KLOW-K5" },
-      { label: "10 Kit (Best Value)", price: 1000.0, regularPrice: 1300.0, sku: "KLOW-K10" },
+      { label: "Single", price: 130.0, sku: "KLOW" },
+      { label: "5 Kit (Save 10%)", price: 617.5, regularPrice: 650.0, sku: "KLOW-K5" },
+      { label: "10 Kit (Best Value)", price: 1170.0, regularPrice: 1300.0, sku: "KLOW-K10" },
     ],
     tabs: [
       {
@@ -201,12 +201,12 @@ export const products: Product[] = [
     category: "Longevity Research",
     isVariable: true,
     variants: [
-      { label: "50mg - Single", price: 50.0, regularPrice: 70.0, sku: "GHKCU-50", image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "50mg - 5 Kit", price: 210.0, regularPrice: 300.0, sku: "GHKCU-50-K5", image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "50mg - 10 Kit", price: 400.0, regularPrice: 600.0, sku: "GHKCU-50-K10", image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "100mg - Single", price: 67.5, regularPrice: 90.0, sku: "GHKCU-100", image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "100mg - 5 Kit", price: 330.0, regularPrice: 400.0, sku: "GHKCU-100-K5", image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "100mg - 10 Kit", price: 650.0, regularPrice: 750.0, sku: "GHKCU-100-K10", image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "50mg - Single", price: 55.0, sku: "GHKCU-50", image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "50mg - 5 Kit", price: 261.25, regularPrice: 275.0, sku: "GHKCU-50-K5", image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "50mg - 10 Kit", price: 495.0, regularPrice: 550.0, sku: "GHKCU-50-K10", image: "/images/products/ghk-cu-50mg.jpg" },
+      { label: "100mg - Single", price: 75.0, sku: "GHKCU-100", image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "100mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "GHKCU-100-K5", image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "100mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "GHKCU-100-K10", image: "/images/products/ghk-cu-100mg.jpg" },
       // 200mg commented out per user instructions
       // { label: "200mg - Single", price: 135.0, regularPrice: 150.0, sku: "GHKCU-200", image: "/images/products/ghk-cu-200mg.jpg" },
       // { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, sku: "GHKCU-200-K10", image: "/images/products/ghk-cu-200mg.jpg" },
@@ -277,12 +277,12 @@ export const products: Product[] = [
     category: "Metabolic Research",
     isVariable: true,
     variants: [
-      { label: "10mg - Single", price: 55.0, regularPrice: 70.0, sku: "MOTS-C-10", image: "/images/products/mots-c-10mg.jpg" },
-      { label: "10mg - 5 Kit", price: 320.0, regularPrice: 350.0, sku: "MOTS-C-10-K5", image: "/images/products/mots-c-10mg.jpg" },
-      { label: "10mg - 10 Kit", price: 600.0, regularPrice: 700.0, sku: "MOTS-C-10-K10", image: "/images/products/mots-c-10mg.jpg" },
-      { label: "40mg - Single", price: 110.0, regularPrice: 120.0, sku: "MOTS-C-40", image: "/images/products/mots-c-40mg.jpg" },
-      { label: "40mg - 5 Kit", price: 470.0, regularPrice: 550.0, sku: "MOTS-C-40-K5", image: "/images/products/mots-c-40mg.jpg" },
-      { label: "40mg - 10 Kit", price: 900.0, regularPrice: 1100.0, sku: "MOTS-C-40-K10", image: "/images/products/mots-c-40mg.jpg" },
+      { label: "10mg - Single", price: 65.0, sku: "MOTS-C-10", image: "/images/products/mots-c-10mg.jpg" },
+      { label: "10mg - 5 Kit", price: 308.75, regularPrice: 325.0, sku: "MOTS-C-10-K5", image: "/images/products/mots-c-10mg.jpg" },
+      { label: "10mg - 10 Kit", price: 585.0, regularPrice: 650.0, sku: "MOTS-C-10-K10", image: "/images/products/mots-c-10mg.jpg" },
+      { label: "40mg - Single", price: 110.0, sku: "MOTS-C-40", image: "/images/products/mots-c-40mg.jpg" },
+      { label: "40mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "MOTS-C-40-K5", image: "/images/products/mots-c-40mg.jpg" },
+      { label: "40mg - 10 Kit", price: 990.0, regularPrice: 1100.0, sku: "MOTS-C-40-K10", image: "/images/products/mots-c-40mg.jpg" },
     ],
     tabs: [
       {
@@ -347,12 +347,12 @@ export const products: Product[] = [
     category: "Cognitive Research",
     isVariable: true,
     variants: [
-      { label: "500mg - Single", price: 60.0, regularPrice: 100.0, sku: "NAD-500", image: "/images/products/nadplus-500mg.jpg" },
-      { label: "500mg - 5 Kit", price: 375.0, regularPrice: 450.0, sku: "NAD-500-K5", image: "/images/products/nadplus-500mg.jpg" },
-      { label: "500mg - 10 Kit", price: 700.0, regularPrice: 900.0, sku: "NAD-500-K10", image: "/images/products/nadplus-500mg.jpg" },
-      { label: "1000mg - Single", price: 100.0, regularPrice: 125.0, sku: "NAD-1000", image: "/images/products/nad-1000mg.jpg" },
-      { label: "1000mg - 5 Kit", price: 450.0, regularPrice: 625.0, sku: "NAD-1000-K5", image: "/images/products/nad-1000mg.jpg" },
-      { label: "1000mg - 10 Kit", price: 800.0, regularPrice: 1250.0, sku: "NAD-1000-K10", image: "/images/products/nad-1000mg.jpg" },
+      { label: "500mg - Single", price: 75.0, sku: "NAD-500", image: "/images/products/nadplus-500mg.jpg" },
+      { label: "500mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "NAD-500-K5", image: "/images/products/nadplus-500mg.jpg" },
+      { label: "500mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "NAD-500-K10", image: "/images/products/nadplus-500mg.jpg" },
+      { label: "1000mg - Single", price: 110.0, sku: "NAD-1000", image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "NAD-1000-K5", image: "/images/products/nad-1000mg.jpg" },
+      { label: "1000mg - 10 Kit", price: 990.0, regularPrice: 1100.0, sku: "NAD-1000-K10", image: "/images/products/nad-1000mg.jpg" },
     ],
     tabs: [
       {
@@ -416,8 +416,8 @@ export const products: Product[] = [
     category: "Recovery Research",
     isVariable: true,
     variants: [
-      { label: "600mg", price: 65.0, sku: "GLUTATHIONE-600" },
-      { label: "1500mg", price: 95.0, sku: "GLUTATHIONE-1500" },
+      { label: "600mg", price: 60.0, sku: "GLUTATHIONE-600" },
+      { label: "1500mg", price: 80.0, sku: "GLUTATHIONE-1500" },
     ],
     tabs: [
       {
@@ -481,12 +481,12 @@ export const products: Product[] = [
     category: "Performance Research",
     isVariable: true,
     variants: [
-      { label: "5/5mg - Single", price: 70.0, regularPrice: 80.0, sku: "BPCTB-0505", image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "5/5mg - 5 Kit", price: 315.0, regularPrice: 350.0, sku: "BPCTB-0505-K5", image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "5/5mg - 10 Kit", price: 550.0, regularPrice: 600.0, sku: "BPCTB-0505-K10", image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "10/10mg - Single", price: 95.0, regularPrice: 110.0, sku: "BPCTB-1010", image: "/images/products/wolverine-10-10-mg.jpg" },
-      { label: "10/10mg - 5 Kit", price: 475.0, regularPrice: 525.0, sku: "BPCTB-1010-K5", image: "/images/products/wolverine-10-10-mg.jpg" },
-      { label: "10/10mg - 10 Kit (Best Value)", price: 800.0, regularPrice: 1050.0, sku: "BPCTB-1010-K10", image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "5/5mg - Single", price: 75.0, sku: "BPCTB-0505", image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "5/5mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "BPCTB-0505-K5", image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "5/5mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "BPCTB-0505-K10", image: "/images/products/wolverine-5-5-mg.jpg" },
+      { label: "10/10mg - Single", price: 110.0, sku: "BPCTB-1010", image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "10/10mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "BPCTB-1010-K5", image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "10/10mg - 10 Kit (Best Value)", price: 990.0, regularPrice: 1100.0, sku: "BPCTB-1010-K10", image: "/images/products/wolverine-10-10-mg.jpg" },
     ],
     tabs: [
       {
@@ -539,17 +539,17 @@ export const products: Product[] = [
     isVariable: true,
     variants: [
       { label: "10mg - Single", price: 100.0, sku: "RETATRUTIDE-10", image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "10mg - 5 Kit", price: 500.0, sku: "RETATRUTIDE-10-K5", image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "10mg - 10 Kit", price: 950.0, sku: "RETATRUTIDE-10-K10", image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "10mg - 5 Kit", price: 475.0, regularPrice: 500.0, sku: "RETATRUTIDE-10-K5", image: "/images/products/retatrutide-10mg.jpg" },
+      { label: "10mg - 10 Kit", price: 900.0, regularPrice: 1000.0, sku: "RETATRUTIDE-10-K10", image: "/images/products/retatrutide-10mg.jpg" },
       { label: "20mg - Single", price: 140.0, sku: "RETATRUTIDE-20", image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "20mg - 5 Kit", price: 700.0, sku: "RETATRUTIDE-20-K5", image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "20mg - 10 Kit", price: 1400.0, sku: "RETATRUTIDE-20-K10", image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "30mg - Single", price: 170.0, sku: "RETATRUTIDE-30", image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "30mg - 5 Kit", price: 850.0, sku: "RETATRUTIDE-30-K5", image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "30mg - 10 Kit", price: 1700.0, sku: "RETATRUTIDE-30-K10", image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "20mg - 5 Kit", price: 665.0, regularPrice: 700.0, sku: "RETATRUTIDE-20-K5", image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "20mg - 10 Kit", price: 1260.0, regularPrice: 1400.0, sku: "RETATRUTIDE-20-K10", image: "/images/products/retatrutide-20mg.jpg" },
+      { label: "30mg - Single", price: 180.0, sku: "RETATRUTIDE-30", image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "30mg - 5 Kit", price: 855.0, regularPrice: 900.0, sku: "RETATRUTIDE-30-K5", image: "/images/products/retatrutide-30mg.jpg" },
+      { label: "30mg - 10 Kit", price: 1620.0, regularPrice: 1800.0, sku: "RETATRUTIDE-30-K10", image: "/images/products/retatrutide-30mg.jpg" },
       { label: "60mg - Single", price: 280.0, sku: "RETATRUTIDE-60", image: "/images/products/retatrutide-50mg.jpg" },
-      { label: "60mg - 5 Kit", price: 1400.0, sku: "RETATRUTIDE-60-K5", image: "/images/products/retatrutide-50mg.jpg" },
-      { label: "60mg - 10 Kit", price: 2800.0, sku: "RETATRUTIDE-60-K10", image: "/images/products/retatrutide-50mg.jpg" },
+      { label: "60mg - 5 Kit", price: 1330.0, regularPrice: 1400.0, sku: "RETATRUTIDE-60-K5", image: "/images/products/retatrutide-50mg.jpg" },
+      { label: "60mg - 10 Kit", price: 2520.0, regularPrice: 2800.0, sku: "RETATRUTIDE-60-K10", image: "/images/products/retatrutide-50mg.jpg" },
       // { label: "50mg - Single", price: 240.0, sku: "RETATRUTIDE-50", image: "/images/products/retatrutide-50mg.jpg" },
       // { label: "100mg - Single", price: 390.0, sku: "RETATRUTIDE-100", image: "/images/products/retatrutide-100mg.jpg" },
     ],
