@@ -13,7 +13,8 @@ const NAV_ITEMS = [
   { label: "Shop", href: "/shop" },
   { label: "About", href: "/about" },
   { label: "FAQs", href: "/faqs" },
-  { label: "Journal", href: "/blog" }
+  { label: "Journal", href: "/blog" },
+  { label: "Contact Us", href: "/contact" }
 ];
 
 export default function Header() {

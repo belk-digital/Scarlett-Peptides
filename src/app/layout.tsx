@@ -120,8 +120,8 @@ export default function RootLayout({
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[300px] bg-white/[0.01] blur-[100px] rounded-full pointer-events-none"></div>
 
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24 mb-16 md:mb-20">
-                  <div className="col-span-1 md:col-span-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-16 mb-16 md:mb-20">
+                  <div className="lg:col-span-2">
                     <Link href="/" className="inline-block mb-6 hover:opacity-80 transition-opacity duration-300">
                       <Image 
                         src="/logo.png" 
@@ -154,6 +154,19 @@ export default function RootLayout({
                       <li><Link href="/contact" style={{ color: '#9ca3af' }} className="hover:text-white transition-colors duration-300">Contact Us</Link></li>
                       <li><Link href="/cart" style={{ color: '#9ca3af' }} className="hover:text-white transition-colors duration-300">View Cart</Link></li>
                     </ul>
+                  </div>
+                  <div>
+                    <h4 className="text-white text-xs md:text-sm tracking-widest uppercase mb-6 font-medium">
+                      Reach Us
+                    </h4>
+                    <div className="space-y-4 text-sm md:text-base font-light">
+                      <a href="mailto:hello@peptides7.com" className="inline-flex items-center gap-2 text-white hover:text-white/70 transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                        hello@peptides7.com
+                      </a>
+                    </div>
                   </div>
                 </div>
                 
