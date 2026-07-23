@@ -61,7 +61,7 @@ export const products: Product[] = [
       "A proprietary multi-peptide blend formulated for skin-quality, anti-aging, and cellular repair research. ≥99% HPLC purity, independently verified.",
     longDescription:
       "GLOW is a proprietary research blend combining several well-characterized peptide fragments selected for their reported roles in dermal repair, collagen signaling, and tissue regeneration pathways. Formulated as part of the Peptides7 curated catalog, GLOW is intended to give researchers a single, convenient vial to study synergistic effects between complementary peptide mechanisms rather than sourcing and combining individual compounds themselves. Each batch is synthesized via solid-phase peptide synthesis, purified by reversed-phase HPLC, and independently verified at ≥99% purity with a published Certificate of Analysis. GLOW reflects Peptides7' philosophy of curation over volume: it exists because it solves a specific research formulation problem, not because it is trending.",
-    image: "/images/products/glow.jpg",
+    image: "/images/products/glow.webp",
     category: "Glow Research",
     isVariable: true,
     variants: [
@@ -131,7 +131,7 @@ export const products: Product[] = [
       "A proprietary peptide blend curated for skin, recovery, and cellular signaling research. Independently verified to ≥99% purity with full COA transparency.",
     longDescription:
       "KLOW is a second proprietary peptide blend in the Peptides7 catalog, formulated with a distinct selection of peptide fragments from GLOW to support a different angle of dermal, repair, and cellular signaling research. Like every product in this catalog, KLOW is manufactured exclusively by <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a> and tested by an independent third-party laboratory before release. KLOW was added to the catalog to give researchers a second combinatorial option when GLOW's specific composition does not align with their study design, not as a duplicate, but as a complementary formulation with its own mechanistic focus.",
-    image: "/images/products/klow.jpg",
+    image: "/images/products/klow.webp",
     category: "Vitality Research",
     isVariable: true,
     variants: [
@@ -197,19 +197,19 @@ export const products: Product[] = [
       "GHK-Cu copper peptide studied for gene expression, collagen synthesis, and wound-healing research. ≥99% pure, third-party verified.",
     longDescription:
       "GHK-Cu (Glycyl-L-Histidyl-L-Lysine copper complex, CAS 49557-75-7) is a naturally occurring copper-binding tripeptide first identified in human plasma and widely studied in dermatological and regenerative research for its reported influence on gene expression, collagen and elastin synthesis, and antioxidant enzyme activity. Its copper-chelating structure is central to its proposed mechanism, facilitating interactions with copper-dependent enzymatic pathways implicated in tissue remodeling. Peptides7 sources GHK-Cu exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified by HPLC and LC-MS prior to release and accompanied by a Certificate of Analysis.",
-    image: "/images/products/ghk-cu-100mg.jpg",
+    image: "/images/products/ghk-cu-100mg.webp",
     category: "Longevity Research",
     isVariable: true,
     variants: [
-      { label: "50mg - Single", price: 55.0, sku: "GHKCU-50", image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "50mg - 5 Kit", price: 261.25, regularPrice: 275.0, sku: "GHKCU-50-K5", image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "50mg - 10 Kit", price: 495.0, regularPrice: 550.0, sku: "GHKCU-50-K10", image: "/images/products/ghk-cu-50mg.jpg" },
-      { label: "100mg - Single", price: 75.0, sku: "GHKCU-100", image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "100mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "GHKCU-100-K5", image: "/images/products/ghk-cu-100mg.jpg" },
-      { label: "100mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "GHKCU-100-K10", image: "/images/products/ghk-cu-100mg.jpg" },
+      { label: "50mg - Single", price: 55.0, sku: "GHKCU-50", image: "/images/products/ghk-cu-50mg.webp" },
+      { label: "50mg - 5 Kit", price: 261.25, regularPrice: 275.0, sku: "GHKCU-50-K5", image: "/images/products/ghk-cu-50mg.webp" },
+      { label: "50mg - 10 Kit", price: 495.0, regularPrice: 550.0, sku: "GHKCU-50-K10", image: "/images/products/ghk-cu-50mg.webp" },
+      { label: "100mg - Single", price: 75.0, sku: "GHKCU-100", image: "/images/products/ghk-cu-100mg.webp" },
+      { label: "100mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "GHKCU-100-K5", image: "/images/products/ghk-cu-100mg.webp" },
+      { label: "100mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "GHKCU-100-K10", image: "/images/products/ghk-cu-100mg.webp" },
       // 200mg commented out per user instructions
-      // { label: "200mg - Single", price: 135.0, regularPrice: 150.0, sku: "GHKCU-200", image: "/images/products/ghk-cu-200mg.jpg" },
-      // { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, sku: "GHKCU-200-K10", image: "/images/products/ghk-cu-200mg.jpg" },
+      // { label: "200mg - Single", price: 135.0, regularPrice: 150.0, sku: "GHKCU-200", image: "/images/products/ghk-cu-200mg.webp" },
+      // { label: "200mg - 10 Kit", price: 1000.0, regularPrice: 1350.0, sku: "GHKCU-200-K10", image: "/images/products/ghk-cu-200mg.webp" },
     ],
     tabs: [
       {
@@ -273,16 +273,16 @@ export const products: Product[] = [
       "Mitochondrial-derived peptide studied for AMPK activation and metabolic/exercise-mimetic research. ≥99% verified purity.",
     longDescription:
       "MOTS-C (Mitochondrial Open Reading Frame of the 12S rRNA-c) is a 16-amino-acid peptide encoded within mitochondrial DNA and studied for its reported role as a regulator of cellular metabolic homeostasis. Research interest in MOTS-C centers on its ability to translocate to the nucleus under metabolic stress and activate the AMPK (AMP-activated protein kinase) pathway, a mechanism frequently associated with exercise-mimetic and metabolic-adaptation research models. Peptides7 sources MOTS-C exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with independent third-party testing confirming ≥99% purity on every batch.",
-    image: "/images/products/mots-c-10mg.jpg",
+    image: "/images/products/mots-c-10mg.webp",
     category: "Metabolic Research",
     isVariable: true,
     variants: [
-      { label: "10mg - Single", price: 65.0, sku: "MOTS-C-10", image: "/images/products/mots-c-10mg.jpg" },
-      { label: "10mg - 5 Kit", price: 308.75, regularPrice: 325.0, sku: "MOTS-C-10-K5", image: "/images/products/mots-c-10mg.jpg" },
-      { label: "10mg - 10 Kit", price: 585.0, regularPrice: 650.0, sku: "MOTS-C-10-K10", image: "/images/products/mots-c-10mg.jpg" },
-      { label: "40mg - Single", price: 110.0, sku: "MOTS-C-40", image: "/images/products/mots-c-40mg.jpg" },
-      { label: "40mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "MOTS-C-40-K5", image: "/images/products/mots-c-40mg.jpg" },
-      { label: "40mg - 10 Kit", price: 990.0, regularPrice: 1100.0, sku: "MOTS-C-40-K10", image: "/images/products/mots-c-40mg.jpg" },
+      { label: "10mg - Single", price: 65.0, sku: "MOTS-C-10", image: "/images/products/mots-c-10mg.webp" },
+      { label: "10mg - 5 Kit", price: 308.75, regularPrice: 325.0, sku: "MOTS-C-10-K5", image: "/images/products/mots-c-10mg.webp" },
+      { label: "10mg - 10 Kit", price: 585.0, regularPrice: 650.0, sku: "MOTS-C-10-K10", image: "/images/products/mots-c-10mg.webp" },
+      { label: "40mg - Single", price: 110.0, sku: "MOTS-C-40", image: "/images/products/mots-c-40mg.webp" },
+      { label: "40mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "MOTS-C-40-K5", image: "/images/products/mots-c-40mg.webp" },
+      { label: "40mg - 10 Kit", price: 990.0, regularPrice: 1100.0, sku: "MOTS-C-40-K10", image: "/images/products/mots-c-40mg.webp" },
     ],
     tabs: [
       {
@@ -343,16 +343,16 @@ export const products: Product[] = [
       "Nicotinamide Adenine Dinucleotide studied for sirtuin activation, cellular energy, and longevity research. ≥99% pure, COA-verified.",
     longDescription:
       "NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme essential to cellular energy metabolism and a central molecule of interest in longevity and mitochondrial-health research. It serves as a required cofactor for sirtuins, PARP enzymes, and CD38, all pathways implicated in DNA repair, metabolic regulation, and cellular aging research models. Because NAD+ levels are reported to decline with age in numerous research contexts, it remains one of the most actively studied molecules in longevity science. Peptides7 offers NAD+ exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, manufactured and independently tested to ≥99% purity with a published Certificate of Analysis per batch.",
-    image: "/images/products/nadplus-500mg.jpg",
+    image: "/images/products/nadplus-500mg.webp",
     category: "Cognitive Research",
     isVariable: true,
     variants: [
-      { label: "500mg - Single", price: 75.0, sku: "NAD-500", image: "/images/products/nadplus-500mg.jpg" },
-      { label: "500mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "NAD-500-K5", image: "/images/products/nadplus-500mg.jpg" },
-      { label: "500mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "NAD-500-K10", image: "/images/products/nadplus-500mg.jpg" },
-      { label: "1000mg - Single", price: 110.0, sku: "NAD-1000", image: "/images/products/nad-1000mg.jpg" },
-      { label: "1000mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "NAD-1000-K5", image: "/images/products/nad-1000mg.jpg" },
-      { label: "1000mg - 10 Kit", price: 990.0, regularPrice: 1100.0, sku: "NAD-1000-K10", image: "/images/products/nad-1000mg.jpg" },
+      { label: "500mg - Single", price: 75.0, sku: "NAD-500", image: "/images/products/nadplus-500mg.webp" },
+      { label: "500mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "NAD-500-K5", image: "/images/products/nadplus-500mg.webp" },
+      { label: "500mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "NAD-500-K10", image: "/images/products/nadplus-500mg.webp" },
+      { label: "1000mg - Single", price: 110.0, sku: "NAD-1000", image: "/images/products/nadplus-1000mg.webp" },
+      { label: "1000mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "NAD-1000-K5", image: "/images/products/nadplus-1000mg.webp" },
+      { label: "1000mg - 10 Kit", price: 990.0, regularPrice: 1100.0, sku: "NAD-1000-K10", image: "/images/products/nadplus-1000mg.webp" },
     ],
     tabs: [
       {
@@ -412,7 +412,7 @@ export const products: Product[] = [
       "Tripeptide antioxidant studied for redox balance and oxidative stress research. ≥99% purity, independently verified by COA.",
     longDescription:
       "Glutathione (GSH) is a tripeptide composed of glutamine, cysteine, and glycine, recognized as one of the body's principal endogenous antioxidants. Research interest centers on its central role in maintaining cellular redox balance, detoxifying reactive oxygen species, and regenerating other antioxidants such as vitamins C and E. The ratio of reduced glutathione (GSH) to its oxidized form (GSSG) is a commonly studied biomarker of oxidative stress in laboratory research. Peptides7 sources Glutathione exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with each batch independently verified to ≥99% purity and accompanied by a published Certificate of Analysis.",
-    image: "/images/products/glutathione-200mg.jpg",
+    image: "/images/products/glutathione-600mg.webp",
     category: "Recovery Research",
     isVariable: true,
     variants: [
@@ -477,16 +477,16 @@ export const products: Product[] = [
       "A synergistic research stack combining BPC-157 and TB-500. Formulated for advanced tissue repair, angiogenesis, and structural remodeling research.",
     longDescription:
       "The Wolverine Stack is a specialized combination product supplying both BPC-157 and TB-500. This combination is one of the most widely referenced pairs in preclinical musculoskeletal, tendon, and ligament repair models. While BPC-157 is studied primarily for its influence on angiogenesis and the nitric oxide pathway, TB-500 (a Thymosin Beta-4 fragment) is studied for its role in actin sequestration and cell migration. Together, they offer a multi-pathway approach to tissue regeneration research. Peptides7 sources both compounds exclusively from <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, with every batch independently verified to ≥99% purity and accompanied by full Certificates of Analysis.",
-    image: "/images/products/wolverine-10-10-mg.jpg",
+    image: "/images/products/wolverine-10-10-mg.webp",
     category: "Performance Research",
     isVariable: true,
     variants: [
-      { label: "5/5mg - Single", price: 75.0, sku: "BPCTB-0505", image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "5/5mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "BPCTB-0505-K5", image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "5/5mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "BPCTB-0505-K10", image: "/images/products/wolverine-5-5-mg.jpg" },
-      { label: "10/10mg - Single", price: 110.0, sku: "BPCTB-1010", image: "/images/products/wolverine-10-10-mg.jpg" },
-      { label: "10/10mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "BPCTB-1010-K5", image: "/images/products/wolverine-10-10-mg.jpg" },
-      { label: "10/10mg - 10 Kit (Best Value)", price: 990.0, regularPrice: 1100.0, sku: "BPCTB-1010-K10", image: "/images/products/wolverine-10-10-mg.jpg" },
+      { label: "5/5mg - Single", price: 75.0, sku: "BPCTB-0505", image: "/images/products/wolverine-5-5-mg.webp" },
+      { label: "5/5mg - 5 Kit", price: 356.25, regularPrice: 375.0, sku: "BPCTB-0505-K5", image: "/images/products/wolverine-5-5-mg.webp" },
+      { label: "5/5mg - 10 Kit", price: 675.0, regularPrice: 750.0, sku: "BPCTB-0505-K10", image: "/images/products/wolverine-5-5-mg.webp" },
+      { label: "10/10mg - Single", price: 110.0, sku: "BPCTB-1010", image: "/images/products/wolverine-10-10-mg.webp" },
+      { label: "10/10mg - 5 Kit", price: 522.5, regularPrice: 550.0, sku: "BPCTB-1010-K5", image: "/images/products/wolverine-10-10-mg.webp" },
+      { label: "10/10mg - 10 Kit (Best Value)", price: 990.0, regularPrice: 1100.0, sku: "BPCTB-1010-K10", image: "/images/products/wolverine-10-10-mg.webp" },
     ],
     tabs: [
       {
@@ -534,24 +534,24 @@ export const products: Product[] = [
       "Retatrutide (LY3437943) triple-agonist peptide studied for GLP-1, GIP, and GCGR receptor activation in metabolic research. ≥99% HPLC verified purity.",
     longDescription:
       "Retatrutide (LY3437943) is a novel synthetic peptide functioning as a triple hormone receptor agonist, targeting the GLP-1 (glucagon-like peptide-1), GIP (glucose-dependent insulinotropic polypeptide), and GCGR (glucagon receptor) pathways. In preclinical and clinical research models, this tri-agonist mechanism has been extensively studied for its synergistic effects on metabolic regulation, energy expenditure, and lipid metabolism. Peptides7 sources Retatrutide exclusively through <a href='http://99puritypeptides.com/' target='_blank' rel='noopener noreferrer' class='underline hover:text-white transition-colors'>99 Purity Peptides</a>, ensuring that every batch is independently verified by HPLC and LC-MS prior to release and accompanied by a comprehensive Certificate of Analysis.",
-    image: "/images/products/retatrutide-10mg.jpg",
+    image: "/images/products/retatrutide-10mg.webp",
     category: "Metabolic Research",
     isVariable: true,
     variants: [
-      { label: "10mg - Single", price: 100.0, sku: "RETATRUTIDE-10", image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "10mg - 5 Kit", price: 475.0, regularPrice: 500.0, sku: "RETATRUTIDE-10-K5", image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "10mg - 10 Kit", price: 900.0, regularPrice: 1000.0, sku: "RETATRUTIDE-10-K10", image: "/images/products/retatrutide-10mg.jpg" },
-      { label: "20mg - Single", price: 140.0, sku: "RETATRUTIDE-20", image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "20mg - 5 Kit", price: 665.0, regularPrice: 700.0, sku: "RETATRUTIDE-20-K5", image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "20mg - 10 Kit", price: 1260.0, regularPrice: 1400.0, sku: "RETATRUTIDE-20-K10", image: "/images/products/retatrutide-20mg.jpg" },
-      { label: "30mg - Single", price: 180.0, sku: "RETATRUTIDE-30", image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "30mg - 5 Kit", price: 855.0, regularPrice: 900.0, sku: "RETATRUTIDE-30-K5", image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "30mg - 10 Kit", price: 1620.0, regularPrice: 1800.0, sku: "RETATRUTIDE-30-K10", image: "/images/products/retatrutide-30mg.jpg" },
-      { label: "60mg - Single", price: 280.0, sku: "RETATRUTIDE-60", image: "/images/products/retatrutide-50mg.jpg" },
-      { label: "60mg - 5 Kit", price: 1330.0, regularPrice: 1400.0, sku: "RETATRUTIDE-60-K5", image: "/images/products/retatrutide-50mg.jpg" },
-      { label: "60mg - 10 Kit", price: 2520.0, regularPrice: 2800.0, sku: "RETATRUTIDE-60-K10", image: "/images/products/retatrutide-50mg.jpg" },
-      // { label: "50mg - Single", price: 240.0, sku: "RETATRUTIDE-50", image: "/images/products/retatrutide-50mg.jpg" },
-      // { label: "100mg - Single", price: 390.0, sku: "RETATRUTIDE-100", image: "/images/products/retatrutide-100mg.jpg" },
+      { label: "10mg - Single", price: 100.0, sku: "RETATRUTIDE-10", image: "/images/products/retatrutide-10mg.webp" },
+      { label: "10mg - 5 Kit", price: 475.0, regularPrice: 500.0, sku: "RETATRUTIDE-10-K5", image: "/images/products/retatrutide-10mg.webp" },
+      { label: "10mg - 10 Kit", price: 900.0, regularPrice: 1000.0, sku: "RETATRUTIDE-10-K10", image: "/images/products/retatrutide-10mg.webp" },
+      { label: "20mg - Single", price: 140.0, sku: "RETATRUTIDE-20", image: "/images/products/retatrutide-20mg.webp" },
+      { label: "20mg - 5 Kit", price: 665.0, regularPrice: 700.0, sku: "RETATRUTIDE-20-K5", image: "/images/products/retatrutide-20mg.webp" },
+      { label: "20mg - 10 Kit", price: 1260.0, regularPrice: 1400.0, sku: "RETATRUTIDE-20-K10", image: "/images/products/retatrutide-20mg.webp" },
+      { label: "30mg - Single", price: 180.0, sku: "RETATRUTIDE-30", image: "/images/products/retatrutide-30mg.webp" },
+      { label: "30mg - 5 Kit", price: 855.0, regularPrice: 900.0, sku: "RETATRUTIDE-30-K5", image: "/images/products/retatrutide-30mg.webp" },
+      { label: "30mg - 10 Kit", price: 1620.0, regularPrice: 1800.0, sku: "RETATRUTIDE-30-K10", image: "/images/products/retatrutide-30mg.webp" },
+      { label: "60mg - Single", price: 280.0, sku: "RETATRUTIDE-60", image: "/images/products/retatrutide-60mg.webp" },
+      { label: "60mg - 5 Kit", price: 1330.0, regularPrice: 1400.0, sku: "RETATRUTIDE-60-K5", image: "/images/products/retatrutide-60mg.webp" },
+      { label: "60mg - 10 Kit", price: 2520.0, regularPrice: 2800.0, sku: "RETATRUTIDE-60-K10", image: "/images/products/retatrutide-60mg.webp" },
+      // { label: "50mg - Single", price: 240.0, sku: "RETATRUTIDE-50", image: "/images/products/retatrutide-60mg.webp" },
+      // { label: "100mg - Single", price: 390.0, sku: "RETATRUTIDE-100", image: "/images/products/retatrutide-100mg.webp" },
     ],
     tabs: [
       {
@@ -599,6 +599,68 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    slug: "10-needles",
+    name: "10 Needles",
+    shortDescription: "Pack of 10 sterile insulin syringes for laboratory research.",
+    longDescription: "High-quality, individually wrapped sterile insulin syringes suitable for precise measurement and reconstitution of research peptides. Pack includes 10 single-use syringes.",
+    image: "/images/products/10-needles.webp",
+    category: "Lab Supplies",
+    isVariable: false,
+    price: 7.5,
+    tabs: [
+      {
+        title: "Product Details",
+        paragraphs: [
+          "Pack of 10 sterile insulin syringes.",
+          "Ideal for use with bacteriostatic water for peptide reconstitution."
+        ]
+      },
+      QUALITY_TAB,
+      COMPLIANCE_TAB,
+    ],
+    faqs: [
+      {
+        q: "What are these needles used for?",
+        a: "They are intended for laboratory use, specifically for drawing and measuring bacteriostatic water during the reconstitution of research peptides."
+      }
+    ]
+  },
+  {
+    slug: "bac-water",
+    name: "BAC Water (Bacteriostatic Water)",
+    shortDescription: "Bacteriostatic Water (BAC Water) for research peptide reconstitution. Contains 0.9% benzyl alcohol as a preservative.",
+    longDescription: "Bacteriostatic water is sterile water formulated with 0.9% benzyl alcohol. This acts as a bacteriostatic preservative, allowing for repeated withdrawals from a single vial while inhibiting bacterial growth. It is the standard diluent for multi-use research peptide vials.",
+    image: "/images/products/bac-water.webp",
+    category: "Lab Supplies",
+    isVariable: true,
+    variants: [
+      { label: "3ML", price: 9.0, sku: "BAC-WATER-3ML", image: "/images/products/bac-water-3ml.webp" },
+      { label: "10ML", price: 15.0, sku: "BAC-WATER-10ML", image: "/images/products/bac-water-10ml.webp" },
+      { label: "30ML", price: 25.0, sku: "BAC-WATER-30ML", image: "/images/products/bac-water-30ml.webp" }
+    ],
+    tabs: [
+      {
+        title: "Product Details",
+        paragraphs: [
+          "Bacteriostatic Water contains 0.9% benzyl alcohol added as a bacteriostatic preservative.",
+          "Supplied in multi-dose plastic or glass vials depending on volume."
+        ]
+      },
+      QUALITY_TAB,
+      COMPLIANCE_TAB,
+    ],
+    faqs: [
+      {
+        q: "What is Bacteriostatic Water?",
+        a: "It is sterile water containing 0.9% benzyl alcohol, used to dissolve or dilute research peptides."
+      },
+      {
+        q: "How long does it last after opening?",
+        a: "Once opened, bacteriostatic water is generally recommended to be discarded after 28-30 days to ensure sterility."
+      }
+    ]
+  }
 ];
 
 export function getAllProducts(): Product[] {
