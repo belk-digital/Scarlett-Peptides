@@ -74,12 +74,13 @@ export default function Header() {
           className="pointer-events-auto shrink-0 relative z-50 flex items-center"
         >
           <Image 
-            src="/logo.png" 
-            alt="Peptides7" 
-            width={240} 
-            height={60} 
-            className="h-12 md:h-16 w-auto object-contain mix-blend-difference hover:opacity-80 transition-opacity" 
+            src="/p7-mark.png" 
+            alt="P7 Research" 
+            width={186} 
+            height={88} 
+            className="h-12 md:h-16 w-auto object-contain hover:opacity-80 transition-opacity" 
             priority
+            unoptimized
           />
         </Link>
 

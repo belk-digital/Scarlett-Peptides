@@ -124,11 +124,12 @@ export default function RootLayout({
                   <div className="lg:col-span-2">
                     <Link href="/" className="inline-block mb-6 hover:opacity-80 transition-opacity duration-300">
                       <Image 
-                        src="/logo.png" 
-                        alt="Peptides7" 
-                        width={300} 
-                        height={65} 
-                        className="h-14 md:h-20 w-auto object-contain mix-blend-difference" 
+                        src="/p7-mark.png" 
+                        alt="P7 Research" 
+                        width={232} 
+                        height={110} 
+                        className="h-14 md:h-20 w-auto object-contain" 
+                        unoptimized
                       />
                     </Link>
                     <p style={{ color: '#9ca3af' }} className="text-sm md:text-base max-w-sm leading-relaxed font-light">

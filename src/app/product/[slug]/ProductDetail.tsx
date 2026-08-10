@@ -51,14 +51,18 @@ export default function ProductDetail({ product }: { product: Product }) {
 
   const coaMap: Record<string, string> = {
     'bpc-157': '/coa/BPC 157 BP5526.pdf',
+    'bpc-tb-500-research-peptide-blend': '/coa/BPC 157 BP5526.pdf',
+    'ghk-cu': '/coa/GHK-Cu GK61726.pdf',
     'ghkcu': '/coa/GHK-Cu GK61726.pdf',
     'glow': '/coa/GLOW GL61626.pdf',
     'glutathione': '/coa/Glutathione GL61526.pdf',
+    'glutathione-600-1500': '/coa/Glutathione GL61526.pdf',
     'klow': '/coa/KLOW KL6926.pdf',
     'nad': '/coa/NAD ND6826.pdf',
     'retatrutide': '/coa/Reta RT61626.pdf',
   };
-  const coaUrl = coaMap[product.slug] || null;
+  const coaUrl = product.coa?.pdfUrl || coaMap[product.slug] || null;
+  const coa = product.coa;
 
   const handleAddToCart = () => {
     if (product.isVariable && !selectedVariant) {
@@ -290,6 +294,125 @@ export default function ProductDetail({ product }: { product: Product }) {
 
           </div>
         </div>
+
+        {/* CERTIFICATE OF ANALYSIS */}
+        {coa && (
+          <ScrollReveal direction="up" delay={0.15}>
+            <section className="mt-32 w-full">
+              <div className="mb-8">
+                <h2 className="font-serif text-3xl md:text-4xl text-white mb-3">
+                  Certificate of Analysis
+                </h2>
+                <p className="text-sm text-white/45 font-light">
+                  {coa.subtitle}
+                </p>
+              </div>
+
+              <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-xl overflow-hidden shadow-2xl">
+                <div className="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-white/10">
+                  {/* Left: purity summary */}
+                  <div className="lg:col-span-3 p-6 md:p-8 flex flex-col">
+                    <div className="flex flex-wrap gap-2 mb-8">
+                      <span className="bg-white text-black text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded">
+                        Latest
+                      </span>
+                      <span className="border border-white/20 text-white/70 text-[9px] font-medium tracking-widest uppercase px-2.5 py-1 rounded">
+                        ISO 17025
+                      </span>
+                      <span className="bg-white text-black text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded">
+                        8x Testing
+                      </span>
+                    </div>
+
+                    <div className="mb-6">
+                      <p className="font-serif text-5xl md:text-6xl text-white tracking-tight">
+                        {coa.purity}
+                      </p>
+                      <p className="text-[10px] uppercase tracking-[0.25em] text-white/40 mt-2">
+                        Purity
+                      </p>
+                    </div>
+
+                    <div className="flex items-center gap-2 text-sm text-white/70 mb-8">
+                      <Check className="w-4 h-4 text-emerald-400 shrink-0" strokeWidth={2.5} />
+                      Passed full QC panel
+                    </div>
+
+                    <a
+                      href={coa.pdfUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-auto inline-flex items-center justify-center gap-2 bg-white text-black px-5 py-3 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-gray-200 transition-colors"
+                    >
+                      <FileText className="w-4 h-4" />
+                      View COA
+                    </a>
+                  </div>
+
+                  {/* Middle: lot specs */}
+                  <div className="lg:col-span-4 p-6 md:p-8">
+                    <dl className="space-y-0">
+                      {[
+                        { label: "Variant", value: coa.variant },
+                        { label: "Lot #", value: coa.lot },
+                        { label: "Labeled", value: coa.labeled },
+                        { label: "Actual", value: coa.actual, accent: true },
+                        { label: "Tested", value: coa.tested },
+                      ].map((row) => (
+                        <div
+                          key={row.label}
+                          className="flex items-start justify-between gap-6 py-4 border-b border-white/10 last:border-b-0"
+                        >
+                          <dt className="text-[11px] uppercase tracking-widest text-white/40 shrink-0 pt-0.5">
+                            {row.label}
+                          </dt>
+                          <dd className={`text-sm text-right font-medium ${row.accent ? "text-white" : "text-white/80"}`}>
+                            {row.value}
+                          </dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+
+                  {/* Right: full QC panel */}
+                  <div className="lg:col-span-5 p-6 md:p-8 flex flex-col">
+                    <div className="flex items-center justify-between mb-6">
+                      <h3 className="text-[10px] uppercase tracking-[0.25em] text-white/50 font-medium">
+                        Full QC Panel
+                      </h3>
+                      <span className="text-[10px] uppercase tracking-widest text-white/80">
+                        8x tested
+                      </span>
+                    </div>
+
+                    <ul className="space-y-3 flex-1">
+                      {coa.panel.map((item) => (
+                        <li
+                          key={item.label}
+                          className="flex items-center justify-between gap-4 text-sm"
+                        >
+                          <span className="text-white/55 font-light">{item.label}</span>
+                          <span className="flex items-center gap-2 text-white/90 font-medium shrink-0">
+                            {item.value}
+                            <Check className="w-3.5 h-3.5 text-emerald-400" strokeWidth={2.5} />
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <p className="mt-8 text-[10px] uppercase tracking-[0.2em] text-white/40">
+                      ISO/IEC 17025 Accredited
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-6 text-xs text-white/35 font-light leading-relaxed max-w-3xl">
+                All certificates are issued by independent ISO-accredited laboratories. Lot-specific documents are made available to qualified research professionals on request.
+              </p>
+            </section>
+          </ScrollReveal>
+        )}
 
         {/* TABS SECTION */}
         {product.tabs && product.tabs.length > 0 && (

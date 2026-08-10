@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAllProducts } from "@/data/products";
+import { getShopCatalog } from "@/data/products";
 import { buildMetadata, collectionPageJsonLd, breadcrumbJsonLd, SITE_URL } from "@/lib/seo";
 import JsonLd from "@/components/JsonLd";
 import ShopClient from "./ShopClient";
@@ -24,12 +24,12 @@ export const metadata: Metadata = buildMetadata({
 });
 
 export default function Shop() {
-  const allProducts = getAllProducts();
+  const allProducts = getShopCatalog();
   const productListForSchema = allProducts.map((p) => ({
     name: p.name,
     slug: p.slug,
     image: p.image,
-    price: p.isVariable ? Math.min(...(p.variants?.map((v) => v.price) || [0])) : p.price || 0,
+    price: p.price,
   }));
 
   return (
