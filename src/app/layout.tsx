@@ -109,7 +109,7 @@ export default function RootLayout({
               <Header />
             </div>
 
-            {/* Main Content */}
+           
             <main className="flex-1">
               {children}
             </main>
