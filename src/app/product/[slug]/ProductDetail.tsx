@@ -195,7 +195,7 @@ export default function ProductDetail({ product }: { product: Product }) {
                       </div>
                     </div>
 
-                    {/* Size Selection (Pills) */}
+                   
                     <div className={`transition-opacity duration-500 ${!selectedConcentration ? "opacity-30 pointer-events-none" : "opacity-100"}`}>
                       <label className="block text-[10px] uppercase tracking-widest text-white/50 mb-4 font-sans ml-1">
                         2. Select Size / Format
