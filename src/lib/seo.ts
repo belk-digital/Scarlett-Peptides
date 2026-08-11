@@ -64,7 +64,7 @@ export function organizationJsonLd() {
     name: SITE_NAME,
     legalName: BUSINESS_INFO.legalName,
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/p7-mark.png`,
     description: SITE_DESCRIPTION,
     email: BUSINESS_INFO.email,
     telephone: BUSINESS_INFO.phone,
@@ -78,7 +78,7 @@ export function localBusinessJsonLd() {
     "@id": `${SITE_URL}/#business`,
     name: BUSINESS_INFO.name,
     url: SITE_URL,
-    logo: `${SITE_URL}/logo.png`,
+    logo: `${SITE_URL}/p7-mark.png`,
     image: `${SITE_URL}/og-image.jpg`,
     description: SITE_DESCRIPTION,
     email: BUSINESS_INFO.email,
@@ -96,7 +96,7 @@ export function websiteSearchJsonLd() {
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/p7-mark.png` },
     },
   };
 }
@@ -191,7 +191,7 @@ export function blogPostingJsonLd(post: {
     publisher: {
       "@type": "Organization",
       name: SITE_NAME,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/p7-mark.png` },
     },
     mainEntityOfPage: {
       "@type": "WebPage",

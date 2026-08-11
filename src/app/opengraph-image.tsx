@@ -14,7 +14,7 @@ export const contentType = 'image/png';
 export default async function Image() {
   // Read the logo from the public directory
   const logoData = await fetch(
-    new URL('../../public/logo.png', import.meta.url)
+    new URL('../../public/p7-mark.png', import.meta.url)
   ).then((res) => res.arrayBuffer());
 
   return new ImageResponse(
@@ -79,11 +79,11 @@ export default async function Image() {
           <img
             // @ts-expect-error ImageResponse src accepts ArrayBuffer
             src={logoData}
-            width={700}
+            width={560}
+            height={243}
             style={{
               objectFit: 'contain',
               marginBottom: 40,
-              filter: 'brightness(0) invert(1)', // Forces the logo to be pure white
             }}
           />
 
