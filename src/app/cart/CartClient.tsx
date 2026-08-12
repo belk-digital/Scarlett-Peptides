@@ -156,12 +156,12 @@ export default function CartClient() {
                       <span className="text-white font-medium">${subtotal.toFixed(2)}</span>
                     </div>
                     <div className="flex justify-between items-center pb-5 border-b border-white/5">
-                      <span className="tracking-wide">Shipping</span>
-                      <span className="text-white/40 italic">Calculated at checkout</span>
+                      <span className="tracking-wide">Standard Shipping</span>
+                      <span className="text-white font-medium">$25.00</span>
                     </div>
                     <div className="pt-2 flex justify-between items-end">
                       <span className="text-white font-serif text-xl">Estimated Total</span>
-                      <span className="text-white font-serif text-3xl">${subtotal.toFixed(2)}</span>
+                      <span className="text-white font-serif text-3xl">${(subtotal + 25).toFixed(2)}</span>
                     </div>
                   </div>
 
