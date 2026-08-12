@@ -165,34 +165,39 @@ export default function CartClient() {
                     </div>
                   </div>
 
-                  <button 
-                    onClick={handleCheckout}
-                    disabled={items.length === 0 || isRedirecting}
-                    className="w-full bg-white text-black h-16 rounded-2xl font-bold tracking-widest uppercase text-[11px] sm:text-xs hover:bg-gray-200 transition-all duration-300 shadow-[0_10px_30px_rgba(255,255,255,0.1)] hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:shadow-none flex items-center justify-center gap-3 relative overflow-hidden group"
-                  >
-                    {!isRedirecting && (
-                      <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
-                    )}
-                    
-                    {isRedirecting ? (
-                      <div className="w-5 h-5 border-2 border-black/20 border-t-black rounded-full animate-spin"></div>
-                    ) : (
-                      <>
-                        <span>Proceed to Checkout</span>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </>
-                    )}
-                  </button>
-                  
-                  <div className="mt-8 text-center flex flex-col items-center gap-4">
-                    <div className="flex items-center gap-2 text-white/40">
-                      <Lock className="w-3.5 h-3.5" />
-                      <span className="text-[10px] uppercase tracking-widest">Secure Checkout</span>
+                  {/* Temporarily Hidden */}
+                  {false && (
+                    <div className="hidden">
+                      <button 
+                        onClick={handleCheckout}
+                        disabled={items.length === 0 || isRedirecting}
+                        className="w-full bg-white text-black h-16 rounded-2xl font-bold tracking-widest uppercase text-[11px] sm:text-xs hover:bg-gray-200 transition-all duration-300 shadow-[0_10px_30px_rgba(255,255,255,0.1)] hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:shadow-none flex items-center justify-center gap-3 relative overflow-hidden group"
+                      >
+                        {!isRedirecting && (
+                          <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-50 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+                        )}
+                        
+                        {isRedirecting ? (
+                          <div className="w-5 h-5 border-2 border-black/20 border-t-black rounded-full animate-spin"></div>
+                        ) : (
+                          <>
+                            <span>Proceed to Checkout</span>
+                            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                          </>
+                        )}
+                      </button>
+                      
+                      <div className="mt-8 text-center flex flex-col items-center gap-4">
+                        <div className="flex items-center gap-2 text-white/40">
+                          <Lock className="w-3.5 h-3.5" />
+                          <span className="text-[10px] uppercase tracking-widest">Secure Checkout</span>
+                        </div>
+                        <p className="text-[10px] md:text-xs text-white/30 leading-relaxed max-w-xs font-light">
+                          You will be securely redirected to our parent laboratory, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 underline hover:text-white transition-colors">99 Purity Peptides</a>, to complete your research order.
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-[10px] md:text-xs text-white/30 leading-relaxed max-w-xs font-light">
-                      You will be securely redirected to our parent laboratory, <a href="http://99puritypeptides.com/" target="_blank" rel="noopener noreferrer" className="text-white/60 underline hover:text-white transition-colors">99 Purity Peptides</a>, to complete your research order.
-                    </p>
-                  </div>
+                  )}
                 </div>
             </ScrollReveal>
           </div>
